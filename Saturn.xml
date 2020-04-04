@@ -1,0 +1,2082 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.35.0-wmf.26</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="108" case="first-letter">Book</namespace>
+      <namespace key="109" case="first-letter">Book talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="446" case="first-letter">Education Program</namespace>
+      <namespace key="447" case="first-letter">Education Program talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Saturn Sky</title>
+    <ns>0</ns>
+    <id>1222980</id>
+    <revision>
+      <id>941283976</id>
+      <parentid>918212978</parentid>
+      <timestamp>2020-02-17T17:48:14Z</timestamp>
+      <contributor>
+        <ip>2605:E000:1528:436F:75FA:BA3F:E849:E233</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="14177" xml:space="preserve">{{Use mdy dates|date=September 2019}}
+{{Infobox automobile
+|name           = Saturn Sky
+|image          = 2009 Saturn Sky Redline Ruby Red Limited Edition.jpg
+|caption        = 2009 Saturn Sky Redline Ruby Red Limited Edition
+|manufacturer   = [[General Motors]]
+|aka            = {{Plainlist|
+*[[Opel GT#GT (roadster) (2007–2010)|Opel GT]]
+*Daewoo G2X
+}}
+|production     = 2006–2009
+|model_years    = 2007–2010
+|assembly       = United States: [[Wilmington, Delaware]] ([[Wilmington Assembly]])
+|designer       = [[Franz von Holzhausen]]
+|class          = [[Sports car]]
+|body_style     = 2-door [[Roadster (automobile)|roadster]]
+|platform       = [[GM Kappa platform]]
+|related        = [[Pontiac Solstice]]
+|layout         = [[Front-engine, rear-wheel-drive layout|FR layout]]
+|predecessor    = [[Buick Reatta]]
+|engine         = {{Plainlist|
+*2.4&amp;nbsp;[[litre|L]] ''[[GM Ecotec engine#LE5|LE5]]'' [[Inline-four engine|I4]] ([[Petrol engine|gasoline]])
+*2.0&amp;nbsp;L ''[[GM Ecotec engine#2.0 LNF (Z20NHH Opel)|Ecotec LNF]]'' [[Turbocharger|turbo]] I4 (gasoline)
+}}
+| transmission = {{Plainlist|
+*5-speed [[Aisin Seiki|Aisin]] ''[[Aisin AR transmission|AR5]]'' [[manual transmission|manual]]
+*5-speed ''[[GM 5L40 transmission|5L40-E]]'' [[automatic transmission|automatic]]
+}}
+|wheelbase      = {{convert|95.1|in|mm|0|abbr=on}}
+|length         = {{convert|161.1|in|mm|0|abbr=on}}
+|width          = {{convert|71.4|in|mm|0|abbr=on}}
+|height         = {{convert|50.2|in|mm|0|abbr=on}}
+|weight         = {{convert|2940|lb|kg||abbr=on}} (Base)&lt;br/&gt;{{convert|3071|lb|kg||abbr=on}} (Red Line)
+}}
+The '''Saturn Sky''' is a [[Roadster (automobile)|roadster]] that was produced by [[Saturn Corporation|Saturn]], and was initially released in the first quarter of 2006 as a 2007 model. It uses the ''[[GM Kappa platform|Kappa]]'' [[automobile platform]] shared with the [[Pontiac Solstice]]. The Sky concept was shown at the [[North American International Auto Show#2005|2005 North American International Auto Show]], with the production version following at the 2006 show. It was built at GM's [[Wilmington Assembly]] plant in [[Wilmington, Delaware]], alongside the Solstice. The Sky featured 18-inch (457&amp;nbsp;mm) wheels and a 2.4&amp;nbsp;[[litre|L]] [[GM Ecotec engine#LE5|Ecotec ''LE5'']] [[Inline-four engine|I4]] engine that produced {{Convert|177|hp|kW|0|abbr=on}}, a new straight-4 2.0 L [[Turbocharger|turbocharged]] [[Gasoline direct injection|direct injected]] engine that made {{Convert|260|hp|kW|0|abbr=on}} as well as an optional dealer-installed turbo upgrade kit that made {{Convert|290|hp|kW|0|abbr=on}}.  Both five-speed [[manual transmission|manual]] and [[automatic transmission]]s were available.
+
+The styling for the Sky, penned by [[Franz von Holzhausen]], was based on the Vauxhall VX Lightning Concept's design. It was available in some European markets as the [[Opel GT#GT (roadster) (2007–2010)|Opel GT]]. A [[Rebadging|rebadged]] version named the '''Daewoo G2X''' was unveiled as a concept vehicle for the [[South Korea]]n market in 2006. The production version was released in September 2007.&lt;ref name="g2x"&gt;{{cite web|title='G2X Roadster' released!|url=http://archives.media.gm.com/archive/documents/domain_461/docId_38717_pr.html|publisher=GM Daewoo|accessdate=February 6, 2012|language=Korean|date=August 23, 2007}}&lt;/ref&gt; 
+
+The Wilmington Assembly plant closed in July 2009, ending production as both the Pontiac and Saturn nameplates were retired.&lt;ref&gt;{{cite web|title=GM Pulls Ahead U.S. Plant Closures; Reaffirms Intent to Build Future Small Car in U.S.|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=827&amp;docid=54632|publisher=GM Media Online|accessdate=June 1, 2009|url-status=dead|archiveurl=https://archive.is/20090608161828/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do%3Fdomain=827&amp;docid=54632|archivedate=June 8, 2009}}&lt;/ref&gt;
+
+==Sky Red Line==
+[[File:2009 gray Saturn Sky Red Line steering wheel.JPG|thumb|left|Saturn Sky Red Line interior]]
+[[File:Sky 2009.jpg|thumb|left|2009 Saturn Sky]]
+A '''Red Line''' model of the Sky was introduced on April 11, 2006 at the [[New York Auto Show#2006|New York Auto Show]]. It uses the same {{Convert|260|hp|kW|0|abbr=on}} [[turbocharger|turbocharged]] Ecotec engine as the [[Pontiac Solstice]], as well as the same standard 5-speed Aisin manual transmission. An automatic transmission is optional.
+
+The Red Line had a standard torque-sensing limited-slip differential, standard StabiliTrak stability control, and an enhanced sport suspension over the standard Sky (available as a dealer-add on for regular models). Other exterior enhancements included dual exhausts, 18-inch wheels, and a specific front fascia modeled for the Red Line. On the inside the Red Line had a special leather-wrapped steering wheel with audio controls, special embroidery on the seats and floor mats, metallic door sill covers and stainless steel pedals, special tachometer and gauges, and a digital boost gauge in the Driver Information Center.  The Red Line model started shipping in the third quarter of 2006, with a retail price starting at $29,795.
+
+{| class="wikitable"
+|+Models
+|-
+!Trim!!Engine!!Power!!Torque!!Transmission
+|-
+|Base||2.4&amp;nbsp;[[litre|L]] ''[[GM Ecotec engine#LE5|LE5]]'' [[Inline-four engine|I4]]||{{Convert|177|hp|kW|0|abbr=on}}||{{convert|173|lbft|Nm|0|abbr=on}}||rowspan=3|5-speed [[Aisin AR transmission|Aisin AR-5]] manual, or&lt;br&gt;5-speed [[GM 5L40 transmission|GM 5L40-E]] automatic
+|-
+|Red Line||2.0&amp;nbsp;L ''[[GM Ecotec engine#2.0 LNF (Z20NHH Opel)|LNF]]'' I4||{{Convert|260|hp|kW|0|abbr=on}}||{{convert|260|lbft|Nm|0|abbr=on}}
+|-
+|Red Line with&lt;br&gt;Turbo Upgrade Kit &lt;!--GM Part #19212670; this is an official GM product, not an aftermarket add-on--&gt;||2.0&amp;nbsp;L ''LNF'' I4||{{Convert|290|hp|kW|0|abbr=on}}||{{convert|340|lbft|Nm|0|abbr=on}} ([[Aisin AR transmission|MT]])&lt;br&gt;{{convert|325|lbft|Nm|0|abbr=on}} ([[GM 5L40 transmission|AT]])
+|}{{Clear}}
+
+==Specifications==
+2007 Saturn Sky (Base model) specifications:
+*0-{{convert|60|mph|km/h|abbr=on}}: 6.9 seconds
+*0-{{convert|100|mph|0|abbr=on}}: 21.9 seconds
+*1/4&amp;nbsp;mile: 15.2 seconds @ {{convert|88|mph|km/h|abbr=on}}
+*Top speed: {{convert|123|mph|km/h|0|abbr=on}} drag limited
+*{{convert|70|mph|0|abbr=on}}-0&amp;nbsp;mph braking: {{convert|174|ft|m|0|abbr=on}}
+*{{convert|300|ft|m|abbr=on}} skidpad: 0.86 g
+*EPA fuel economy: {{convert|20|mpgus|L/100 km mpgimp|abbr=on}} city/{{convert|28|mpgus|L/100 km mpgimp|abbr=on}} highway
+
+Source: Car and Driver
+http://media.caranddriver.com/files/2007-saturn-sky2007-saturn-sky-specs.pdf
+
+2007 Saturn Sky Red Line specifications:
+*0-{{convert|60|mph|km/h|abbr=on}}: 5.2 seconds
+*0-{{convert|100|mph|0|abbr=on}}: 14.7 seconds
+*1/4&amp;nbsp;mile: 14.0 seconds @ {{convert|98|mi/h|km/h|0|abbr=on}}
+*Top speed: {{convert|141|mph|km/h|0|abbr=on}} drag limited
+*{{convert|70|mph|0|abbr=on}}-0&amp;nbsp;mph braking: {{convert|168|ft|m|0|abbr=on}}
+*{{convert|300|ft|m|abbr=on}} skidpad: 0.87 g
+*EPA fuel economy: {{convert|19|mpgus|L/100 km mpgimp|abbr=on}} city / ?? highway
+
+Source: Car and Driver
+http://www.caranddriver.com/reviews/2007-saturn-sky-red-line-short-take-road-test-specs-page-2
+
+==Limited editions==
+
+===2008===
+For the 2008 model year, GM offered the Carbon Flash Special Edition Saturn Sky. Unlike the two Limited Edition models launched later in 2009, its production was slightly higher at 550 units.&lt;ref&gt;{{cite web|url=http://www.skyroadster.com/forums/f13/official-carbon-flash-numbers-31953/|title=OFFICIAL Carbon Flash Numbers... - Saturn Sky Forums: Saturn Sky Forum|work=skyroadster.com}}&lt;/ref&gt; The Carbon Flash Special Edition featured a unique metallic Carbon Flash paint color, removable silver racing stripe standard, and Monsoon premium audio standard. The largest differentiator however, is Carbon Flash Edition's silver inserts in the interior seating and steering wheel that provide a black-on-silver appearance.
+
+===2009===
+For the 2009 model year, GM launched two limited-edition Saturn Sky roadsters jointly; Ruby Red Special Edition and Hydro Blue Limited Edition. Both are VIN-coded&lt;ref&gt;[http://service.gm.com/dealerworld/vincards/pdf/vincard09%2003-07-12%20R1.6.pdf]{{Dead link|date=June 2019}}&lt;/ref&gt; and some blue books track it as a limited edition vehicle. All limited editions featured Monsoon premium stereos.
+
+The Ruby Red Edition featured the Ruby Red color and a unique, removable carbon racing stripe that was exclusive to the 500 Sky units produced in this trim.
+
+The Hydro Blue Edition featured a Hydro Blue color, as well as matching blue-colored stitching in the seats and gear shifter. Also, the word Sky stitched into the seats is changed to matching-blue color as well. All Hydro Blue Edition Saturn Sky units were sold with the removable silver racing stripe.
+
+GM had planned to make 500 Hydro Blue units to match the 500 Ruby Red Special Edition Sky build count. However, Hydro Blue units were being built as GM was declaring bankruptcy, resulting in the immediate termination of the Kappa platform. As such, only 89 Hydro Blue Edition Saturn Sky roadsters were built.&lt;ref&gt;{{cite web|url=http://www.skyroadster.com/forums/f2/hydro-blue-database-thread-60602/|title=OFFICIAL Hydro Blue Numbers... - Saturn Sky Forums: Saturn Sky Forum|work=skyroadster.com}}&lt;/ref&gt;
+
+The Hydro Blue paint color (and seat/shifter blue stitching) was offered on the [[Pontiac Solstice]]. However, it is not VIN coded as a unique/limited edition, racing stripes were not standard, and seats do not have blue-colored lettering. Hydro Blue is the rarest color in all three vehicles; Sky Roadster, Solstice Roadster, and Solstice Coupe.
+
+==2010 production==
+In April and May 2009 the Wilmington, DE. plant built thirty 2010 model year VIN-coded cars on the Kappa platform. Of those, 8 were Saturn SKYs. The other remaining included 12 Pontiac Solstice Coupes, eight Pontiac Solstice roadsters, and two Opel GTs. They were then used as GM company vehicles to be evaluated and also as special event display vehicles. These vehicles were built to the 2010 model year specs with 2010 model year changes and had legal 2010 VIN numbers. All 8 2010 SKYs were purchased by the same dealer in Minnesota and subsequently sold as used vehicles. Among changes to the SKY for the 2010 model year were the addition of remote start on automatic equipped cars, option package changes and additions, and three new colors. Those colors were Kinetic Blue, Opus Green, and Dark Labyrinth Metallic.
+
+===2010 SKYs produced===
+* SKY, Black Lt. Cashmere Leather Tan LE5 Auto Chrome Air
+* SKY Redline, Kinetic Blue Black Leather Black LNF Auto Polished Air
+* SKY Redline, Black Red Leather Black LNF Auto Polished Air
+* SKY Redline, Dk Labyrinth Met Black Leather Black LNF Auto Chrome Air
+* SKY, Black Lt. Cashmere Leather Tan LE5 Manual Chrome
+* SKY Redline, Black Black Leather Black LNF Auto Chrome Air
+* SKY Redline, Dk Labyrinth Met Black Leather Black LNF Manual Chrome Air
+* SKY, Dk Labyrinth Met Black Leather Black LE5 Auto Chrome
+
+==Production by model year==
+{| class="wikitable"
+|-
+! Model Year
+! Total Saturn Sky Production&lt;ref&gt;{{cite web|url=http://www.gm.com/corporate/investor_information/sales_prod/hist_prod.jsp |title=General Motors: Investors: Sales and Production Reports: Historical Production |publisher=GM |date=July 10, 2009 |accessdate=September 27, 2009}}&lt;/ref&gt;
+|-
+| 2007
+| 16,567
+|-
+| 2008
+| 13,662
+|-
+| 2009
+| 4,178
+|-
+| 2010
+| 8
+|-
+|''' Total'''
+| '''34,415'''
+|}
+
+==Yearly American sales==
+{| class="wikitable"
+|-
+! Calendar Year
+! Total American sales
+|-
+| 2006&lt;ref&gt;{{cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=6&amp;docid=31596 |title=GM Media Online |publisher=Media.gm.com |date=January 3, 2007 |accessdate=May 1, 2009 |url-status=dead |archiveurl=https://archive.is/20090221044819/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do%3Fdomain=6&amp;docid=31596 |archivedate=February 21, 2009 }}&lt;/ref&gt;
+| 8,671
+|-
+| 2007
+| 11,263
+|-
+| 2008&lt;ref&gt;{{cite web |url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=2&amp;docid=51161 |title=GM Media Online |publisher=Media.gm.com |date=January 5, 2009 |accessdate=May 1, 2009 |url-status=dead |archiveurl=https://web.archive.org/web/20090423151551/http://media.gm.com/servlet/GatewayServlet?target=http%3A%2F%2Fimage.emerald.gm.com%2Fgmnews%2Fviewpressreldetail.do%3Fdomain%3D2&amp;docid=51161 |archivedate=April 23, 2009 }}&lt;/ref&gt;
+| 9,162
+|-
+| 2009&lt;ref&gt;{{cite web|url=http://media.gm.com/content/media/us/en/news/news_detail.html/content/Pages/news/us/en/2010/Jan/0105_Dec_Sales |title=Chevrolet, Buick, GMC and Cadillac Post Sales Gains |publisher=Media.gm.com |date=January 5, 2010 |accessdate=January 5, 2010}}&lt;/ref&gt;
+| 3,399
+|-
+|''' Total'''
+| '''32,495'''
+|}
+
+==Motorsport==
+An extremely modified Saturn Sky competes in the [[Formula D]] [[Drifting (motorsport)|drifting]] series, driven by [[Darren McNamara]] &amp; sponsored by [[Falken Tires]]. It produces 800&amp;nbsp;hp and sports an [[aluminum]] [[turbocharged]] [[V8]] that displaces 6.7 liters. The car was built by [[Autosport Dynamics]].
+
+==See also==
+* [[Pontiac Solstice]]
+* [[Vauxhall VX220]] and [[Opel Speedster]] – European-market predecessors, both based on the [[Lotus Elise]] and built by [[Lotus Cars]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category|Saturn Sky}}
+*[https://web.archive.org/web/20111215161750/http://www.saturn.com/vehicles/saturn_vehicles.html#/SKY Official Saturn Sky website]
+*[http://g2x.gmdaewoo.co.kr/ Official Daewoo G2X website]{{dead link|date=June 2019}}
+
+{{Saturn Corporation}}
+{{GM Daewoo timeline}}
+
+[[Category:Saturn vehicles|Sky]]
+[[Category:Roadsters]]
+[[Category:Hardtop convertibles]]
+[[Category:Sports cars]]
+[[Category:Rear-wheel-drive vehicles]]
+[[Category:2000s cars]]
+[[Category:Cars introduced in 2007]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>8s85zrjuiba86o75iwu86n4au16pn7z</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Curve</title>
+    <ns>0</ns>
+    <id>3809688</id>
+    <revision>
+      <id>945087058</id>
+      <parentid>945087036</parentid>
+      <timestamp>2020-03-11T18:54:47Z</timestamp>
+      <contributor>
+        <username>CommonsDelinker</username>
+        <id>2304267</id>
+      </contributor>
+      <comment>Removing [[:c:File:SaturnCurveConceptrear.jpg|SaturnCurveConceptrear.jpg]], it has been deleted from Commons by [[:c:User:Green Giant|Green Giant]] because: per [[:c:Commons:Deletion requests/Files uploaded by TKOIII|]].</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="1631" xml:space="preserve">{{Single source|date=November 2018}}{{Infobox automobile
+| name = Saturn Curve
+| manufacturer = [[Saturn Corporation|Saturn]] ([[General Motors]])
+| aka = 
+| production = 2004
+| assembly = 
+| predecessor = 
+| successor = 
+| class = [[Concept car]]
+| body_style = 2-door [[Roadster (automobile)|roadster]]
+| layout = [[FR layout]]
+| platform = [[GM Kappa platform]]
+| engine = 2.0L inline-four [[GM Ecotec engine#Ecotec Gen I|Ecotec]], Supercharged.
+| transmission = 
+| wheelbase = 
+| length = 
+| width = 
+| height = 
+| ground_clearance = 
+| front_track = 
+| rear_track = 
+| weight = 
+| top_speed = 
+| related = [[Saturn Sky]]&lt;br&gt;[[Pontiac Solstice]]&lt;br&gt;[[Opel GT]]
+| designer = [[Michael Mauer]]
+| image =
+}}
+
+The '''Saturn Curve''' was a [[Roadster (automobile)|roadster]] [[concept car|concept]] by [[Saturn Corporation|Saturn]] designed by [[Michael Mauer]] who was the former head of design at [[Saab Automobile]]. It was shown at the [[North American International Auto Show#2004|2004 North American International Auto Show]] along with the [[Saturn Sky]] concept.
+
+This project would also evolve to a new "[[Saab Sonett]]", with a different front styling, {{CN|date=July 2014}} but ultimately Saab's intentions to make it an AWD car did not come true, and Saturn opted to go with the Opel project, giving birth to the Saturn Sky.
+
+==External links==
+*[http://www.autointell.com/Events/naias-2004/naias-2004-daily/saturn-curve-04/saturn-curve-front-800.jpg Photo of the Saturn Curve]
+
+[[Category:Saturn vehicles|Curve]]
+[[Category:General Motors concept cars]]
+
+
+{{Modern-auto-stub}}{{Saturn automobile timeline 1991 to 2010}}</text>
+      <sha1>lt36phrrtviyfkwk3c1cq1ohnt50nhz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Aura</title>
+    <ns>0</ns>
+    <id>1373768</id>
+    <revision>
+      <id>948753125</id>
+      <parentid>948666133</parentid>
+      <timestamp>2020-04-02T20:59:55Z</timestamp>
+      <contributor>
+        <username>Sable232</username>
+        <id>1101750</id>
+      </contributor>
+      <comment>The Saturn brand was discontinued with no successors</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="24964" xml:space="preserve">{{Infobox automobile
+|name = Saturn Aura
+|image = Saturn Aura XR -- 08-28-2009.jpg
+|manufacturer = [[General Motors]]
+|production = 2006–2009
+|model_years=2007–2010
+|assembly =[[Kansas City, Kansas]], [[United States]]
+|class = [[Midsize car]]
+|body_style = 4-door [[sedan (automobile)|sedan]]
+|designer = Bryan Nesbitt&lt;ref&gt;{{cite web|title=GM's Bryan Nesbitt named chief Buick stylist in design shuffle|url=http://www.autonews.com/article/20150604/OEM03/150609920/gms-bryan-nesbitt-named-chief-buick-stylist-in-design-shuffle}}&lt;/ref&gt;
+|platform = [[GM Epsilon platform]]
+| related        = [[Chevrolet Malibu#Seventh generation .282008.E2.80.932012.29|Chevrolet Malibu]]&lt;br /&gt;[[Fiat Croma#Second generation .282005.E2.80.932011.29|Fiat Croma]]&lt;br /&gt;[[Opel Signum]]&lt;br /&gt;[[Opel Vectra#Vectra C .282002.E2.80.932009.29|Opel Vectra C]]&lt;br /&gt;[[Pontiac G6]]&lt;br /&gt;[[Saab 9-3#Second generation .282002.E2.80.932012.29|Saab 9-3]]
+|layout = [[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]]
+|engine = {{ubl |2.4 L ''[[GM Ecotec engine#LE5|LE5]]'' [[Straight-4|I4]] ([[gasoline]])||2.4 L ''[[GM Ecotec engine#LE9|LE9]]'' [[Straight-4|I4]] (gasoline/[[E85]])|2.4 L ''[[GM Ecotec engine#LAT|LAT]]'' ([[hybrid electric vehicle|hybrid]] gasoline / electric)|3.5 L ''[[GM High Value engine#LZ4|LZ4]]'' [[V6 engine|V6]] (gasoline)|3.6&amp;nbsp;L ''[[GM High Feature engine#LY7|LY7]]'' [[V6]] (gasoline)}}
+|transmission = {{ubl |4-speed ''[[GM 4T45-E transmission|4T45-E]]'' automatic|6-speed ''[[GM 6T70 transmission|6T70]]'' automatic|6-speed ''[[GM 6T40 transmission|6T40]]'' automatic}}
+|wheelbase = {{convert|112.3|in|mm|0|abbr=on}}
+|length = {{convert|190.9|in|mm|0|abbr=on}}
+|width = {{convert|70.3|in|mm|0|abbr=on}}
+|height = {{convert|57.6|in|mm|0|abbr=on}}
+|weight = {{convert|3781|lb|abbr=on}}
+|predecessor = [[Saturn L-Series]]
+}}
+
+The '''Saturn Aura''' is a [[mid-size car|midsize family sedan]] that was produced by [[Saturn Corporation|Saturn]]. It debuted as a [[concept car]] at the [[North American International Auto Show]] in January 2005. The production model of the Aura was shown at the 2006 [[New York Auto Show]] in April, with production commencing in North America in the summer of 2006 for the 2007 model year. The Aura replaced the [[Saturn L-Series]], which was discontinued after the 2005 model year.&lt;ref&gt;{{cite web |url=http://consumerguideauto.howstuffworks.com/2000-to-2005-saturn-l-series.htm |title=Saturn L-Series on Consumerguide.com |accessdate=2007-03-17 |url-status=dead |archiveurl=https://web.archive.org/web/20070821134604/http://consumerguideauto.howstuffworks.com/2000-to-2005-saturn-l-series.htm |archivedate=2007-08-21 }}&lt;/ref&gt; Although Saturn had never intended to use the Aura name for the production vehicle, the name ended up sticking as a result of the popularity of the concept.&lt;ref&gt;{{cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=3&amp;docid=16976|title=Saturn Announces New "Outlook" for Future Portfolio: Also Confirms "Aura" Name|accessdate=2008-04-21}} {{Dead link|date=September 2010|bot=H3llBot}}&lt;/ref&gt;
+
+The Aura was considered an important model for both Saturn and General Motors.&lt;ref name="Profit"&gt;[http://www.edmunds.com/insideline/do/Columns/articleId=116831 Saturn is ready to turn a profit] {{webarchive|url=https://web.archive.org/web/20090210070823/http://www.edmunds.com/insideline/do/Columns/articleId=116831 |date=2009-02-10 }}&lt;/ref&gt; It was part of a product rejuvenation for Saturn intended to make the brand profitable as well as competitive with European imports.&lt;ref name = "Profit" /&gt;&lt;ref&gt;{{cite web|url=http://www.saturnfans.com/Company/2007/thesaturnrevival.shtml|title=Rick Wagoner explains in this video what he has planned for the Saturn brand|accessdate=2007-03-17}}&lt;/ref&gt; Reaction to the Aura was positive, both in terms of reviews and sales.&lt;ref name = "Dan" /&gt;  The Saturn Aura was the 2007 North American [[Car of the Year]].
+
+The concept used a 252&amp;nbsp;hp (186&amp;nbsp;kW) 3.6&amp;nbsp;L [[V6]] and a new ''[[GM 6T70 transmission|6T70]]'' six-speed [[automatic transmission]].&lt;ref&gt;{{cite web|url=http://www.autoblog.com/2005/01/07/detroit-auto-show-saturn-aura-concept/
+|title=Saturn Aura concept auto show unveiling|work=autoblog.com|accessdate=2006-08-24}}&lt;/ref&gt; That powertrain was offered in the production model known as the ''XR''.  Also introduced was the 3.5&amp;nbsp;L V6 with 219&amp;nbsp;hp (163&amp;nbsp;kW), down from 224 in 2007 in the ''XE'', and the [[hybrid vehicle|hybrid]] 164&amp;nbsp;hp (122&amp;nbsp;kW) 2.4&amp;nbsp;L [[inline-4]], down from {{Convert|170|hp|kW|0|abbr=on}}, in the ''Green Line''.  The Aura, developed on the [[GM Epsilon platform]], was available only as a [[sedan (car)|sedan]] and was built at the [[Kansas City, Kansas]], [[Fairfax Assembly]] plant.
+
+The model was discontinued after the 2010 model year as a direct result of the Saturn division being terminated that year. It was later revealed that a second-generation model based on the [[Opel Vectra|Vectra]]'s replacement, the [[Opel Insignia|Insignia]], was due to be released. However, with the discontinuation of the Saturn brand, the Insignia was offered to Buick, who released it as the fifth-generation [[Buick Regal]].{{fact|date=April 2020}}
+
+==Design==
+
+===Exterior===
+[[File:Saturn-Aura-rear.jpg|thumb|left|200px|Note that the rear of the Aura sits higher than the front.]]
+The Aura was a new styling direction for Saturn, with styling that resembled its cousin, the European [[Opel Vectra]]. All Aura models came standard with folding side mirrors and side marker lights, lending to its European stylings.&lt;ref name = "Saturn" /&gt; The design of the Aura Special appearance pieces included an integrated radio antenna in the rear window, a chrome appearance package available on XR models, standard 17&amp;nbsp;inch wheels with five-spoke wheel covers and P225/50R17 all-season tires on XE models, and standard 18&amp;nbsp;inch machined aluminum 14-spoke wheels on the XR with high-performance Goodyear Eagle LS2 P225/50R18 T tires.
+
+===Interior===
+[[File:Saturn-Aura-interior.JPG|200px|thumb|left|2007 Saturn Aura XR Interior]]
+The interior of the Aura also marked a new interior direction for Saturn, moving to a more European-style interior. The design of the interior of the Aura differed from that of the Ion, which was highly criticized.&lt;ref&gt;{{cite web|url=http://www.edmunds.com/saturn/ion/review.html|title=Saturn Ion review, Edmunds.com|accessdate=2007-03-17}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.edmunds.com/apps/vdpcontainers/do/vdp/articleId=89620/pageNumber=1?synpartner=edmunds&amp;pageurl=www.edmunds.com/used/2003/saturn/ion/100184118/roadtestarticle.html&amp;articleId=89620 |title=2003 Saturn Ion review |accessdate=2007-03-17 |url-status=dead |archiveurl=https://web.archive.org/web/20070930035012/http://www.edmunds.com/apps/vdpcontainers/do/vdp/articleId%3D89620/pageNumber%3D1?synpartner=edmunds&amp;pageurl=www.edmunds.com%2Fused%2F2003%2Fsaturn%2Fion%2F100184118%2Froadtestarticle.html&amp;articleId=89620 |archivedate=2007-09-30 }}&lt;/ref&gt; On the upscale XR model, the interior came with an option for saddle leather and paddle shifters, as well as an option for back seat radio controls.&lt;ref name="Saturn"&gt;[http://www.saturn.com/saturn/vehicles/aura/pricing.jsp Saturn Aura Pricing and options: Saturn.com] {{webarchive|url=https://web.archive.org/web/20080215055755/http://www.saturn.com/saturn/vehicles/aura/pricing.jsp |date=2008-02-15 }}&lt;/ref&gt; Despite being praised for its design and fit and finish, the Aura's interior was criticized for using cheap materials.&lt;ref name = "Automobile"&gt;Automobile Magazine: By Design, Robert Cumberford, December 2006 issue&lt;/ref&gt;&lt;ref name = "CNN"&gt;[http://money.cnn.com/2006/10/02/autos/saturn_aura/index.htm?postversion=2006100417 Saturn Aura aims high, scores big. CNN Money]&lt;/ref&gt;
+
+The Aura XR's standard features included: automatic climate control, remote vehicle start, [[Stabilitrak]] stability control, backseat audio controls, heated seats, six airbags, [[Anti-lock braking system|ABS]] four-wheel disc brakes, steering wheel audio controls, universal home remote, [[OnStar]] and a "Driver Information Center".&lt;ref name = "Saturn" /&gt;
+
+==Models==
+
+===Aura XR===
+[[File:Saturn Aura XR -- 08-28-2009.jpg|thumb|right|250px|2009 Saturn Aura XR]]
+The Aura XR was the top-line Aura model. The XR was fitted with the 3.6&amp;nbsp;L [[DOHC]] V6 with VVT, rated at {{convert|252|hp|kW|0|abbr=on}} at 6200 rpm and {{convert|251|lbft|Nm|abbr=on}} of torque at 3100 rpm.  This engine was first used in the [[Cadillac CTS]] as well as the [[Cadillac STS]] and marks its third use in a North American GM car.  With this 3.6&amp;nbsp;L engine, the Aura was the first [[front-wheel drive]] GM passenger car to use the new Hydra-Matic 6T70 six-speed automatic transmission.&lt;ref name = "Equip" /&gt; The transmission featured TAPshift, which allowed the driver to manually select gears by using paddles located behind the steering wheel.&lt;ref&gt;{{cite web|url=http://www.saturnfans.com/Cars/AURA/2007/auraxeequipment.shtml|title=Saturn Aura Standard and optional equipment|accessdate=2007-03-17}}&lt;/ref&gt;  The Aura XR was the performance-oriented version with a taut, but not harsh, suspension and the more powerful engine.  Available interior colors in the XR were tan and grey leather (available in the XE), along with the XR-specific black or Morocco Brown leather.  Cloth was standard.  Other standard features included the Advanced Audio Package, 18&amp;nbsp;inch alloy wheels, chrome exterior door handles, and remote vehicle start.&lt;ref&gt;{{cite web|url=http://www.saturn.com/saturn/vehicles/aura/pricing.jsp|title=Saturn Aura equipment|accessdate=2008-02-05|url-status=dead|archiveurl=https://web.archive.org/web/20080215055755/http://www.saturn.com/saturn/vehicles/aura/pricing.jsp|archivedate=2008-02-15}}&lt;/ref&gt; Given the 2007 Saturn Aura's European roots—the car's chassis was also used for the Saab 9-3. The Aura also used hydraulic power steering (V-6 models only) that provided more feedback and a more linear feel than the fussy electric power-assist units. For 2009, an entry level XR became available.  It included the 17 inch 10 spoke alloy wheels available on the XE and the 2.4 L [[GM Ecotec engine#LE5|LE5 Ecotec]] engine mated to GM's all new [[GM 6T40 transmission|6T40]] 6-speed automatic transmission with TAPshift.  The 3.6L VVT with 18" wheels was optional.
+
+===Aura XE===
+[[File:2007 Saturn Aura XE.jpg|250px|thumb|right|2007 Saturn Aura XE]]
+The base version was the Aura XE. Equipped with the 3.5&amp;nbsp;L VVT V6 ([[GM High Value engine#LZ4|LZ4]]), the engine was matched with the 4T45-E four-speed automatic transmission. In the Aura, the engine produced {{convert|219|hp|kW|0|abbr=on}}  and {{convert|220|lbft|Nm|abbr=on}} of torque.&lt;ref name = "Equip"&gt;[http://www.leftlanenews.com/2007-saturn-aura-unveiled.html Saturn Aura unveiled]&lt;/ref&gt; Traction Control, six airbags, V6, automatic, auto headlights, CD with AUX, 17&amp;nbsp;inch wheels, among other features, comes standard.&lt;ref name = "Saturn" /&gt;  The Aura XE had a softer suspension, but still handled very well.  A Special Edition version of the XE included equipment upgrades, the option of the XR-only black or Morocco Brown leather, along with new, XE-only 18&amp;nbsp;inch machined alloy wheels. Beginning with the 2008 model, the 2.4 L [[GM Ecotec engine#LE5|LE5 Ecotec]] 4-cylinder became available with the [[GM 4T45-E transmission|4T45-E]] 4-speed automatic. For 2009 the standard 4-cylinder was mated to GM's all new [[GM 6T40 transmission|6T40]] 6-speed automatic with TAPshift as standard equipment. This improved overall performance and increased fuel economy to {{convert|22|mpgus|L/100 km mpgimp}} in the city, and {{convert|33|mpgus|L/100 km mpgimp}} on the highway, up from the 2008's {{convert|22|mpgus|L/100 km mpgimp}} city, {{convert|30|mpgus|L/100 km mpgimp}} highway&lt;ref&gt;{{cite web
+  | authorlink =http://www.eere.energy.gov/
+  | title =Fuel Economy
+  | publisher =U.S. Department of Energy
+  | url =http://www.fueleconomy.gov/feg/2008car1tablef.jsp?id=24397
+  | accessdate =2007-08-03}}&lt;/ref&gt;
+
+===Aura Green Line===
+[[File:AuraGreenLine.JPG|thumb|right|250px|2007 Saturn Aura Green Line]]
+The Aura Green Line was a [[mild hybrid]], following the [[Saturn Vue|Vue]] Green Line as the second vehicle in Saturn's lineup incorporating GM's [[belt alternator starter]] system.  It rode on the XE's suspension.&lt;ref name = "GCC"&gt;[http://www.greencarcongress.com/2006/04/gm_saturn_aura_.html Green Car Congress: Saturn Aura Green Line]&lt;/ref&gt; It was sold from late March 2007 to 2010.&lt;ref&gt;{{cite web |url=http://www.edmunds.com/insideline/do/News/articleId=120024 |title=Saturn Announces Pricing on Aura Green Line Hybrid |accessdate=2007-03-26 |url-status=dead |archiveurl=https://web.archive.org/web/20070927192520/http://www.edmunds.com/insideline/do/News/articleId%3D120024 |archivedate=2007-09-27 }}&lt;/ref&gt;
+
+As in the Vue, the Aura Green Line was equipped with the 2.4L [[GM Ecotec engine|Ecotec]] engine mated to an electric motor/generator and the 4T45-E four-speed automatic transmission.&lt;ref name = "GCC" /&gt; The powertrain was rated at {{convert|164|hp|kW|0|abbr=on}} and {{convert|159|lbft|Nm|abbr=on}} of torque. The electric motor/generator augmented the gasoline engine during launch and under wide-open throttle.&lt;ref name = "GCC" /&gt; The Aura Green Line had an EPA estimated fuel economy of {{convert|26|mpgus|L/100 km mpgimp|abbr=on}} city and {{convert|34|mpgus|L/100 km mpgimp|abbr=on}} highway (for the 2007-08 model years it was {{convert|28|mpgus|L/100 km mpgimp|abbr=on}} city and {{convert|36|mpgus|L/100 km mpgimp|abbr=on}}), which Saturn claimed was up to a 30% improvement over the Aura XE.&lt;ref&gt;{{cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=74&amp;docid=34380 |title=GM Media Online - Saturn Aura Green Line |accessdate=2007-03-20 |archiveurl=https://archive.today/20071015104356/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do%3Fdomain=74&amp;docid=34380 |archivedate=2007-10-15 |url-status=dead }}&lt;/ref&gt;
+
+The Saturn Aura Green Line was eligible for a $1300 US Federal tax credit, as well as several state tax credits.&lt;ref&gt;{{cite news| url=https://www.reuters.com/article/tnBasicIndustries-SP/idUSN1929812320070319 | title=GM's Saturn Aura hybrid gets ,300 tax credit | first=Jui | last=Chakravorty | date=2007-03-19 | work=Reuters}}&lt;/ref&gt;
+
+Prior to the shutdown of Saturn, General Motors said that they would introduce a new hybrid system in summer 2010.&lt;ref&gt;[http://www.nbcnews.com/id/31249072 "GM cancels Chevy Malibu, Saturn Aura hybrids"]. [[Associated Press]]. June 11, 2009.&lt;/ref&gt;
+
+===Recall===
+On September 21, 2012. General Motors recalled 473,841 vehicles involving the [[Chevy Malibu]], [[Pontiac G6]] and Saturn Aura from model years 2007 through 2010 equipped with four-speed automatic transmissions. The problem is a condition that could make cars roll when in park. The recall affects 426,240 in the United States, 40,029 in Canada and 7,572 in other markets.&lt;ref&gt;{{cite web|last=Klayman|first=Ben|title=GM recalls nearly 474,000 cars over gear shift problem|url=https://www.reuters.com/article/2012/09/21/us-gm-usrecall-idUSBRE88K0II20120921|publisher=Reuters|accessdate=21 September 2012}}&lt;/ref&gt;
+
+==Engines==
+
+{| class="wikitable" border="1"
+|-
+!Trim!!Engine!!Displacement!!Power!!Torque!!Transmission!!Fuel Mileage &lt;br /&gt;(latest EPA mpg&lt;sub&gt;-[[US gallon|US]]&lt;/sub&gt;)
+|-
+|Green Line||2.4 L [[GM Ecotec engine#LAT|LAT]] [[DOHC]] I4 (''[[belt alternator starter|BAS]]'' [[hybrid vehicle|hybrid]])||{{convert|2393|cc|cuin|0|abbr=on}}&lt;ref name=2009specs&gt;{{cite web|url=http://media.gm.com/us/saturn/en/product_services/r_cars/r_c_aura/09index.html |title=GM Media Online: English |publisher=Media.gm.com |date= |accessdate=2009-05-01 }}{{dead link|date=June 2016|bot=medic}}{{cbignore|bot=medic}}&lt;/ref&gt;||164&amp;nbsp;hp (124&amp;nbsp;kW)||{{convert|159|lbft|Nm|0|abbr=on}}||4-Speed ''[[GM 4T45-E transmission|4T45-E]]''||'''26''' city, '''34''' hwy, '''29''' comb
+|-
+|XE (2008)||2.4 L ''[[GM Ecotec engine#LE5|LE5]]'' DOHC I4||{{convert|2384|cc|cuin|0|abbr=on}}&lt;ref name=2009specs/&gt;||{{Convert|169|hp|kW|0|abbr=on}}||{{convert|160|lbft|Nm|0|abbr=on}}||4-speed ''[[GM 4T45-E transmission|4T45-E]]''||'''22''' city, '''30''' hwy, '''25''' comb
+|-
+|XE (2009)||2.4 L ''[[GM Ecotec engine#LE5|LE5]]'' DOHC I4||{{convert|2384|cc|cuin|0|abbr=on}}&lt;ref name=2009specs/&gt;||{{Convert|169|hp|kW|0|abbr=on}}||{{convert|160|lbft|Nm|0|abbr=on}}||6-speed ''[[GM 6T40 transmission|6T40]]''||'''22''' city, '''33''' hwy, '''26''' comb
+|-
+|XE (2007–08)||3.5&amp;nbsp;L ''[[GM High Value engine#LZ4|LZ4]]'' [[OHV]] V6||{{convert|3510|cc|cuin|0|abbr=on}}&lt;ref name=2007specs&gt;{{cite web|url=http://media.gm.com/us/saturn/en/product_services/r_cars/r_c_aura/07index.html |title=GM Media Online: English |publisher=Media.gm.com |date=2005-03-31 |accessdate=2009-05-01 |url-status=dead |archiveurl=https://archive.today/20071130174850/http://media.gm.com/us/saturn/en/product_services/r_cars/r_c_aura/07index.html |archivedate=November 30, 2007 }}&lt;/ref&gt;||219&amp;nbsp;hp (162&amp;nbsp;kW)||{{convert|219|lbft|Nm|0|abbr=on}}||4-speed ''[[GM 4T45-E transmission|4T45-E]]''||'''18''' city, '''29''' hwy, '''22''' comb
+|-
+|XR (2009)||2.4 L ''[[GM Ecotec engine#LE5|LE5]]'' DOHC I4||{{convert|2384|cc|cuin|0|abbr=on}}&lt;ref name=2009specs/&gt;||{{Convert|169|hp|kW|0|abbr=on}}||{{convert|160|lbft|Nm|0|abbr=on}}||6-speed ''[[GM 6T40 transmission|6T40]]''||'''22''' city, '''33''' hwy, '''26''' comb
+|-
+|XR (2007–09)||3.6&amp;nbsp;L ''[[GM High Feature engine#LY7|LY7]]'' DOHC V6||{{convert|3564|cc|cuin|0|abbr=on}}&lt;ref name=2009specs/&gt;||252&amp;nbsp;hp (186&amp;nbsp;kW)||{{convert|251|lbft|Nm|0|abbr=on}}||6-speed ''[[GM 6T70 transmission|6T70]]''||'''17''' city, '''26''' hwy, '''20''' comb
+|}
+
+==Reception==
+Reception to the Aura was generally positive. The Aura was described as the best looking sedan to come out of GM in quite a while.&lt;ref name = "Fuel"&gt;[https://www.youtube.com/watch?v=QPcxcJjzxDY Fuel Show review of the Saturn Aura]&lt;/ref&gt; The Aura was also praised for its performance.&lt;ref name = "Fuel" /&gt;&lt;ref name = "Ann Job"&gt;{{Cite web |url=http://autos.msn.com/research/vip/job.aspx?year=2007&amp;make=Saturn&amp;model=Aura |title=Ann Job review of the Saturn Aura. autos.msn.com |access-date=2007-03-17 |archive-url=https://web.archive.org/web/20071106093855/http://autos.msn.com/research/vip/job.aspx?year=2007&amp;make=Saturn&amp;model=Aura |archive-date=2007-11-06 |url-status=dead }}&lt;/ref&gt; The Aura has been described as "the best Saturn yet",&lt;ref name = "Dan"&gt;{{Cite web |url=http://autos.msn.com/research/vip/jedlicka.aspx?year=2007&amp;make=Saturn&amp;model=Aura |title=Dan Jedlicka's reviews of the Saturn Aura |access-date=2007-03-17 |archive-url=https://web.archive.org/web/20080107030745/http://autos.msn.com/research/vip/jedlicka.aspx?year=2007&amp;make=Saturn&amp;model=Aura |archive-date=2008-01-07 |url-status=dead }}&lt;/ref&gt; and fit and finish and ride quality are regarded as greatly improved over previous Saturns. Other improvements include reduced road noise, attributed to the fact that this model doesn't use polymer body panels like its predecessors, in addition to the extensive soundproofing GM added to car, and the triple-pane front windows and windshield.&lt;ref name = "Ann Job" /&gt; The Aura also garnered praise for its value, as it was noted that an Aura XE loaded up with certain options cost less at the time than the standard MSRP of the [[Toyota Camry]] with a V6.&lt;ref name = "Ann Job" /&gt; The Aura finished fourth out of six places in a ''[[Car and Driver]]'' comparison test, ahead of the [[Chrysler Sebring]] and the [[Toyota Camry]], but fell behind the [[Honda Accord]].&lt;ref name = "Car and Driver"&gt;[http://www.caranddriver.com/comparisons/12148/2007-chrysler-sebring-touring-vs-2007-honda-accord-se-vs-2007-kia-optima-ex-vs-2007-nissan-altima-25s-vs-2007-saturn-aura-xe-vs-2007-toyota-camry-le.html Familial Four Doors: Car and Driver mid size sedan comparison]&lt;/ref&gt; Despite this, it was the best performing out of the cars compared.&lt;ref name = "Car and Driver" /&gt; The Aura also got praise for the craftsmanship of its interior and its European flair.&lt;ref name = "connection"&gt;[http://www.thecarconnection.com/Vehicle_Reviews/Sedans_Coupes_and_Hatchbacks/2007_Saturn_Aura.S180.A10775.html The Car Connection: Saturn Aura review]&lt;/ref&gt; The Aura also got a favorable review by Consumer Guide, with it being a recommended pick.&lt;ref name="Consumerguide"&gt;[http://consumerguideauto.howstuffworks.com/2007-saturn-aura-1.htm Consumer Guide road test of the Saturn Aura] {{webarchive|url=https://web.archive.org/web/20070410141332/http://consumerguideauto.howstuffworks.com/2007-saturn-aura-1.htm |date=2007-04-10 }}&lt;/ref&gt; It also got more than favorable reviews from actual owners of the vehicle.&lt;ref&gt;{{cite web|url=http://autos.msn.com/research/userreviews/reviewlist.aspx?modelid=12079&amp;trimid=-1|title=MSN autos user reviews: Saturn Aura|accessdate=2007-03-17|archive-url=https://web.archive.org/web/20110717073851/http://autos.msn.com/research/userreviews/reviewlist.aspx?modelid=12079&amp;trimid=-1|archive-date=2011-07-17|url-status=dead}}&lt;/ref&gt;
+
+Despite this, the Aura has a few criticisms. The Aura's interior has been criticized for using cheap materials.&lt;ref name = "Automobile" /&gt;&lt;ref name = "CNN" /&gt;&lt;ref name = "Car and Driver" /&gt; Also, the steering wheel has been criticized for being too big for some drivers&lt;ref name = "Ann Job" /&gt; and that rear headroom was tight when equipped with the optional sunroof.&lt;ref name = "Consumerguide" /&gt; The Aura was also criticized for being noisy over bumps&lt;ref name = "CNN" /&gt; and its lack of a rear armrest and head restraint,&lt;ref name = "Ann Job" /&gt; and that the push button controls on the steering wheel cannot be operated while holding the wheel.&lt;ref name = "CNN" /&gt; Robert Cumberford of [[Automobile (magazine)|''Autombile'' magazine]] claimed that the Aura is a good car watered down by GM's cost cutting department.&lt;ref name = "Automobile" /&gt;
+
+===Awards===
+The Aura won the [[North American Car of the Year]] prize for 2007.&lt;ref&gt;{{cite web|url=http://autoweek.com/apps/pbcs.dll/article?AID=/20070107/FREE/70107002/1056/autoshows|title=One-two punch, GM sweeps North American awards|accessdate=2007-03-17}}&lt;/ref&gt; As a result, Saturn sent a copy of the award to select customers who bought an Aura before it was awarded.&lt;ref&gt;{{cite web|url=http://www.saturnfans.com/Cars/AURA/2007/oscarauraad.shtml|title=Saturn Aura Academy Award ad|accessdate=2007-03-17}}&lt;/ref&gt; The Aura also won Canadian's Motoring Television's 2007 car of the year award,&lt;ref name = "Saturn Awards"&gt;[http://www.saturnfans.com/Cars/Aura/2007/auravotedbest.shtml Saturnfans.com: Saturn Aura awards]&lt;/ref&gt;''Motorweek''{{'}}s Driver's Choice for best new midsize sedan,&lt;ref name = "Saturn Awards" /&gt; and ''World of Wheels''{{'}} Editor's Choice for best family sedan.&lt;ref name = "Saturn Awards" /&gt;
+
+==Yearly American sales==
+{| class="wikitable" border="1"
+|-
+! Calendar Year
+! Total American sales
+|-
+| 2006
+| 19,746
+|-
+| 2007&lt;ref&gt;{{cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=2&amp;docid=51161 |title=GM Media Online |publisher=Media.gm.com |date=2009-01-05 |accessdate=2009-05-01 |url-status=dead |archiveurl=https://archive.today/20090423151551/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do%3Fdomain=2&amp;docid=51161 |archivedate=April 23, 2009 }}&lt;/ref&gt;
+| 59,964
+|-
+| 2008
+| 59,380
+|-
+| 2009&lt;ref&gt;http://media.gm.com/content/Pages/news/us/en/2010/Jan/0105_Dec_Sales/_jcr_content/iconrow/textfile/file.res/Deliveries%20December%2009.xls&lt;/ref&gt;
+| 21,395
+|}
+
+==See also==
+*[[List of hybrid vehicles]]
+
+==References==
+*{{cite web |url=http://www.saturn.com/saturn/vehicles/aura/overview.jsp |title=Saturn Aura official website |work=saturn.com |accessdate=2006-08-24 |url-status=dead |archiveurl=https://web.archive.org/web/20060826032224/http://www.saturn.com/saturn/vehicles/aura/overview.jsp |archivedate=2006-08-26 }}
+*{{cite web|url=http://onlocation.consumerreports.org/new-york-auto-show/2-Model.asp?ID=190|title=Saturn Aura auto show unveiling|work=consumerreports.org|accessdate=2006-08-24}}
+*{{cite web|url=http://www.edmunds.com/saturn/aura/2007/#fullreview|title=Edmunds Review 2007 Saturn Aura|work=edmunds.com| accessdate=2011-01-15}}
+
+==Notes==
+{{Reflist|2}}
+
+==External links==
+{{commons category}}
+
+{{Saturn Corporation}}
+
+[[Category:Saturn vehicles|Aura]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Mid-size cars]]
+[[Category:Sedans]]
+[[Category:2000s cars]]
+[[Category:Cars introduced in 2006]]
+[[Category:Hybrid electric cars]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>spvrcjlkow2f6juwjmobkdw73btseut</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Outlook</title>
+    <ns>0</ns>
+    <id>2372552</id>
+    <revision>
+      <id>927351106</id>
+      <parentid>927221695</parentid>
+      <timestamp>2019-11-21T23:15:07Z</timestamp>
+      <contributor>
+        <username>Sable232</username>
+        <id>1101750</id>
+      </contributor>
+      <minor/>
+      <comment>Reverted edits by [[Special:Contribs/2607:FCC8:BDD0:8E00:34E1:1A75:386F:918C|2607:FCC8:BDD0:8E00:34E1:1A75:386F:918C]] ([[User talk:2607:FCC8:BDD0:8E00:34E1:1A75:386F:918C|talk]]) to last version by Monkbot</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="8878" xml:space="preserve">{{Refimprove|date=September 2007}}
+{{Infobox automobile
+| name = Saturn Outlook
+| image = Saturn Outlook -- 03-24-2012.JPG
+| manufacturer = [[General Motors]]
+| production = 2006–2010
+| model_years = 2007–2010
+| assembly = Lansing-Delta Township Assembly in [[Delta Township, Michigan]], [[United States]]
+| class = [[Full-size]] [[crossover SUV]]
+| body_style = 4-door [[sport utility vehicle|SUV]]
+| platform = [[GM Lambda platform]]/GMT966 (Series GMT960)
+| related = [[Buick Enclave]]&lt;br&gt;[[GMC Acadia]]&lt;br&gt;[[Chevrolet Traverse]]
+| layout = [[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]] / [[Front-engine, all-wheel-drive layout|all-wheel drive]]
+| engine = 3.6&amp;nbsp;L ''[[GM High Feature engine#LY7|LY7]]'' &amp;nbsp;[[V6]]&lt;br&gt; 3.6&amp;nbsp;L ''[[GM High Feature engine#LLT|LLT]]'' &amp;nbsp;V6
+| transmission = 6-speed ''[[GM 6T70 transmission|6T70]]'' [[automatic transmission|automatic]]
+| wheelbase = {{convert|118.9|in|mm|0|abbr=on}}
+| length = {{convert|200.7|in|mm|0|abbr=on}}
+| width = {{convert|78.2|in|mm|0|abbr=on}}
+| height = {{convert|69.9|in|mm|0|abbr=on}}
+| predecessor = [[Saturn Relay]]
+| successor = [[Chevrolet Traverse]]&lt;br&gt;[[GMC Acadia]]
+}}
+
+[[File:Saturn Outlook rear 5.6.18.jpg|thumb|right|Saturn Outlook rear]]
+The '''Saturn Outlook''' is a [[full-size]] [[crossover SUV]] that debuted at the [[New York International Auto Show]], and was based on the [[GM Lambda platform]], which it shared with the [[Buick Enclave]], [[Chevrolet Traverse]] and [[GMC Acadia]]. The Outlook went on sale in 2006 as a 2007 model. The Outlook featured the lowest sticker price among GM's Lambda [[crossover (automobile)|crossover SUV]]s, slotting below the [[GMC Acadia]] and [[Buick Enclave]].  The Chevrolet Traverse would ultimately take the place of the Outlook as the family-oriented model following the introduction of the Traverse for the 2009 model year, and the demise of the Outlook, along with the rest of the Saturn brand in 2010, with the 2010 model year being the final model year for the Outlook. The Saturn Outlook was discontinued after the 2010 model year.
+
+Following the withdrawal of a bid by [[Penske Automotive Group|Penske Automotive]] to acquire [[Saturn Corporation|Saturn]], the [[Motors Liquidation Company]] of [[General Motors]] announced in September 2009 that it would phase out the Saturn brand by October 31, 2010, when it ceased operations.&lt;ref&gt;{{cite web|author=Reuters |date=September 30, 2009 |url=https://montrealgazette.com/wind+down+Saturn+brand+October+2010/2052163/story.html |title=GM to wind down Saturn brand by October 2010 |publisher=Montrealgazette.com |accessdate=2009-10-07 }}{{dead link|date=June 2016|bot=medic}}{{cbignore|bot=medic}}&lt;/ref&gt; The GM logos were applied on the front doors of the Outlook; the GM logo had stopped being applied on the Outlook in 2010, but the GM logo was applied on the early 2010 Outlook models.
+
+==Driveline==
+The Outlook was powered by the 3.6 L [[V6]] [[DOHC]] [[Multi-valve|24-valve]] [[GM High Feature engine|HFV6 engine]] with [[Variable Valve Timing]], available with either single or dual exhaust.
+Both versions use the [[Hydra-Matic]] [[GM-Ford 6-speed automatic transmission|6T75]] six-speed [[automatic transmission]], and available with either [[front-wheel drive]] or [[all-wheel drive]].
+
+{| class=wikitable
+|-
+!Year!!Exhaust!!Engine!!Power!!Torque!!Transmission
+|-
+|rowspan=2|2007–2008||Single||3.6&amp;nbsp;L ''[[GM High Feature engine#LY7|LY7]]'' [[V6]]||270&amp;nbsp;hp (198&amp;nbsp;kW)||248&amp;nbsp;lb·ft (331&amp;nbsp;N·m)||rowspan=4|6-speed ''[[GM 6T75 transmission|6T75]]''
+|-
+||Dual||3.6&amp;nbsp;L ''[[GM High Feature engine#LY7|LY7]]'' [[V6 engine|V6]]||275&amp;nbsp;hp (199&amp;nbsp;kW)||251&amp;nbsp;lb·ft (335&amp;nbsp;N·m)
+|-
+|rowspan=2|2009||Single||3.6&amp;nbsp;L ''[[GM High Feature engine#LLT|LLT]]'' [[V6 engine|V6]]||281&amp;nbsp;hp (210&amp;nbsp;kW)||266&amp;nbsp;lb·ft (361&amp;nbsp;N·m)
+|-
+||Dual||3.6&amp;nbsp;L ''[[GM High Feature engine#LLT|LLT]]'' [[V6 engine|V6]]||288&amp;nbsp;hp (215&amp;nbsp;kW)||270&amp;nbsp;lb·ft (366&amp;nbsp;N·m)
+|}
+
+==Yearly American sales==
+{| class="wikitable"
+|-
+! Year
+! Sales
+|-
+| 2006
+| 144
+|-
+| 2007
+| 34,748
+|-
+| 2008&lt;ref&gt;{{cite press|date=January 3, 2008 |publisher=GM |title=GM Reports 323,453 December Deliveries; 3.87 Million Vehicles Sold in 2007 |url=http://archives.media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=3&amp;docid=42261 }}{{dead link|date=November 2016 |bot=InternetArchiveBot |fix-attempted=yes }}&lt;/ref&gt;
+| 25,340
+|-
+| 2009&lt;ref&gt;http://media.gm.com/content/Pages/news/us/en/2010/Jan/0105_Dec_Sales/_jcr_content/iconrow/textfile/file.res/Deliveries%20December%2009.xls&lt;/ref&gt;
+| 13,115
+|-
+| 2010
+| 3,637&lt;ref&gt;GM did not report sales of individual models for the discontinued brands after January 2010.&lt;/ref&gt;
+|}
+
+==Seating configuration==
+The Outlook can seat eight in a three-row setting.  The front row consists of two [[bucket seat]]s, and the second row is available as either a 60/40 split-folding three-passenger [[bench seat]] or two individual "captain chairs."  The third row is a 60/40 split-folding three-passenger bench seat.
+
+In the press release accompanying the Outlook's launch, GM emphasized the "industry first" ''SmartSlide'' second row.  In case of both bench seat or captain chairs, the seat cushion flips forward while the seat is being slid forward, which allows for "compression" of the space used by the seat in the foremost position.  If the third seat is folded, this allows for expansion of the cargo area. The system also allows for fore-aft adjustment of the middle seat to change the spacing between the second and third-row seats for more legroom.
+
+==Production==
+The Outlook, along with the other Lambda-based vehicles, was built in the [[Delta Township Assembly]] plant near [[Lansing, Michigan]]. Production on the Saturn Outlook and its twin the GMC Acadia had both began on May 24, 2006 for the 2007 model year.
+
+In December 2006, all production and sales of the Outlook (and the GMC Acadia) were temporarily stopped due to the engine mounts not having holes drilled to release accumulated water, as well as an issue with potentially faulty rivets in the load floor just forward of the rear hatch.  The assembly process was quickly adjusted, and dealerships were told to fix the problems themselves before offering the Outlook (or the Acadia) for sale again. Sales resumed within days of the notice.
+
+Production of the Outlook was halted in late 2009.  However, in February 2010 GM resumed production of the Outlook to use up remaining parts prior to the closing of the Saturn division. It is not known how or where they were sold.&lt;ref&gt;http://www.autoweek.com/article/20100316/CARNEWS/100319901&lt;/ref&gt; 3,637 2010 model year Outlooks were built, 2,507 of them were assembled in the calendar year of 2010.
+
+Following its discontinuation, the bodyshell of the Outlook was revived as a mid-cycle refresh of the 2013 [[GMC Acadia]]. The bodyshell of the 2013 Acadia was mostly unchanged from the Saturn Outlook, GM had only made changes to the 2013 Acadia where necessary.
+
+==Crash test ratings==
+[[National Highway Traffic Safety Administration]] (NHTSA):
+
+Frontal: [[File:5 stars.svg|70px]]
+
+Side: [[File:5 stars.svg|70px]]
+
+The Outlook was an [[Insurance Institute for Highway Safety]] Top Safety Pick for 2008 and 2009.&lt;ref&gt;{{cite web |url=http://www.iihs.org/ratings/tsp_archive_2008.html |title=Top Safety Picks 2008 |publisher=Insurance Institute for Highway Safety |accessdate=2009-12-23 |url-status=dead |archiveurl=https://web.archive.org/web/20091223064406/http://www.iihs.org/ratings/tsp_archive_2008.html |archivedate=2009-12-23 }}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://www.iihs.org/ratings/tsp_archive.html |title=Top Safety Picks 2009 |publisher=Insurance Institute for Highway Safety |accessdate=2009-12-23 |url-status=dead |archiveurl=https://web.archive.org/web/20070520111723/http://www.iihs.org/ratings/tsp_archive.html |archivedate=2007-05-20 }}&lt;/ref&gt;
+
+==Notes==
+{{reflist}}
+
+==External links==
+{{commons category|Saturn Outlook}}
+*[https://web.archive.org/web/20070128080856/http://www.saturn.com/saturn/vehicles/outlook/overview.jsp Official site]
+*{{cite press|publisher=GM|date=April 11, 2006|url=http://archives.media.gm.com/servlet/GatewayServlet?target=http://www.theautochannel.com/news/2006/04/12/003753.html  |title=Saturn Has An All-New Outlook}}
+*[http://www.iihs.org/ratings/default.aspx IIHS Top Safety Picks 2008]
+
+{{Saturn Corporation}}
+
+[[Category:All-wheel-drive vehicles]]
+[[Category:Mid-size sport utility vehicles]]
+[[Category:Crossover sport utility vehicles]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Saturn vehicles|Outlook]]
+[[Category:2000s cars]]
+[[Category:Cars introduced in 2006]]
+[[Category:Vehicles built in Lansing, Michigan]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>nsgxbipit63hemxbh1vduejumys6tb3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Astra</title>
+    <ns>0</ns>
+    <id>6978995</id>
+    <redirect title="Opel Astra" />
+    <revision>
+      <id>782488252</id>
+      <parentid>654941545</parentid>
+      <timestamp>2017-05-27T06:15:50Z</timestamp>
+      <contributor>
+        <ip>99.110.183.132</ip>
+      </contributor>
+      <comment>[[WP:AES|←]]Redirected page to [[Opel Astra#Saturn Astra]]</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="73" xml:space="preserve">#REDIRECT [[Opel_Astra#Saturn_Astra]]
+
+[[Category:Saturn vehicles|Astra]]</text>
+      <sha1>jmw1vdhwzryd5pvyak5ex08uzqtqecj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Ion</title>
+    <ns>0</ns>
+    <id>857894</id>
+    <revision>
+      <id>921025170</id>
+      <parentid>913380588</parentid>
+      <timestamp>2019-10-13T11:38:18Z</timestamp>
+      <contributor>
+        <username>FrescoBot</username>
+        <id>9021902</id>
+      </contributor>
+      <minor/>
+      <comment>Bot: [[User:FrescoBot/Links|link syntax]] and minor changes</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="18955" xml:space="preserve">{{Infobox automobile
+|name           = Saturn Ion
+|image          = Saturn Ion -- 07-09-2009.jpg
+|caption        = 
+|manufacturer = [[Saturn Corporation]]
+|production     = 2002–March 29, 2007
+|model_years    = 2003–2007
+|assembly       =[[Spring Hill, Tennessee]], [[United States]]
+|class          = [[Compact car]]
+|body_style     = 4-door [[sedan (automobile)|sedan]]&lt;br&gt;4-door [[quad coupe]]
+|platform       = [[GM Delta platform]]
+|related        = [[Chevrolet Cobalt]]&lt;br&gt;[[Chevrolet HHR]]&lt;br&gt;[[Pontiac G5]]&lt;br&gt;[[Opel Astra]]
+|layout         = [[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]]
+|engine=2.2&amp;nbsp;[[Liter|L]] ''[[GM Ecotec engine#L61|L61]]'' [[I4 engine|I4]] ([[gasoline]])&lt;br&gt;2.4&amp;nbsp;L ''[[GM Ecotec engine#LE5|LE5]]'' [[I4 engine|I4]] (gasoline)&lt;br&gt;2.0&amp;nbsp;L ''[[GM Ecotec engine#LSJ|LSJ]]'' [[I4 engine|I4]] ([[supercharger|s/c]] [[gasoline]])
+|transmission   = 5-speed [[Getrag]] ''[[Getrag F23 transmission|F23]]'' manual&lt;br&gt;5-speed [[Getrag]] ''[[F35 transmission|F35]]'' manual&lt;br&gt;4-speed [[GM Powertrain|GM]] ''[[GM 4T45 transmission|4T45-E]]'' automatic&lt;br&gt;5-speed [[Aisin]] ''[[Aisin AF33 transmission|AF33]]'' automatic&lt;br&gt;[[Continuously variable transmission|CVT]] ''[[VTi transmission|VTi]]'' automatic
+|wheelbase      = {{convert|103.2|in|mm|0|abbr=on}} (sedan)&lt;br&gt;{{convert|103.2|in|mm|0|abbr=on}} (coupe)&lt;br&gt;{{convert|103.5|in|mm|0|abbr=on}} (Red Line)
+|length         = {{convert|184.5|in|mm|0|abbr=on}} (sedan)&lt;br&gt;{{convert|185.0|in|mm|0|abbr=on}} (coupe)&lt;br&gt;{{convert|185.0|in|mm|0|abbr=on}} (Red Line)
+|width          = {{convert|67.2|in|mm|0|abbr=on}} (sedan)&lt;br&gt;{{convert|67.9|in|mm|0|abbr=on}} (coupe)&lt;br&gt;{{convert|67.9|in|mm|0|abbr=on}} (Red Line)
+|height         = {{convert|57.4|in|mm|0|abbr=on}} (sedan)&lt;br&gt;{{convert|56.0|in|mm|0|abbr=on}} (coupe)&lt;br&gt;{{convert|55.6|in|mm|0|abbr=on}} (Red Line)
+|weight         = {{convert|2600|-|2984|lb|kg|0|abbr=on}}&lt;ref name=Caranddriver&gt;{{cite web|last=Swan|first=Tony|title=Saturn Ion Red Line|url=http://www.caranddriver.com/reviews/saturn-ion-red-line-first-drive-review|work=Car and Driver|publisher=[[Car and Driver]]|accessdate=26 March 2013|date=December 2003}}&lt;/ref&gt;&lt;ref name=Caranddriver2&gt;{{cite web|last=Quiroga|first=Tony|title=Saturn Ion Red Line|url=http://www.caranddriver.com/reviews/saturn-ion-red-line-short-take-road-test-specs-page-2|work=Car and Driver|publisher=[[Car and Driver]]|accessdate=26 March 2013|date=October 2004}}&lt;/ref&gt;
+|predecessor    = [[Saturn S-Series]]
+|successor      = [[Saturn Astra]]
+}}
+
+The '''Saturn Ion''' was a [[compact car]] sold by [[Saturn Corporation|Saturn]] between the 2003 and 2007 model years. It used the [[GM Delta platform]]. The Ion replaced the [[Saturn S-Series]] in 2002,&lt;ref&gt;{{cite press release
+  | title =  GM Hopes to Win over Drivers with Saturn Ion
+  | publisher = [[Detroit Free Press]]
+  | date = 2002-10-31
+  | url = http://www.accessmylibrary.com/coms2/summary_0286-8956273_ITM
+  | accessdate = 2008-09-20 }}&lt;/ref&gt;
+and was replaced by the new [[Saturn Astra]] in 2008. Production of the Ion ended on March 29, 2007.
+
+==History==
+
+===2003–2004===
+[[File:Saturn Ion coupe -- 11-5-2011.jpg|left|thumb|2005–2007 Saturn Ion coupe]]
+[[File:Saturn ION silver 4-door coupe doors.jpg|thumb|left|Clamshell doors]]
+The 2003 Saturn Ion [[quad coupe]] production car first appeared at the 2002 [[New York International Auto Show]]. The 2003 Ion came standard with a 2.2 [[Litre|L]] {{Convert|140|hp|kW|0|abbr=on}} [[DOHC]] [[Ecotec]] [[I4 engine]]. The Ion's instrument panel was mounted on the top center of the dashboard, rather than behind the steering wheel. The Ion is also available in [[Sedan (car)|sedan]] level 1, 2, or 3; level three signified a more user friendly setup with power windows and power locks, while lower levels included crank windows and plastic wheel covers. Other extras included fog lights, sunroof, and spoiler. The Saturn Ion Quad Coupe has half-sized rear [[Suicide door#Modern use|clamshell doors]] while the sedan has conventionally hinged doors.
+
+A [[Getrag F23 transmission|Getrag F23]] 5-speed manual or an [[Aisin AF23 transmission|Aisin AF23]] 5-speed [[automatic transmission]] were available. The compact 5-speed automatic had several unique characteristics. The [[transmission (mechanics)|transmission]] lacked an overdrive, allowing for five forward gears to be packaged in the size of a typical four-speed manual gearbox, both providing close gear ratios for better acceleration and fuel efficiency while eliminating the heat and parasitic loss generated by the additional planetary gearset. The unit was also “fill-for-life”, meaning that it was not intended to be serviced for the life of the vehicle. The 2003 and 2004 Ion Coupes were available with the [[VTi transmission|VTi]] [[continuously variable transmission]] or a [[Getrag F23 transmission|Getrag F23]] 5-speed manual.
+
+For 2004, Saturn also re-calibrated the electric power steering, as well as upgraded interior materials, and offered new sound systems.
+
+===2005–2006===
+[[File:2005-Saturn-Ion-1.jpg|alt=|left|thumb|2005 Saturn Ion]]
+In 2005, the Aisin 5-speed automatic transmission was discontinued. The VTi CVT used in the quad-coupes between 2002 and 2004 was also discontinued. [[GM 4T45-E transmission|GM's 4-speed 4T45-E]] replaced both transmissions, becoming the only available automatic transmission option. The 2005 Ion sedan models also received a new steering wheel, the same one used in the 2004 Ion coupe models. In the middle of the 2005 model year, the seats in the base Ion1 model received upgraded fabrics and a height adjustment feature. "[[Quiet Steel]]" multilaminate sound-reduction technology was also introduced in 2005. Cosmetic changes included an upgraded fascia with a larger grille opening (2005-2007 Ion sedan models) and redesigned wheel covers and redesigned alloy wheel offerings.  Under the hood, an acoustic engine cover was added to the engine bay to reduce noise emissions.
+
+The Level 2 and Level 3 models were offered with GM's new standard radio, featuring [[MP3]] playback.
+
+2006 saw the {{Convert|170|hp|kW|0|abbr=on}}, {{convert|162|lbft|Nm|0|abbr=on}} torque, 2.4 L [[I4 engine]] with [[variable valve timing]] become available for the Ion3.  Along with that, the Ion was discontinued after the 2007 model year.&lt;ref&gt;{{cite web|url=http://www.cars.com/go/crp/research.jsp?makeid=43&amp;mode=&amp;revid=48452&amp;year=2006&amp;acode=&amp;modelid=6768&amp;revlogtype=21&amp;section=reviews&amp;crpPage=summary.jsp&amp;myid=&amp;section=reviews&amp;mode=&amp;aff=national|title=2006 Saturn Ion Overview|publisher=Cars.com|date=2005-08-02 |accessdate=2009-10-07}}&lt;/ref&gt;
+
+===2007===
+[[File:Ion1.jpg|left|thumb|2007 Saturn Ion 3 Quad Coupe]]
+
+The 2.2-liter Ecotec engine in the 2007 Saturn Ion was improved over the previous year's model: power output increased from {{Convert|140|hp|kW|0|abbr=on}} to {{Convert|145|hp|kW|0|abbr=on}} at 5600&amp;nbsp;rpm, and torque output increased from {{Convert|145|lbft|Nm|0|abbr=on}} to {{Convert|150|lbft|Nm|0|abbr=on}} at 4200&amp;nbsp;rpm. The new engine was fitted with the ECU from the 2.4-liter engine.
+
+The 2.4-liter Ecotec received a similar upgrade: power increased from {{Convert|170|hp|kW|0|abbr=on}} to {{Convert|175|hp|kW|0|abbr=on}} at 6500&amp;nbsp;rpm, and torque increased from {{Convert|162|lbft|Nm|0|abbr=on}} to {{Convert|164|lbft|Nm|0|abbr=on}} at 4800 [[Revolutions per minute|rpm]].
+
+An "Appearance Package" was offered for the 2007 Ion 3 Quad Coupe, including redesigned front and rear bumpers, side moldings, elliptical [[fog lamps]], and a chrome exhaust tip. The [[Recaro]] seats in the Red Line version were replaced with black leather-appointed seats, which featured a [[passenger]]-sensing system.
+
+The Ion was discontinued after the 2007 model year, and replaced in Saturn's lineup by the [[Saturn Astra]] [[hatchback]], a [[Badge engineering|rebadged]] [[Opel Astra H]] imported from [[Belgium]].&lt;ref&gt;{{cite press release
+  | title =  Ion makes room for the Astra
+  | publisher = San Francisco Chronicle
+  | date = 2007-03-10
+  | url = http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2007/03/10/MTGM4OI2NT1.DTL
+  | accessdate = 2008-09-20 }}&lt;/ref&gt;
+
+The Ion was the last Saturn built at the Spring Hill, Tennessee plant.&lt;ref&gt;http://www.automobilemag.com/news/saturn-timeline-1982-to-2009/&lt;/ref&gt;
+
+=== Red Line Edition ===
+[[File:Saturn-Ion-RedLine.jpg|200px|thumb|left|Saturn Ion Red Line]]In production from 2004 through the 2007 Model Year, Saturn produced the '''Red Line''' [[Sport compact|Sport Compact]]&lt;ref&gt;{{cite web|last=Cole |first=Steven |url=http://www.signonsandiego.com/uniontrib/20051015/news_lz1d15saturn.html |title=Saturn's Ion Red Line offers fun, good mileage &amp;#124; The San Diego Union-Tribune |publisher=Signonsandiego.com |date=2005-10-15 |accessdate=2015-03-31}}&lt;/ref&gt;&lt;ref&gt;{{cite press release
+  | title =  Saturn Announces Ion Red Line  Pricing
+  | publisher = GM Media Online
+  | date = 2004-03-30
+  | url = http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=35&amp;docid=3012
+  | accessdate = 2009-10-06 }}&lt;/ref&gt; This engine/powertrain combination is also shared with the [[Chevrolet Cobalt SS#SS Supercharged|Chevy Cobalt SS Supercharged Edition]], which did not start production until the 2005 model year. The Ion Red Line features most interior features from the standard Ion Coupe, including its rear [[Suicide door#Modern use|clamshell doors]], to allow accessibility to the rear seat.&lt;ref&gt;{{cite web|url=http://www.caranddriver.com/reviews/comparisons/05q3/acura_rsx_type-s_vs._chevy_cobalt_ss_supercharged_dodge_srt4_acr_saturn_ion_red_line_subaru_impreza_wrx-comparison_tests/saturn_ion_red_line_page_6 |title=Saturn Ion Red Line |publisher=John Phillips, Caranddriver.com|date=September 2005 |accessdate=2009-10-08}}&lt;/ref&gt;
+
+Introduced for the 2005 model year was the optional Competition Package. Included in the Competition Package were 17" Gunmetal Painted Alloy Rims, Ladder [[Tachometer]] w/ shift lights, a [[Differential (mechanical device)|Limited Slip Differential]], and Optional Projector-beam Fog Lamps.&lt;ref&gt;{{cite web|url=http://www.edmunds.com/used/2006/saturn/ion/100595788/standard.html|title=2006 Saturn Ion Specs|publisher=Edmunds.com|year=2006 |accessdate=2009-10-08}}&lt;/ref&gt; In mid-2006, GM released two Engine Kit upgrades for both the Ion Red Line and the Cobalt SS.  The Stage 1 Kit retailed for around US$500, and included higher-flow fuel injectors and a recalibration to the [[Engine control unit|ECU]] to increase the [[horsepower]] by {{Convert|31|hp|kW|0|abbr=on}} to {{Convert|236|hp|kW|0|abbr=on}} and {{Convert|205|lbft|Nm|0|abbr=on}} of [[torque]], up from the stock {{Convert|205|hp|kW|0|abbr=on}} and {{Convert|200|lbft|Nm|0|abbr=on}}. The Stage 2 Kit retailed for around $750 and opens up the middle of the power curve to more power than the Stage 1 Kit alone. In addition to everything that the Stage 1 Kit comes with, the Stage 2 Kit includes a smaller drive belt and pulley for the supercharger, bringing the engine up to {{Convert|241|hp|kW|0|abbr=on}} and {{Convert|218|lbft|Nm|0|abbr=on}} of torque. GM did release a Stage 1 to Stage 2 Upgrade kit that retailed for $400. This Upgrade Kit is for a Red Line with the Stage 1 kit already installed. This Upgrade Kit adds the Stage 2 elements and increases the horsepower from {{Convert|236|hp|kW|0|abbr=on}} to {{Convert|241|hp|kW|0|abbr=on}}.&lt;ref&gt;{{cite web|url=http://www.leftlanenews.com/gm-announces-superchargers-for-cobalt-ss-ion-redline.html|title=GM Announces Supercharger Upgrades for Cobalt SS, Ion Red Line |publisher=Admin, leftlanenews.com|date=2006-04-06 |accessdate=2009-10-08}}&lt;/ref&gt;
+
+On October 17, 2003 at the [[Bonneville Salt Flats]] in Utah, the Saturn Ion Red Line, piloted by the GM Performance Division's "Saturn Land Speed Record Project" set a new land-speed record in the "G/Blown Fuel Altered" Class at 212.684&amp;nbsp;mph. This exceeded the previous record of 183.086&amp;nbsp;mph that was set in 2001.&lt;ref&gt;{{cite press release
+  | title =  Saturn ION Red Line Sets Speed Record
+  | publisher = Worldcarfans.com
+  | date = 2004-10-21
+  | url = http://www.worldcarfans.com/104102110111/saturn-ion-red-line-sets-speed-record
+  | accessdate = 2009-10-06 }}&lt;/ref&gt;
+
+Below are the Production Numbers for the Ion Red Line from 2004 to 2007.&lt;ref&gt;{{cite web|url=http://www.redlineforums.com/forums/ion-redline-discussion/14991-redline-production-s-would-like-help.html|title=2006 Red Line Production Numbers|publisher=redlineforums.com|year=2006 |accessdate=2009-10-08}}&lt;/ref&gt;
+{| class="wikitable"
+|-
+! Color
+! 2004
+! 2005
+! 2006
+! 2007
+! Totals
+|-
+| Silver
+| 831
+| 353
+| 274
+| 131
+| 1589
+|-
+| Red
+| None
+| 286
+| 260
+| 116
+| 662
+|-
+| Blue
+| 783
+| 478
+| 189
+| 134
+| 1584
+|-
+| Black
+| 1012
+| 395
+| 406
+| 173
+| 1986
+|-
+| Total
+| 2626
+| 1512
+| 1135
+| 554
+| 5827
+|-
+| Comp. Pkg.
+| 0
+| 118
+| 641
+| 337
+| 1096
+|}
+
+===Discontinuation===
+[[File:Saturn Ion rear 4.11.18.jpg|thumb|right|Rear view]]
+[[General Motors]] decided to discontinue the Ion after the 2007 model year. It was replaced by the 2008 Astra.
+
+The Astra shares the Delta platform with the Ion, but is a captive import from Opel. While Opel offered the Astra in multiple body types, and with other performance options, Saturn did not import any of them &amp;ndash; the Astra was only offered with a single base engine, and in 3-door and 5-door hatchback bodystyles only, in two trim levels.
+
+==Safety==
+
+===Insurance Institute for Highway Safety (IIHS)===
+
+{| class="wikitable"
+|+2003&amp;ndash;2007 Ion [[Insurance Institute for Highway Safety|IIHS]] scores&lt;ref&gt;{{cite web|url=http://www.iihs.org/iihs/ratings/vehicle/v/saturn/ion-4-door-sedan |title=IIHS-HLDI: Saturn ION |publisher=Iihs.org |date= |accessdate=2015-12-29}}&lt;/ref&gt;
+|-
+|Moderate overlap frontal offset||Acceptable
+|-
+|Small overlap frontal offset||Not Tested
+|-
+|Side impact||Poor
+|-
+|Roof strength||Not Tested
+|}
+
+IIHS only tested the 4-door sedan version. It did not test coupe versions of the Ion.
+
+===NHTSA===
+
+{| class="wikitable"
+|+2003&amp;ndash;2007 Ion [[National Highway Traffic Safety Administration|NHTSA]] scores&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4790 |title=2003 Saturn Ion 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1267 |title=2004 Saturn Ion 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1268 |title=2004 Saturn Ion 4-DR Coupe. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1653 |title=2005 Saturn Ion 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1654 |title=2005 Saturn Ion 4-DR Coupe. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1783 |title=2006 Saturn Ion 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1782 |title=2006 Saturn Ion 4-DR Coupe. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=2102 |title=2007 Saturn Ion 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=2103 |title=2007 Saturn Ion 4-DR Coupe. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;
+|-
+! Year
+! Vehicle Type
+! Frontal Driver
+! Frontal Passenger
+! Side Driver
+! Side Passenger
+! 4x2 Rollover
+! 4x4 Rollover
+|-
+| 2003
+| 4DR Sedan
+| {{rating|5|5}}
+| {{rating|5|5}}
+| Not Rated
+| {{rating|3|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+|rowspan=2| 2004
+| 4DR Sedan
+| {{rating|5|5}}
+| {{rating|5|5}}
+| Not Rated
+| {{rating|3|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+| 4DR Coupe
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+| Not Rated
+|-
+|rowspan=2| 2005
+| 4DR Sedan
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+| 4DR Coupe
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+|rowspan=2| 2006
+| 4DR Sedan
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+| 4DR Coupe
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+|rowspan=2| 2007
+| 4DR Sedan
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+| 4DR Coupe
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+|}
+
+===Recall===
+In February 2014, the Ion was added to a list of General Motors cars recalled due to a faulty ignition switch. 13 deaths were found to have been caused by the defect in [[Chevrolet Cobalt]] models, prompting the recall of the Ion and other related GM vehicles.&lt;ref&gt;{{cite web|author= |url=https://www.usatoday.com/story/money/cars/2014/02/25/gm-ignition-recall/5813539/ |title=GM adds four models to recall, doubles deaths to 13 |publisher=Usatoday.com |date=2014-02-27 |accessdate=2015-03-31}}&lt;/ref&gt;
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+{{Commons category|Saturn ION}}
+*[https://web.archive.org/web/20070928195339/http://www.cheersandgears.com/forums/index.php?showtopic=1422&amp;st=0 C&amp;G Spy Shots: Ion replaced by Astra]
+*[http://www.redlineforums.com Saturn Ion Redline Forums]
+*[http://prescottacf.org/saturn/77-saturn-ion-quad-coupe-2.2i-16v-ecotec-140hp.html Saturn ION Quad Coupe 2.2i] Specifications &amp; pictures
+
+{{Saturn Corporation}}
+
+{{GM Delta sport compacts timeline}}
+
+[[Category:Compact cars]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Saturn vehicles|Ion]]
+[[Category:Vehicles with CVT transmission]]
+[[Category:Coupés]]
+[[Category:Sedans]]
+[[Category:2000s cars]]
+[[Category:Cars introduced in 2002]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>bu2rh7hllljq7y3yohw0hemztilwbjd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Vue</title>
+    <ns>0</ns>
+    <id>857893</id>
+    <revision>
+      <id>943905121</id>
+      <parentid>918334465</parentid>
+      <timestamp>2020-03-04T14:48:18Z</timestamp>
+      <contributor>
+        <ip>216.16.54.134</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="16224" xml:space="preserve">{{Infobox automobile
+| name = Saturn Vue
+| image = 2008 Saturn Vue XE.jpg
+|manufacturer = [[Saturn Corporation]] (2002-2007)&lt;br /&gt;[[Opel]] ([[General Motors]]) (2008-2010)
+| production = 2001–2009
+| model_years = 2002–2010
+| class = [[Compact SUV]]
+| body_style = 5-door [[SUV]]
+| related = [[Pontiac Torrent]]
+[[Chevrolet Equinox]]
+| layout = [[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]] / [[Front-engine, all-wheel-drive layout|all-wheel drive]]
+| predecessor = [[Isuzu MU|Isuzu Rodeo]] (Canada)&lt;br /&gt;[[Chevrolet Tracker (Americas)|Geo/Chevrolet Tracker]]
+| successor = [[Opel Antara|Chevrolet Captiva Sport]]
+}}
+
+The '''Saturn Vue''' is a [[compact SUV]] that was sold and built by [[Saturn Corporation|Saturn]], and it was Saturn's best-selling model. It was the first vehicle to use the [[GM Theta platform]] when it was introduced in 2001 for the 2002 model year. The Vue was later facelifted for the 2006 model year. A second generation model was launched in 2007 for the 2008 model year as a rebadged [[Opel Antara]]. The Vue production in North America ended as GM wound down the Saturn brand during its [[General Motors Chapter 11 reorganization|2009 reorganization]].
+__TOC__
+{{clear}}
+
+== First generation (2002–2007) ==
+{{Infobox automobile
+| name = First generation
+| image = Saturn VUE 1234 (cropped).JPG
+| production = 2001–2007
+| model_years = 2002–2007
+| assembly = [[Spring Hill, Tennessee]], United States ([[Spring Hill Manufacturing]])
+| class = [[Compact SUV]]
+| body_style = 5-door [[sport utility vehicle|SUV]]
+| platform = [[GM Theta platform]]
+| engine = {{ubl |2.2 L ''[[GM Ecotec engine#L61|L61]]'' [[inline-four engine|I4]] ([[gasoline]])|2.4 L ''[[GM Ecotec engine#LAT|LAT]]'' ([[hybrid electric vehicle|hybrid]] gasoline / electric)|3.0 L ''[[General Motors 54° V6 engine#L81|L81]]'' [[V6]] (gasoline)|3.5 L ''[[Honda_J_engine#J35A|L66]]'' [[V6]] (gasoline)}}
+| transmission = {{ubl |4-speed ''[[GM_4T45-E_transmission#4T45|GM 4T45-E]]'' automatic|5-speed ''[[Aisin AF33 transmission|Aisin AF33]]'' automatic|5-speed ''[[Honda H5 transmission|Honda H5]]'' automatic|5-speed ''[[Getrag F23 transmission|Getrag F23]]'' manual|[[continuously variable transmission|CVT]] ''[[VTi transmission|VTi]]'' automatic}}
+| wheelbase = {{convert|106.6|in|mm|0|abbr=on}}
+| length = {{convert|181.3|in|mm|0|abbr=on}}
+| width = {{convert|71.5|in|mm|0|abbr=on}}&lt;br /&gt;Hybrid: {{convert|71.6|in|mm|0|abbr=on}}
+| height = {{convert|66.5|in|mm|0|abbr=on}}&lt;br /&gt;Hybrid: {{convert|66.3|in|mm|0|abbr=on}}
+}}
+
+The Vue was introduced for the 2002 model year and was designed by Saturn. It was manufactured at the [[Spring Hill, Tennessee|Spring Hill]] GM plant. Its unibody platform is shared with the [[Chevrolet Equinox]], [[Pontiac Torrent]] and the [[Europe]]an [[Opel Antara]]. The first generation ran from model year 2002-2007.
+
+[[File:03 Saturn Vue (6676845529).jpg|thumb|left|2003 Saturn Vue rear]]
+Four-cylinder Vues use the ''[[GM Ecotec engine|Ecotec]]'' [[inline-four engine|I4]]. The ''[[GM 54-Degree V6 engine#L81|L81]]'' [[V6]] from the [[Saturn L-Series|L-Series]] and five-speed [[Aisin AF33 transmission|Aisin AF33]] [[automatic transmission]] were initially offered, but starting in 2004, all six-cylinder Vues were equipped with [[Honda]]'s {{convert|250|hp|kW|adj=on}} ''[[Honda_J_engine#J35A|J35A3]]'' engine and a [[Honda]] transmission. The four-cylinder Vue was available with the [[VTi transmission|VTi]] [[continuously variable transmission]] (CVT) until GM canceled it for 2005 due to dependability issues.
+
+The Vue received a facelift for the 2006 model year. Upgrades included a redesigned interior with higher-quality materials, a new bumper and grille, and some minor cosmetic pieces to the exterior. [[OnStar]] is now standard as well as [[cruise control]] and automatic headlights. However, GM badges were not added to the side of the vehicle until GM took over production from Saturn for the second generation Vue.
+
+===Model year changes===
+In 2004: 
+*The Vue Red Line was released
+*V6 models received Honda's J35S1 engine and Honda transmission. This 3.5 liter engine and  5 speed transmission boosted performance over the prior V-6. It was an important selling point at the time. This V-6 engine was used in the Saturn Vue 2004 to 2007 model years.  
+In 2005:
+*5- and 4-speed automatic transmissions return for 2005, and the CVT is dropped.
+*All Vues get a redesigned interior critique with new air vents, new steering wheel, and a new radio faceplate which contributes [[noise, vibration, and harshness]].
+
+In 2006:
+*Facelift with new interior, cosmetic changes to the exterior.
+
+=== Red Line ===
+[[File:Saturn Vue RedLine -- 10-31-2009.jpg|thumb|left|2004–2005 Saturn Vue Red Line]]
+
+Saturn introduced a special high-performance line of vehicles in 2004 under the name, "Red Line". The '''Vue Red Line''' includes the same {{convert|250|hp|kW|0|abbr=on}} [[Honda]] ''[[Honda J engine|J35A3]]'' V6 as the regular model, but with sportier suspension tuning, lowered 1 inch, and unique power steering calibration for performance, 18&amp;nbsp;in alloy wheels, ground-effect front and rear bumpers, unique rocker panel trim, chrome exhaust tip, special black leather and suede seats (optional for 2005, standard for 2006 and 2007), footwell lighting (included with leather and suede seats package, not available with optional full-leather (heated front) seats), and a special gauge cluster complete the visual updates. It also includes some special interior features as well, such as a higher quality audio system.&lt;ref&gt;"Saturn Vue". Advertisement brochure. Canada: General Motors Corporation and General Motors of Canada Limited, 2006, p.21 of 32.&lt;/ref&gt;
+
+=== Green Line ===
+[[File:2007 Saturn Vue Green Line .jpg|thumb|right|Saturn Vue Green Line]]
+[[File:Argonne's Through-the-Road (TTR) Plug-in Hybrid prototype.jpg|thumb|right|Saturn Vue Green Line rear]]
+The high-performance Vue Red Line was joined for 2007 by an environmentally oriented '''Green Line''' model. The Vue is a [[mild hybrid]], or "assist hybrid", using what GM calls a "[[belt alternator starter]]" [[BAS Hybrid]] system.&lt;ref&gt;{{cite web|url=http://www.gm.com/company/gmability/adv_tech/300_hybrids/bas_050103.html |date=2003-11-11 |accessdate=2007-06-14 |title=GM - GMability Advanced Technology: GM's Belt Alternator Starter... - www.gm.com/company/gmability/adv_tech/300_hybrids |url-status=dead |archiveurl=https://web.archive.org/web/20061029110339/http://www.gm.com/company/gmability/adv_tech/300_hybrids/bas_050103.html |archivedate=October 29, 2006 }}&lt;/ref&gt; A large electric motor is connected to the crankshaft via a special accessory drive belt, with a modified automatic transmission fitted.
+
+It automatically stops the engine when the vehicle comes to a halt and instantly restarts it when the vehicle must move again. Not to be confused as just a "start-stop" system, the electric motor also assists somewhat during initial launch, during torque smoothing and when under heavy acceleration. A 36-volt [[nickel metal hydride battery|nickel metal hydride]] (NiMH) battery pack, located under the load floor, powers the motor/generator unit and also stores regenerative braking energy. The regenerative charging and electric motor assist functions are shown to the driver via an analog gauge on the dash board, and real-time fuel-economy feedback is accomplished via an "eco" light that glows when the instantaneous fuel economy is beating the window sticker fuel economy values.
+
+The fuel savings are 20&amp;nbsp;percent up from the base vehicle's {{convert|22|mpgus|L/100 km|abbr=on}}/{{convert|27|mpgus|L/100 km|abbr=on}} city/highway EPA sticker to {{convert|27|mpgus|L/100 km|abbr=on}}/{{convert|32|mpgus|L/100 km|abbr=on}}, the highest highway fuel economy of any 2007 model SUV sold in the US market.&lt;ref&gt;2007 model EPA Highway rating of 32 mpg.&lt;/ref&gt; In Canada, according to Saturn, the Vue gets an estimated {{convert|8.8|L/100 km|abbr=on}} city and {{convert|6.7|L/100 km|abbr=on}} highway.&lt;ref&gt;"Saturn Vue". Advertisement brochure. Canada: General Motors Corporation and General Motors of Canada Limited, 2006, p.8 of 32.&lt;/ref&gt;
+
+The Green Line has a {{convert|170|hp|kW|0|abbr=on|adj=on}} 2.4-liter ''[[GM Ecotec engine|Ecotec]]'' [[DOHC]]-phaser engine which replaces the standard {{convert|144|hp|kW|0|adj=on}} 2.2-liter inline-four engine, resulting in the improvement of {{convert|0|-|60|mph|km/h|abbr=on}} acceleration time by 1.0&amp;nbsp;second. Pricing for the hybrid is about US$2,000 more than a similarly equipped Vue, and debuted in production form on January 8, 2006 at the [[North American International Auto Show]] in [[Detroit]]. The Green Line went on sale in the third quarter of 2006.
+
+=== Engines ===
+{| class="wikitable"
+|-
+!Years
+!Engine
+!Power
+!Torque
+|-
+|2002–2007||2.2&amp;nbsp;[[Liter|L]] ''[[GM Ecotec engine#L61|Ecotec L61]]'' [[inline-four engine|I4]]||143&amp;nbsp;[[Horsepower|hp]] (107&amp;nbsp;[[Kilowatt|kW]])||152&amp;nbsp;[[Foot pound force|lb·ft]] (206&amp;nbsp;[[Newton metre|N·m]])
+|-
+|2002–2003||3.0 L ''[[GM 54-Degree V6 engine|54-Degree]]'' [[V6]]||181&amp;nbsp;hp (135&amp;nbsp;kW)||195&amp;nbsp;lb·ft (264&amp;nbsp;N·m)
+|-
+|2004–2007||3.5 L ''[[GM L66 engine|GM L66]]'' ''([[Honda J engine|J35S1]])'' [[V6]]||250&amp;nbsp;hp (186&amp;nbsp;kW)||242&amp;nbsp;lb·ft (328&amp;nbsp;N·m)
+|-
+|2007-2010||2.4&amp;nbsp;L ''[[GM Ecotec engine#LE5|Ecotec LE5]]'' [[inline-four engine|I4]]||170&amp;nbsp;hp (127&amp;nbsp;kW)||163&amp;nbsp;lb·ft (220&amp;nbsp;N·m)
+|-
+|2008-2010||3.6&amp;nbsp;L ''[[GM High Feature engine#LY7|LY7]]'' [[V6]]||257&amp;nbsp;hp (192&amp;nbsp;kW)||248&amp;nbsp;lb·ft (336&amp;nbsp;N·m)
+|}
+
+=== Safety ===
+In [[Insurance Institute for Highway Safety]] (IIHS) crash tests the Vue receives a ''Good'' overall rating in the frontal offset crash test. In 2008 models came equipped with standard front and rear head side curtain airbags and front seat-mounted torso airbags. These models were given an ''acceptable'' overall rating in side impacts. Models without side airbags were given an overall ''poor'' rating.&lt;ref name="iihs.org"&gt;{{cite web | url = http://www.iihs.org/ratings/ratingsbyseries.aspx?id=446 | title = Saturn Vue | publisher = Iihs.org | accessdate = 2009-05-21 | url-status = dead | archiveurl = https://web.archive.org/web/20090607140804/http://www.iihs.org/ratings/ratingsbyseries.aspx?id=446 | archivedate = 2009-06-07 }}&lt;/ref&gt;
+
+== Second generation (2008–2010) ==
+{{Infobox automobile
+| name = Second generation
+| image = 2nd Saturn Vue -- 08-28-2009.jpg
+| manufacturer = [[Opel]] ([[General Motors]])
+|aka=[[Opel Antara]]&lt;br /&gt;Vauxhall Antara&lt;br /&gt;[[Holden Captiva|Holden Captiva 5]]&lt;br /&gt;GMC Terrain (Middle East)&lt;br /&gt;Daewoo Winstorm MaXX&lt;br /&gt;[[Chevrolet Captiva Sport]]
+| production = 2007–2009
+| model_years = 2008–2010
+| assembly = [[Ramos Arizpe]], Mexico
+| class = [[Compact SUV]]
+| body_style = 5-door [[sport utility vehicle|SUV]]
+| platform = [[GM Theta platform]]
+| related = [[Opel Antara|Chevrolet Captiva Sport]]
+| engine = 
+| transmission = 
+| length = 
+| width = 
+| height = 
+}}
+
+{{Main|Opel Antara#Saturn Vue|l1=Opel Antara}}
+[[File:Saturn vue-2007washauto.jpg|thumb|left|Saturn Vue rear]]
+Saturn introduced the second generation Vue in 2007 for the 2008 model year, manufactured in Mexico as a rebranded version of the German-designed [[Opel Antara]]. Saturn offered four trim levels: base "XE", classier, up-level "XR", top of the line sporty "Red Line" and a "Green Line" hybrid trim. Available engines include a 2.4L inline 4 cylinder, as well as 3.5L and a 3.6L V6 options. A hybrid powertrain version of the 2.4-liter model was also available. GM badges were now added to the front doors. The Mexican-manufactured Vue was also retailed in Mexico and South America as the Chevrolet Captiva Sport, with only badges changed and a new grille insert fitted.
+
+Following the demise of the Saturn brand in 2009 for the 2010 model year, the Vue was discontinued.&lt;ref&gt;{{cite web | last1 = Johnson | first1 = Kimberly | last2 = Krisher | first2 = Tom | date = 1 October 2009 | url = http://www.boston.com/business/articles/2009/10/01/gm_to_phase_out_saturn_division/ | title = GM to phase out Saturn division | work = [[The Boston Globe]] | publisher = [[The New York Times Company]] | accessdate = 2011-03-12}}&lt;/ref&gt; However, GM continued to produce the Chevrolet Captiva Sport, for the Mexican and South American markets. The Chevrolet Captiva Sport was introduced for the US commercial and fleet markets in late 2011 for the 2012 model year.&lt;ref&gt;{{cite web | last = Lassa | first = Todd | date = 11 March 2011 | url = http://wot.motortrend.com/chevys-vue-like-captiva-sport-fleets-only-37847.html | title = Chevy’s Vue-Like Captiva Sport is for Fleets Only | work = [[Motor Trend]] | publisher = Source Interlink Media | accessdate = 2010-10-12}}&lt;/ref&gt;{{-}}
+
+== Sales ==
+{| class="wikitable"
+|-
+! Calendar Year
+! United States
+|-
+| 2001&lt;ref&gt;{{cite web|url=http://media.gm.com/news/sales/030103_decsales.html |title=mediaOnline |publisher=Media.gm.com |date=2003-01-03 |accessdate=2009-05-21 |url-status=dead |archiveurl=https://web.archive.org/web/20090423151018/http://media.gm.com/news/sales/030103_decsales.html |archivedate=April 23, 2009 }}&lt;/ref&gt;
+| 393
+|-
+| 2002
+| 75,478
+|-
+| 2003
+| 81,924
+|-
+| 2004&lt;ref&gt;{{cite web |url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=2&amp;docid=21738 |title=GM Media Online |publisher=Media.gm.com |date=2006-01-04 |accessdate=2009-05-21 |url-status=dead |archiveurl=https://web.archive.org/web/20090301050807/http://media.gm.com/servlet/GatewayServlet?target=http%3A%2F%2Fimage.emerald.gm.com%2Fgmnews%2Fviewpressreldetail.do%3Fdomain%3D2&amp;docid=21738 |archivedate=March 1, 2009 }}&lt;/ref&gt;
+| 86,957
+|-
+| 2005
+| 91,972
+|-
+| 2006&lt;ref&gt;{{cite web |url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=6&amp;docid=31596 |title=GM Media Online |publisher=Media.gm.com |date=2007-01-03 |accessdate=2009-05-21 |url-status=dead |archiveurl=https://web.archive.org/web/20090423152022/http://media.gm.com/servlet/GatewayServlet?target=http%3A%2F%2Fimage.emerald.gm.com%2Fgmnews%2Fviewmonthlyreleasedetail.do%3Fdomain%3D6&amp;docid=31596 |archivedate=April 23, 2009 }}&lt;/ref&gt;
+| 88,581
+|-
+| 2007
+| 81,676
+|-
+| 2008&lt;ref&gt;{{cite web |url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=2&amp;docid=51161 |title=GM Media Online |publisher=Media.gm.com |date=2009-01-05 |accessdate=2009-05-21 |url-status=dead |archiveurl=https://web.archive.org/web/20090221044821/http://media.gm.com/servlet/GatewayServlet?target=http%3A%2F%2Fimage.emerald.gm.com%2Fgmnews%2Fviewpressreldetail.do%3Fdomain%3D2&amp;docid=51161 |archivedate=February 21, 2009 }}&lt;/ref&gt;
+| 84,767
+|-
+| 2009&lt;ref&gt;http://media.gm.com/content/Pages/news/us/en/2010/Jan/0105_Dec_Sales/_jcr_content/iconrow/textfile/file.res/Deliveries%20December%2009.xls&lt;/ref&gt;
+| 28,429
+|}
+
+== References ==
+{{Refbegin}}
+* {{cite web|url=http://www.gm.com/company/gmability/adv_tech/100_news/hybridvue2_10906.html|title=Saturn Vue Green Line Hybrid Delivers Great Fuel Economy Through New, Lower-Cost Hybrid System|work=[[General Motors]] press release|accessdate=January 9, 2006|url-status=dead|archiveurl=https://web.archive.org/web/20060203030651/http://www.gm.com/company/gmability/adv_tech/100_news/hybridvue2_10906.html|archivedate=February 3, 2006}}
+* {{cite web|url=http://www.lemonfree.com/reviews.php?rid=1450|title=2007 Saturn Vue Roadtest|accessdate=December 6, 2006}}{{dead link|date=March 2018 |bot=InternetArchiveBot |fix-attempted=yes }}
+{{Refend}}
+{{Reflist}}
+
+== External links ==
+{{Commons category|Saturn VUE}}
+
+
+{{Saturn Corporation}}
+
+[[Category:Saturn vehicles|Vue]]
+[[Category:Crossover sport utility vehicles]]
+[[Category:Compact sport utility vehicles]]
+[[Category:Hybrid sport utility vehicles]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Vehicles with CVT transmission]]
+[[Category:All-wheel-drive vehicles]]
+[[Category:Cars introduced in 2002]]
+[[Category:Motor vehicles manufactured in the United States]]
+[[Category:Plug-in hybrid vehicles]]</text>
+      <sha1>r56yxg15qjx2g2jx5mu9r46ruacdpp7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Relay</title>
+    <ns>0</ns>
+    <id>3973096</id>
+    <revision>
+      <id>945133425</id>
+      <parentid>945133175</parentid>
+      <timestamp>2020-03-12T00:52:13Z</timestamp>
+      <contributor>
+        <username>Bluecoat2000</username>
+        <id>37692264</id>
+      </contributor>
+      <minor/>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="5444" xml:space="preserve">{{refimprove|date=December 2013}}
+{{Infobox automobile
+| name = Saturn Relay
+| image = Saturn Relay.jpg
+| manufacturer = [[General Motors]]
+| production = June 20, 2004 – November 17, 2006
+| model_years = 2005–2007
+| assembly = [[Doraville Assembly]], [[Doraville, Georgia]], [[United States]]
+| class = [[Minivan]]
+| body_style = 4-door [[minivan]]
+| platform = [[GM U platform|U-body/GMT201]]
+| related = [[Buick GL8]]&lt;br&gt;[[Buick Terraza]]&lt;br&gt;[[Chevrolet Uplander]]&lt;br&gt;[[Pontiac Montana|Pontiac Montana SV6]]
+| layout = [[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]] / [[Front-engine, all-wheel-drive layout|all-wheel drive]]
+| engine = {{ubl |3.5 L ''[[GM High Value engine#LX9|LX9]]'' [[V6]] (gasoline)|3.9 L ''[[GM High Value engine#LZ9|LZ9]]'' [[V6]] (gasoline)|3.9 L ''[[GM High Value engine#LGD|LGD]]'' [[V6]] (gasoline/[[E85]])}}
+| transmission = {{ubl |4-speed ''[[GM 4T60-E transmission#4T65-E|4T65-E]]'' [[automatic transmission|automatic]]}}
+| wheelbase = {{convert|121.1|in|mm|0|abbr=on}}
+| length = {{convert|204.9|in|mm|0|abbr=on}}
+| width = {{convert|72.0|in|mm|0|abbr=on}}
+| height = 2005: {{convert|72.0|in|mm|0|abbr=on}}&lt;br&gt;2006–07: {{convert|68.6|in|mm|0|abbr=on}}
+| weight = {{convert|4426|lb|kg|0|abbr=on}}
+| predecessor = [[Oldsmobile Silhouette]]
+| successor = [[Saturn Outlook]]
+}}
+
+The '''Saturn Relay''' is a minivan that was made by General Motors. It was introduced for the 2005 model year, and was built alongside its sisters, the [[Buick Terraza]], the [[Chevrolet Uplander]], and the [[Pontiac Montana SV6]] in [[Doraville, Georgia]]. The Relay was the first Saturn vehicle without [[polymer]] side paneling, the first Saturn that is a [[badge engineering|rebadged]] [[Chevrolet]] or [[Pontiac]], and it was the first (and only) minivan produced by Saturn.
+
+[[File:Saturn Relay rear, Polk County, FL (cropped).jpg|thumb|left|Saturn Relay rear]]
+The Relay was introduced with a 3.5&amp;nbsp;[[litre|L]] [[GM High Value engine#LX9|LX9]] [[V6]] that generates {{convert|200|hp|kW|0|abbr=on}} and {{convert|220|lbft|Nm|abbr=on}} torque, going from 0-60&amp;nbsp;mph in the 9-second range. For 2006, a 3.9&amp;nbsp;L [[GM High Value engine#LZ9|LZ9]] V6, with 240&amp;nbsp;hp (179&amp;nbsp;kW) and 240&amp;nbsp;lb·ft (332 Nm) torque, was added as an option, which delivered faster acceleration and better response than the 3.5L engine. For 2007, the 3.5&amp;nbsp;L V6 was dropped, leaving the 3.9&amp;nbsp;L as the base engine. Consequently, the optional [[Four-wheel drive|AWD]] system was also dropped, since it could not handle the torque of the 3.9&amp;nbsp;L engine. Also in 2007, the Relay received an optional [[flexible fuel|flex-fuel]] engine but only for fleet applications.&lt;ref&gt;{{cite web|title=2007 Saturn Relay|url=http://archives.media.gm.com/ca/gm/en/products/saturn/archives/2007Relay.html|publisher=[[General Motors]]|accessdate=30 September 2013}}&lt;/ref&gt; The Relay scored three "Good"s (the highest possible score) and two "acceptable"s (the second highest possible score) in [[Insurance Institute for Highway Safety]] (IIHS) [[crash test]]s. In terms of [[gas mileage]], the Relay is rated at {{convert|19|mpgus }} city, {{convert|25|mpgus }} highway.
+
+The Relay started at [[United States dollar|US$]]22,850. There were three available trim levels, ''1'', ''2'', ''3''. The Relay 3 was available in front-wheel drive and in all-wheel drive. All Relays seat seven via folding/removable 2nd row captains chairs and a 50/50 third-row bench. The third-row bench folds flat, but did not fold entirely into the floor. [[OnStar]] assistance and a [[DVD]] rear entertainment system came standard on all Relays. A navigation system was optional on Relay 3s. Side airbags were optional on the Relay. The Relay was discontinued after the 2007 model year and was replaced by the 2007 [[Saturn Outlook]].
+
+==Changes==
+
+===2006===
+2006 models added the GM logos on the front doors.
+
+===2007===
+The final model year of the Relay. The Saturn logos had been dropped from the front doors, and the [[all-wheel drive]] option was no longer available. The Relay was discontinued after the 2007 model year. The [[Doraville Assembly]] plant closed in September 2008. The last 2007 Relay rolled off the line on November 17, 2006. The Relay was replaced by the 8-passenger, Lambda-based [[Saturn Outlook]] [[crossover SUV]].
+
+==Sales==
+{| class="wikitable"
+|-
+! Calendar year
+! US Sales
+|-
+| 2004
+| 1,563&lt;ref&gt;{{cite web|url=http://www.autointell.com/nao_companies/general_motors/gm-sales/GM-US-data-book-2005.xls|title=GM Deliveries 1996 - 2005}}&lt;/ref&gt;
+|-
+| 2005
+| 15,758
+|-
+| 2006
+| 7,171
+|-
+| 2007
+| 1,474
+|-
+| 2008
+| 163
+|}
+
+==References==
+
+{{Reflist}}
+
+==External links==
+{{commonscat-inline}}
+*[http://www.saturn.com/saturn/showroom/relay/ Official American site]{{dead link|date=March 2018 |bot=InternetArchiveBot |fix-attempted=yes }}
+*[https://web.archive.org/web/20060412152015/http://gmcanada.com/ss/english/vehicles/saturn/relay/relay_overview.jsp Official Canadian site]
+*[http://www.autoblog.com/2006/08/29/gmc-to-add-minivan-by-2009/ GMC to add minivan, GM to discontinue others.]
+
+{{Saturn Corporation}}
+
+[[Category:All-wheel-drive vehicles]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Minivans]]
+[[Category:Saturn vehicles|Relay]]
+[[Category:2000s cars]]
+[[Category:Flexible-fuel vehicles]]
+[[Category:Cars introduced in 2005]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>435865wg1yml5t2prvtpiehocqzafge</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Saturn automobile timeline 1991 to 2010</title>
+    <ns>10</ns>
+    <id>1705301</id>
+    <revision>
+      <id>920093619</id>
+      <parentid>914888808</parentid>
+      <timestamp>2019-10-07T16:58:35Z</timestamp>
+      <contributor>
+        <username>WaddlesJP13</username>
+        <id>33569086</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="3079" xml:space="preserve">{| class="navbox collapsible autocollapse"
+!colspan="21" class="navbox-title"| {{navbar-collapsible| [[Saturn Corporation|Saturn]] automobile timeline, 1991–2010 |Saturn automobile timeline 1991 to 2010}}
+|- style="background-color:#F0F0F0;"
+|rowspan= 2 width=18%| '''Type'''
+|colspan=9 width=39%| 1990s
+|colspan=10 width=39%| 2000s
+|colspan=1 width=39%| 2010s
+|- style="background-color:#F0F0F0;"
+|width=4%|1||width=4%|2||width=4%|3||width=4%|4||width=4%|5||width=4%|6||width=4%|7||width=4%|8||width=4%|9
+|width=4%|0||width=4%|1||width=4%|2||width=4%|3||width=4%|4||width=4%|5||width=4%|6||width=4%|7||width=4%|8||width=4%|9
+|width=4%|0
+|- style="background-color:#E0E0E0;"
+| style="background-color:#F0F0F0;" | [[Sports car]]
+|colspan=9|
+|colspan=7|
+|colspan=3 style="background-color:#C0C0C0" | [[Saturn Sky|Sky]]
+|colspan=1|
+|- style="background-color:#E0E0E0;"
+| style="background-color:#F0F0F0;" | [[Compact car]]
+|colspan=5 style="background-color:#C0C0C0" | [[Saturn S series#First_generation|S series]]
+|colspan=4 style="background-color:#C0C0C0" | [[Saturn S series#Second_generation|S series]]
+|colspan=3 style="background-color:#C0C0C0" | [[Saturn S series#Third_generation|S series]]
+|colspan=5 style="background-color:#C0C0C0" | [[Saturn Ion|Ion]]
+|colspan=2 style="background-color:#C0C0C0" | [[Opel_Astra#Saturn_Astra|Astra]]
+|colspan=1|
+|- style="background-color:#E0E0E0;"
+| style="background-color:#F0F0F0;" | [[Mid-size car]]
+|colspan=9|
+|colspan=6 style="background-color:#C0C0C0" | [[Saturn L series|L series]]
+|colspan=1|
+|colspan=3 style="background-color:#C0C0C0" | [[Saturn Aura|Aura]]
+|colspan=1|
+|- style="background-color:#E0E0E0;"
+|rowspan=1 style="background-color:#F0F0F0" | [[Compact car|Compact]] [[crossover (automobile)|crossover utility vehicle]]
+|colspan=9|
+|colspan=2|
+|colspan=6 style="background-color:#C0C0C0" | [[Saturn_Vue#First_generation_.282002.E2.80.932007.29|Vue]]
+|colspan=3 style="background-color:#C0C0C0" | [[Saturn_Vue#Second_generation_.282008.E2.80.932010.29|Vue]]
+|- style="background-color:#E0E0E0;"
+|rowspan=1 style="background-color:#F0F0F0" | [[Full-size car|Full-size]] [[crossover (automobile)|crossover utility vehicle]]
+|colspan=9|
+|colspan=7|
+|colspan=4 style="background-color:#C0C0C0" | [[Saturn Outlook|Outlook]]
+|- style="background-color:#E0E0E0;"
+| style="background-color:#F0F0F0;" | [[Minivan]]
+|colspan=9|
+|colspan=5|
+|colspan=3 style="background-color:#C0C0C0" | [[Saturn Relay|Relay]]
+|colspan=2|
+|colspan=1|
+|- style="background-color:#E0E0E0"
+| style="background-color:#F0F0F0" rowspan=1| [[Concept car|Concept Car]]
+| colspan = 70 style="background-color:#F0F0F0"|&lt;div class="hlist"&gt;
+* [[Saturn Aura|Aura Concept]] (2005)
+* [[Saturn Curve|Curve]] (2004)
+* [[Saturn CV1|CV1]] (2000)
+* [[Saturn Flextreme|Flextreme]] (2008)
+* [[Saturn L series|LST Concept]] (2001)
+* [[Saturn PreVue|PreVue]] (2006)
+* [[Saturn S series#Thrid Generation SC|SC Concept]] (1999)
+* [[Saturn Sky|Sky]] (2002)
+&lt;/div&gt;
+|}&lt;noinclude&gt;
+[[Category:General Motors timeline templates]]
+[[Category:Saturn vehicles|τ]]
+&lt;/noinclude&gt;</text>
+      <sha1>0md0hdwxuqcnhlfjbiacftlhielyz6j</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn Cycling Team</title>
+    <ns>0</ns>
+    <id>43378488</id>
+    <revision>
+      <id>927600815</id>
+      <parentid>841314384</parentid>
+      <timestamp>2019-11-23T15:20:14Z</timestamp>
+      <contributor>
+        <username>Cs-wolves</username>
+        <id>513060</id>
+      </contributor>
+      <comment>Adding local [[Wikipedia:Short description|short description]]: "American cycling team", overriding Wikidata description "cycling team" ([[User:Galobtter/Shortdesc helper|Shortdesc helper]])</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="7893" xml:space="preserve">{{short description|American cycling team}}
+{{Unreferenced|date=June 2017}}
+{{Infobox cycling team
+| name     = Saturn Cycling Team
+| image        = 
+| code         = 
+| registered         = 
+| founded      = 1992
+| disbanded    = 2003
+| discipline   = [[Road bicycle racing|Road]], cyclo-cross
+| status       = 
+| bicycles     = 
+| website      = 
+| generalmanager      = [[Tom Schuler]]
+| teammanager  = 
+| season       = 1992-2003
+| oldname      = Saturn Cycling Team
+| kitimage     = 
+| pattern_la1  = 
+| pattern_b1   = 
+| pattern_ra1  = 
+| leftarm1     = 
+| body1        = 
+| rightarm1    = 
+}}
+The '''Saturn Cycling Team''' was an American cycling team that existed from 1992 to 2003. It was managed by [[Tom Schuler]] and sponsored by the [[Saturn Corporation]].
+
+==Victories==
+{{div col|colwidth=22em}}
+;1995
+:[[United States National Road Race Championships]], [[Norman Alvis]]
+:[[United States National Criterium Championships]], [[Frank McCormack (cyclist)|Frank McCormack]]
+:[[Killington Stage Race]], [[Frank McCormack (cyclist)|Frank McCormack]]
+
+;1996
+:[[Giro del Capo]], [[Scott Mercier]]
+:[[Tour de Toona]], [[Scott Mercier]]
+:[[International Cycling Classic]], [[Fred Rodriguez]]
+
+;1997
+:[[United States National Road Race Championships]], [[Bart Bowen]]
+:[[United States National Cyclo-cross Championships]], [[Mark McCormack]]
+:[[Herald Sun Tour]], [[Norman Alvis]]
+:[[Tour de Toona]], [[Norman Alvis]]
+:[[Tour of Japan]], [[Bart Bowen]]
+
+;1998
+:[[International Cycling Classic]], [[Frank McCormack (cyclist)|Frank McCormack]]
+:[[Tour of Japan]], [[Frank McCormack (cyclist)|Frank McCormack]]
+:[[Fitchburg Longsjo Classic]], [[Frank McCormack (cyclist)|Frank McCormack]]
+
+;1999
+:[[Fitchburg Longsjo Classic]], [[Bart Bowen]]
+:[[Tour de Beauce]], [[Levi Leipheimer]]
+:[[Sea Otter Classic]], [[Frank McCormack (cyclist)|Frank McCormack]]
+
+;2000
+:[[Joe Martin Stage Race]], [[Erin Hartwell]]
+:[[Lancaster Classic]], [[Trent Klasna]]
+:[[Killington Stage Race]], [[Chris Wherry]]
+
+;2001
+:[[United States National Time Trial Championships]], [[Trent Klasna]]
+:[[Canadian National Time Trial Championships]], [[Eric Wohlberg]]
+:[[United States National Criterium Championships]], [[Harm Jansen]]
+:[[Tour de Toona]], [[Harm Jansen]]
+:[[Redlands Bicycle Classic]], [[Trent Klasna]]
+:[[Sea Otter Classic]], [[Trent Klasna]]
+:[[Nature Valley Grand Prix]], [[Frank McCormack (cyclist)|Frank McCormack]]
+:[[Fitchburg Longsjo Classic]], [[Eric Wohlberg]]
+:[[Mount Washington Auto Road Bicycle Hillclimb|Mount Washington Hillclimb]], [[Tim Johnson (cyclist)|Tim Johnson]]
+
+;2002
+:[[Canadian National Road Race Championships]], [[Eric Wohlberg]]
+:[[GP Weltour]], [[Chris Fisher]]
+:[[International Cycling Classic]], [[Viktor Rapinski]]
+:[[Tour de Nez]], [[Eric Wohlberg]]
+
+;2003
+:[[United States National Road Race Championships]], [[Mark McCormack]]
+:[[Canadian National Time Trial Championships]], [[Eric Wohlberg]]
+:[[Sea Otter Classic]], [[Nathan O'Neill]]
+:[[Fitchburg Longsjo Classic]], [[Viktor Rapinski]]
+:[[International Cycling Classic]], [[Viktor Rapinski]]
+:[[Redlands Bicycle Classic]], [[Chris Horner]]
+:[[Tour de Georgia]], [[Chris Horner]]
+:[[Herald Sun Tour]], [[Tim Johnson (cyclist)|Tim Johnson]]
+:[[Nature Valley Grand Prix]], [[Trent Klasna]]
+:[[Cascade Cycling Classic]], [[Tom Danielson]]
+:[[Mount Washington Auto Road Bicycle Hillclimb|Mount Washington Hillclimb]], [[Tom Danielson]]
+:[[Pomona Valley Stage Race]], [[Tom Danielson]]
+:[[Tour de Langkawi]], [[Tom Danielson]]
+:[[Tour de Toona]], [[Tom Danielson]]
+:[[White Spot / Delta Road Race (men's race)|Tour de Delta]], [[William Frischkorn]]
+:[[San Francisco Grand Prix]], [[Chris Horner]]
+{{div col end}}
+
+==List of riders==
+{{Cleanup|section|reason=Dates don't conform to [[MOS:DATEFORMAT]]|date=June 2017}}
+{| class="wikitable sortable"
+|-
+!Name
+!Birth date
+!Nationality
+!Years 
+|-
+|[[Matthew Anand]] ||01/10/1971||{{CAN}}|| 1999
+|-
+|[[Norman Alvis]] ||12/07/1963||{{USA}}|| 1995-1998
+|-
+|[[Rahsaan Bahati]] ||13/02/1982||{{USA}}|| 2002-2003
+|-
+|[[Darren Hugh Baker]] ||13/06/1967||{{USA}}||1994
+|-
+|[[Michael Barry (cyclist)|Michael Barry]] ||18/12/1975||{{CAN}}|| 1999-2001
+|-
+|[[Steve Bauer]] ||12/06/1959||{{CAN}}|| 1996
+|-
+|[[Bart Bowen]] ||22/04/1967||{{USA}}||1994-2000
+|-
+|[[Jonas Carney]] ||03/02/1971||{{USA}}||1994-1995
+|-
+|[[Antonio Cruz (cyclist)|Antonio Cruz]] ||31/10/1971||{{USA}}|| 2000
+|-
+|[[Tom Danielson]] ||13/03/1978||{{USA}}|| 2003
+|-
+|[[Matthew Decanio]] ||05/04/1977||{{USA}}|| 2001
+|-
+|[[Charles Dionne (cyclist)|Charles Dionne]] ||15/03/1979||{{USA}}|| 2003
+|-
+|[[Iván Domínguez]] ||28/05/1976||{{CUB}}||2001-2003
+|-
+|[[Jeff Evanshine]] ||02/10/1973||{{USA}}|| 1996-1997
+|-
+|[[Christopher Fischer (cyclist)|Christopher Fischer]] ||04/07/1969||{{USA}}|| 2001-2002
+|-
+|[[Scott Fortner]] ||22/05/1966||{{USA}}||1993-1998
+|-
+|[[Esteban Fraga]] ||06/01/1965||{{ECU}}||1994
+|-
+|[[Mariano Friedick]] ||09/01/1975||{{USA}}|| 1997-1998
+|-
+|[[William Frischkorn]] ||10/06/1981||{{USA}}|| 2002-2003
+|-
+|[[Jimmy Hansen]] ||17/08/1978||{{DEN}}||1999
+|-
+|[[Erin Hartwell]] ||01/06/1969||{{USA}}|| 2000-2001
+|-
+|[[Steve Hegg]] ||03/12/1963||{{USA}}|| 1997
+|-
+|[[Chris Horner]] ||23/10/1971||{{USA}}|| 2003
+|-
+|[[Harm Jansen]] ||08/11/1967||{{NED}}|| 2000-2002
+|-
+|[[Timothy Johnson (cyclist)|Tim Johnson]] ||05/08/1977||{{USA}}||2001-2003
+|-
+|[[Ron Kiefel]] ||11/04/1960||{{USA}}||1994-1995
+|-
+|[[Trent Klasna]] ||09/12/1969||{{USA}}|| 2000-2003
+|-
+|[[Damon Kluck]] ||23/06/1977||{{USA}}|| 2002
+|-
+|[[Levi Leipheimer]] ||24/10/1973||{{USA}}||1998-1999
+|-
+|[[John Loehner]]||27/07/1968||{{USA}}||1993
+|-
+|[[Michael McCarthy (cyclist)|Mike McCarthy]] ||20/06/1968||{{USA}}|| 1995-1998
+|-
+|[[David Mac Cook]]||24/12/1969||{{USA}}||1993
+|-
+|[[Frank McCormack (cyclist)|Frank McCormack]] ||28/05/1969||{{USA}}|| 1995-2002
+|-
+|[[Mark McCormack (cyclist)|Mark McCormack]] ||15/09/1970||{{USA}}|| 1996-2003
+|-
+|[[Steve Scott McGregor]] ||29/10/1968||{{USA}}||1994
+|-
+|[[Scott McKinley]] ||15/10/1968||{{USA}}|| 1995-1996
+|-
+|[[Chann McRae]] ||11/10/1971||{{USA}}|| 1997-1998
+|-
+|[[Tommy Matush]]||12/03/1968||{{USA}}||1993
+|-
+|[[Scott Mercier]] ||24/01/1968||{{USA}}||1993-1996
+|-
+|[[Andrew Miller (cyclist)|Andrew Miller]]||12/03/1968||{{USA}}||1993
+|-
+|[[Bob Mionske]]||26/04/1962||{{USA}}||1993
+|-
+|[[Jan Neal]]||27/10/1974||{{USA}}||1993
+|-
+|[[Nathan O'Neill]] ||23/11/1974||{{USA}}|| 2003
+|-
+|[[Seth Pelusi]] ||27/11/1976||{{USA}}||1999-2000
+|-
+|[[Soren Petersen (cyclist)|Soren Petersen]] ||07/10/1967||{{DEN}}|| 2001-2002
+|-
+|[[Viktor Rapinski]] ||17/06/1981||{{BLR}}|| 2002-2003
+|-
+|[[Nate Reiss]] ||07/10/1963||{{USA}}|| 1994
+|-
+|[[Fred Rodriguez]] ||03/09/1973||{{USA}}|| 1996-1998
+|-
+|[[Adham Sbeih]] ||08/06/1963||{{USA}}|| 1999
+|-
+|[[Chris Sheehan (cyclist)|Chris Sheehan]]|| 28/02/1969 ||{{USA}}||1993
+|-
+|[[Clarke Sheehan]]||07/04/1969 ||{{USA}}||1993
+|-
+|[[Gregory Strock]] || 30/05/1972||{{USA}}||1993
+|-
+|[[Peter Stubenrauch]] || 26/10/1969||{{USA}}||1993
+|-
+|[[Jose Hernandez (cyclist)|Jose Hernandez]] ||22/02/1974||{{MEX}}||2002-2003
+|-
+|[[Jay Sweet]] ||11/08/1975||{{AUS}}|| 2002
+|-
+|[[Tim Swift]] ||25/01/1964||{{USA}}||1994-1995
+|-
+|[[Burke Swindlehurst]] ||10/03/1973||{{USA}}|| 1999
+|-
+|[[Fernando Tapia]] ||08/07/1973||{{MEX}}|| 1994 
+|-
+|[[Robbie Ventura]] ||05/05/1971||{{USA}}|| 1994-1995, 1999-2000
+|-
+|[[Brian Walton (cyclist)|Brian Walton]] ||18/12/1975||{{CAN}}||1993-2000
+|-
+|[[Chris Wherry]] ||18/07/1973||{{USA}}||1997-2000
+|-
+|[[Eric Wohlberg]] ||08/01/1965||{{CAN}}|| 2001-2003
+|-
+|[[Philip Zajicek]] ||20/03/1979||{{USA}}||2003
+|-
+|}
+
+==References==
+{{reflist}}
+
+[[Category:Defunct cycling teams based in the United States]]
+[[Category:Saturn vehicles]]
+[[Category:Cycling teams established in 1992]]
+[[Category:Cycling teams disestablished in 2003]]
+[[Category:1992 establishments in the United States]]
+[[Category:2003 disestablishments in the United States]]</text>
+      <sha1>o8kk4ftrnc7ovn8bh090xocxp1mjc9p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn S series</title>
+    <ns>0</ns>
+    <id>857884</id>
+    <revision>
+      <id>943699740</id>
+      <parentid>942968006</parentid>
+      <timestamp>2020-03-03T12:36:16Z</timestamp>
+      <contributor>
+        <ip>89.132.194.169</ip>
+      </contributor>
+      <comment>/* Third generation SL and SW */</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="33713" xml:space="preserve">{{Infobox automobile
+|image=1996-1999 Saturn SL2 -- 03-16-2012.JPG
+|name=Saturn S series
+| manufacturer   = [[Saturn Corporation]]
+|production=1990–2002
+|class=[[Compact car]]
+|successor=[[Saturn Ion]]
+|assembly=United States: [[Spring Hill, Tennessee]] ([[Spring Hill Manufacturing]])
+|layout=[[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]]
+|platform=[[GM Z platform]]
+}}
+The '''Saturn S-series''' was a family of [[compact car]]s from the [[Saturn Corporation|Saturn]] [[automobile]] company of General Motors. Saturn pioneered the brand-wide "no haggle" sales technique. 
+
+The [[automobile platform]], the [[GM Z platform|Z-body]], was developed entirely [[in-house]] at Saturn, and it shared very little with the rest of the [[General Motors]] model line.  It implemented a [[spaceframe]] design, which had been used on some [[Pontiac]]s during the 1980s. This meant that the side panels did not carry load and could be made of [[plastic]] instead of [[metal]]. These [[polymer]] panels were dent-resistant, something that remained a selling point for Saturn until just a few years before the Saturn brand was discontinued. 
+
+The S series was sold from the fall of 1990 for the 1991 model year through the end of the 2002 model year. Significant design updates were made in 1996, 1997, and 2000 for all cars. Although nearly every year of the S-series's existence brought some minor changes to the architecture of the car, each model kept the same basic body styling throughout its history.  
+
+==History==
+The S-series debuted in model year 1991 with the Sport Coupe (SC) and Sedan Level (SL) models. The SC was only available with the DOHC (Dual OverHead Cam) engine whereas the SLs had an option for the SOHC (Single OverHead Cam) engine (SL1) or the DOHC (SL2). 
+
+For the 1993 model year, the SC gained an SOHC option (SC1) in addition to the existing DOHC option (SC2, renamed from SC)&lt;ref&gt;A model name with a "1” marked an SOHC/base trim variant while ”2” signified a DOHC/upgraded trim option&lt;/ref&gt;. The SL &amp; SC families were joined by the SW (Station Wagon) models, in both SW1 and SW2 flavors.
+
+The S series all used either the [[Saturn I4 engine#SOHC LK0.2FL24|SOHC LK0/L24]] or the [[Saturn I4 engine#DOHC LL0|DOHC LL0]] version of the completely original, designed in-house [[Saturn I4 engine|Saturn 1.9L]] engine. SL1s, SC1s and SW1s were only offered with the [[Saturn MP transmission#MP2|MP2]] manual transmission and the [[Saturn MP transmission#MP6|MP6]] automatic, while SL2, SC2 and SW2 models came with either the [[Saturn MP transmission#MP3|MP3]] manual or [[Saturn MP transmission#MP7|MP7]] automatic. The only difference in each case is the selection of gear ratios, with the SOHC-associated transmissions being geared taller for more efficiency, and the DOHC-associated transmissions having shorter, more closely spaced ratios for performance. As a result, it's not uncommon for enthusiast-owners to swap a tall-geared MP2 manual into a car equipped with a DOHC engine for better fuel economy on the highway.
+
+Aside from the engine and transmission, the level 2 models also included 15-inch instead of 14-inch wheels, a correspondingly larger tire size, EVO steering &lt;ref&gt;Electronic Variable Orifice, a power steering pump modification that allows for proportional steering&lt;/ref&gt;, a rear [[sway bar|swaybar]], the option of rear [[disc brakes]] (standard on the 1991-1992 SC), color-matched bumpers and door handles, and more interior options such as power locks, power windows, rear defroster, &amp; a sunroof (SC2 only). Aside from the wheel size, it was almost impossible to tell a 1 from a 2 externally, except for the SC2s which had [[retractable headlamps]] thru MY 1996.
+
+A change beginning with the 1999 model year gave the SC a small [[suicide door]] on the driver's side to improve rear-seat access. This type of door had previously been used in extended cab [[pickup truck]]s, but was an innovation in [[coupe]] design.&lt;ref name="The New York Times"&gt;{{cite news|url=https://www.nytimes.com/1999/02/07/automobiles/behind-the-wheel-saturn-sc2-finding-a-jackpot-behind-door-no-3.html?pagewanted=all&amp;src=pm|title=BEHIND THE WHEEL/Saturn SC2; Finding a Jackpot Behind Door No. 3|year=1999 |accessdate=2012-07-30|work=nytimes.com}}&lt;/ref&gt;
+
+The level 1 S-series equipped with a [[manual transmission]] were among the most [[Fuel economy in automobiles|fuel-efficient]] [[car]]s available in the United States when they were produced, reaching {{convert|40|mpgus|L/100 km mpgimp}} in [[United States Environmental Protection Agency|EPA]] highway tests at the time (this would likely translate to {{convert|36|mpgus|L/100 km mpgimp}} under current methodologies)&lt;ref&gt;{{cite web|url=http://www.fueleconomy.gov/feg/calculatorCompareSideBySidePopUp.jsp?column=1&amp;id=13521|title=Compare Old and New EPA MPG Estimates: 1997 Saturn SL|publisher=United States Environmental Protection Agency|accessdate=January 27, 2010}}&lt;/ref&gt;. 
+
+The S-series was replaced by the larger, single-model [[Saturn Ion|Saturn ION]] for the 2003 model year, which was unable to match the S-series sales numbers, efficiency, or reliability before the end of the ION's production at the end of 2007.
+
+===Export markets===
+[[Taiwan]] and [[Japan]] were the only two Asian countries to import Saturns. From 1992 to 1996, the first- and second-generation sedans plus the first-generation coupes were sold in [[Taiwan]]. From 1997 to 2001, the second-generation versions were sold in [[right-hand drive]] in [[Japan]], and some ''[[Toyota Netz]]'' dealerships, and former [[Isuzu]] dealerships did offer Saturn products until 2001. At the time of the Japanese launch, the [[Economy of Japan|Japanese economy]] was in a sharp decline after the [[Japanese asset price bubble]] had collapsed during the early 1990s.
+
+[[Canada]] imported all available Saturn models from 1992 onward.
+
+==First generation==
+{{Infobox automobile
+|name=First generation
+|aka=Saturn SL&lt;br&gt;Saturn SW&lt;br&gt;Saturn SC
+|image=1st-Saturn-SL1.jpg
+|production=1990–1995 SL&lt;br&gt;1993–1995 SW&lt;br&gt;1990–1996 SC
+|body_style=2-door [[coupe]]&lt;br&gt;4-door [[sedan (car)|sedan]]&lt;br&gt;5-door [[station wagon]]
+|wheelbase=SL &amp; SW: {{convert|102.4|in|0|abbr=on}}&lt;br&gt;SC: {{convert|99.2|in|0|abbr=on}}&lt;ref&gt;http://oldcarbrochures.org/index.php/New-Brochures---May/1991-Saturn-Full-Line-Brochure/1991-Saturn-Full-Line-24-25&lt;/ref&gt;
+|length=SL &amp; SW: {{convert|176.3|in|0|abbr=on}}&lt;br&gt;1990–93 SC: {{convert|175.8|in|0|abbr=on}}&lt;br&gt;1994–96 SC1: {{convert|173.2|in|0|abbr=on}}&lt;br&gt;1994–96 SC2: {{convert|174.6|in|0|abbr=on}}
+|width= {{convert|67.6|in|0|abbr=on}}
+|height=SC: {{convert|50.6|in|0|abbr=on}}&lt;br&gt;SL: {{convert|52.5|in|0|abbr=on}}&lt;br&gt;SW: {{convert|53.7|in|0|abbr=on}}
+|weight= SC: {{convert|2293.9|–|2416.7|lb|kg|0|abbr=on}}&lt;br&gt;SL: {{convert|2320.5|–|2456.5|lb|kg|0|abbr=on}}&lt;br&gt;SW: {{convert|2397.3|–|2499.4|lb|kg|0|abbr=on}}
+|engine={{ubl | 1.9&amp;nbsp;L ''[[Saturn I4 engine#SOHC LK0/L24|LK0]]'' [[Inline-four engine|I4]] | 1.9&amp;nbsp;L ''[[Saturn I4 engine#SOHC LK0/L24|L24]]'' I4 | 1.9&amp;nbsp;L ''[[Saturn I4 engine#DOHC LL0|LL0]]'' [[DOHC]] I4 }}
+|transmission=4-speed ''[[Saturn MP transmission#MP6|Saturn MP6]]'' automatic&lt;br&gt;4-speed ''[[Saturn MP transmission#MP7|Saturn MP7]]'' automatic&lt;br&gt;5-speed ''[[Saturn MP transmission#MP2|Saturn MP2]]'' manual&lt;br&gt;5-speed ''[[Saturn MP transmission#MP3|Saturn MP3]]'' manual
+}}
+
+===First generation SL===
+[[File:1993 Saturn SL1 1.9L rear 6.13.18.jpg|thumb|left|Saturn SL]]
+The first generation SL was constructed for model years 1991 through 1995, with the first Saturn to leave the assembly line in the [[Spring Hill, Tennessee]] factory was on July 30, 1990, the same day that then-CEO of GM, [[Roger Bonham Smith]], retired. It was maroon with a tan interior.
+
+From 1991 to 1992, the Saturn SL-series Sedan trim levels consisted of the '''SL''', the '''SL1''', and the '''SL2'''.
+
+The base '''SL''' model featured the [[Saturn MP transmission#MP2|MP2]] manual transmission only, and it had manual steering. The '''SL1''' trim level featured the option of the same MP2, or the [[Saturn MP transmission#MP6|MP6]] automatic transmission. Both were offered only with the [[Saturn I4 engine#SOHC LK0.2FL24|SOHC 1.9L I4 "LKO"]] engine that produced {{Convert|85|hp|kW|0|abbr=on}}, which was rated at 27 mpg (8.7L/100&amp;nbsp;km/32 mpg) City, 34 mpg (6.9L/100&amp;nbsp;km; 41 mpg) Highway. The '''SL2''' trim level featured the [[Saturn MP transmission#MP3|MP3]] manual transmission, or the [[Saturn MP transmission#MP7|MP7]] automatic transmission, both exclusively with the [[Saturn I4 engine#DOHC LL0|DOHC 1.9L I4 LL0]] engine that was rated at {{Convert|123|hp|kW|0|abbr=on}}, 24 mpg (9.8L/100&amp;nbsp;km; 29 mpg) City, 34 mpg (6.9L/100&amp;nbsp;km; 41 mpg) Highway.
+
+===First generation SW===
+[[File:1st-Saturn-SW-rear.jpg|left|thumb|Saturn SW2]]
+For the 1993 model year, a station wagon variant of the SL with SW1 and SW2 trim levels was added to the model lineup.
+
+For the 1995 model year, the seatbelts were changed from the power passive restraint type to the conventional 3-point type. The interior of the vehicle was redesigned with a new dashboard and the addition of a front passenger's airbag. The center console was updated as well, adding previously absent cup holders. Also for 1995, the SOHC (LK0) engine was given [[MPFI#Multipoint fuel injection|MPFI]] to create the {{Convert|100|hp|kW|0|abbr=on}} L24 engine.
+
+The S series also had a 12.8 US gallons (48L; 11 imp gal.) fuel tank, which means that both the SL and the SW models had both gotten around 384 miles (618&amp;nbsp;km) on a single tank based on an average of 32 mpg (7.4L/100&amp;nbsp;km; 38 mpg) Owners of the SL1 model would usually report real-world fuel mileage of about 38-41 mpg (6.2-5.7L/100&amp;nbsp;km; 46-29 mpg) on the Highway with the manual transmission.
+
+===First generation SC===
+
+The first generation Saturn SC coupes were made from 1990 to 1996. The first generation Saturn SC coupes were originally just only available in one trim level which was the SC.
+
+The 1990-1992 Saturn SC featured a DOHC 1.9-litre ''LL0'' [[inline-four engine]] that was rated at {{Convert|123|hp|kW|0|abbr=on}}. For the 1993 model year, the original regular SC coupe model was renamed as the SC2 and a new SC1 trim level was introduced. For the 1994 model year, the SC1 and the SC2 had both gotten revised power door locks and a recalibrated automatic transmission. The first generation SC2 had received a minor refresh in 1995 in which the lower front bumper and the vehicle's taillights were both updated. For the 1995 model year, both the SC1 and the SC2 had gotten a redesigned interior with a new redesigned dashboard with a front passenger's airbag.
+
+The first generation SC1 coupe featured a SOHC 1.9L I4 LKO engine that was rated at {{Convert|85|hp|kW|0|abbr=on}}. The SC1's engine was later upgraded to the {{Convert|100|hp|kW|0|abbr=on}} L24 engine for the 1995 model year.
+
+The first generation Saturn SC1 coupes had shared the same fixed headlight front fascia with the SL sedans and the SW station wagons rather than the [[Hidden headlamp|pop-up headlight]] design used on the SC2 and the original SC. The SC1 had also lacked a rear trunk lid reflector and a rear stabilizer bar.
+
+&lt;gallery widths="210px" heights="130px"&gt;
+File:1992 Saturn SC2, front right side (Hershey 2019).jpg|1992 Saturn SC (pre-facelift)
+File:1st-Saturn-SC.jpg|1995-1996 Saturn SC2
+File:'91-'95 Saturn SC.JPG|Saturn SC1
+&lt;/gallery&gt;
+
+{{clear}}
+
+==Second generation==
+{{Infobox automobile
+|name=Second generation
+|aka=Saturn SL1&lt;br&gt;Saturn SL2&lt;br&gt;Saturn SW1&lt;br&gt;Saturn SW2&lt;br&gt;Saturn SC1&lt;br&gt;Saturn SC2
+|image=Saturn-SL.jpg
+|production=1996–1999 SL&lt;br&gt;1996–1999 SW&lt;br&gt;1997–1999 SC
+|body_style=2-door [[coupe]] (1997–1998) &lt;br&gt;3-door [[coupe]] (1999-2002)&lt;br&gt;4-door [[sedan (car)|sedan]]&lt;br&gt;5-door [[station wagon]]
+|engine= {{ubl | 1.9&amp;nbsp;L ''[[Saturn I4 engine#SOHC LK0/L24|L24]]'' [[Inline-four engine|I4]] | 1.9&amp;nbsp;L ''[[Saturn I4 engine#DOHC LL0|LL0]]'' [[DOHC]] I4 }}
+|wheelbase={{convert|102.4|in|0|abbr=on}}
+|length=1996–99 SW &amp; 1996–97 SL: {{convert|176.8|in|0|abbr=on}}&lt;br&gt;1998–99 SL: {{convert|176.9|in|0|abbr=on}}
+|width=1996–99 SW: {{convert|66.7|in|0|abbr=on}}&lt;br&gt;1997–2000 SC: {{convert|67.3|in|0|abbr=on}}&lt;br&gt;1996–99 SL: {{convert|66.7|in|0|abbr=on}}
+|height=1996–99 SW &amp; SL: {{convert|54.5|in|0|abbr=on}}
+|transmission=4-speed ''[[Saturn MP transmission#MP6|Saturn MP6]]'' automatic&lt;br&gt;4-speed ''[[Saturn MP transmission#MP7|Saturn MP7]]'' automatic&lt;br&gt;5-speed ''[[Saturn MP transmission#MP2|Saturn MP2]]'' manual&lt;br&gt;5-speed ''[[Saturn MP transmission#MP3|Saturn MP3]]'' manual
+}}
+
+===Second generation SL and SW===
+[[File:Saturn SW1 -- 01-28-2010.jpg|thumb|left|1996–1999 Saturn SW1]]
+The second generation SL sedans and SW station wagons were made from 1996 to 1999. They had both featured a completely redesigned exterior. The interior was mostly the same as on the first generation vehicles, while mechanically they went largely untouched. The redesigned second generation S-series went on sale in 1995 for the 1996 model year.
+
+A few minor changes were made for the 1998 model year S-series vehicles. Due to multiple complaints about the noise coming from the vehicle's trip odometer that had been in all of the Saturn S-series since 1995, had replaced with a new type of trip odometer in an effort to correct the problem. For the 1998 model year, a new cluster with a digital trip odometer had been introduced. Rear disc-brakes were no longer available as an option on the S series due to high costs for them as well as very little improvement in braking performance over the conventional rear drum-brakes setup.
+
+Beginning with all of the Saturn S-series vehicles that were made in late 1999 (sometimes referred to as 1999.5 models) had received improvements to both the SOHC and the DOHC engines in the S series. These changes included revised pistons, new connecting rods, and new crankshaft counterweights in the engine as well. The Twin Cam cylinder head had now featured a new roller-rocker setup with hydraulic tappets and roller cams replacing the conventional bucket lifter setup of the previous engine in the S series.
+
+Also introduced for the 1999 model year S-series vehicles that were sold in California was a different type of an exhaust manifold that housed an upstream catalytic converter (this converter had heated up much faster than the conventional unit, and it had also decreased exhaust emissions faster as well), and it also had provisions for an air-injection reaction system (This had injected fresh air into the exhaust to reduce hydrocarbons during the startup of the vehicle, as it would help the oxygen sensors and catalytic converters reach their operating temperatures faster). These vehicles were made to meet the all-new CARB ULEV standards for the 1999 model year.
+[[File:Gen2SLRear.jpg|alt=1996 - 1999 Saturn SL photographed in Sault Ste. Marie, Ontario, Canada|thumb|1996 - 1999 Saturn SL]]
+
+===Second generation SC===
+[[File:2nd-Saturn-SC.jpg|thumb|left|1997–2000 Saturn SC]]
+The second generation SC coupes were made from 1997 to 2000. The second generation SC coupes had also moved to the longer wheelbase that the SL sedans and the SW station wagons had used, resulting in an equal wheelbase length across all S-series models. The redesign had resulted in a more curved look for the SC coupes, which gave a slight increase in the vehicle's interior room/space, as well as doorway size as well as a completely redesigned exterior of the vehicle itself. For the 1999 model year, a suicide door was added to the driver's side of the vehicle, which had been a revolution in coupe bodystyle type of vehicles. Even though the suicide door on the driver's side of the vehicle had allowed easier access into the vehicle's rear seat, the driver's seat in the vehicle was also able to slide forward and to fold down forward somewhat to also allow an easy access into the vehicle's rear seat as well. The suicide door on the driver's side of the SC coupes could not open unless the front driver's door was open because the door handle the driver's side suicide door was on the inside of the suicide door itself. Like the first generation SC coupes, the SC1 model lacked a rear sway bar.
+
+{{clear}}
+
+==Third generation==
+{{Infobox automobile
+|name=Third generation
+|aka=Saturn SL1&lt;br&gt;Saturn SL2&lt;br&gt;Saturn SW1&lt;br&gt;Saturn SW2&lt;br&gt;Saturn SC1&lt;br&gt;Saturn SC2
+|image=2000-2002 Saturn SL -- 03-16-2012 2.JPG|2000-2002 Saturn SL -- 03-16-2012 2
+|production=2000-2002 SL&lt;br&gt;2000-2002 SW&lt;br&gt;2000-2002 SC
+|body_style=3-door [[coupe]]&lt;br&gt;4-door [[sedan (car)|sedan]]&lt;br&gt;5-door [[station wagon]]
+|engine= {{ubl | 1.9&amp;nbsp;L ''[[Saturn I4 engine#SOHC LK0/L24|L24]]'' [[Inline-four engine|I4]] | 1.9&amp;nbsp;L ''[[Saturn I4 engine#DOHC LL0|LL0]]'' [[DOHC]] I4 }}
+|wheelbase={{convert|102.4|in|0|abbr=on}}
+|length=&lt;br&gt;2000–02 SL &amp; SW: {{convert|178.1|in|0|abbr=on}}&lt;br&gt;2001–02 SC: {{convert|180.5|in|0|abbr=on}}
+|width=2000–01 SW: {{convert|66.4|in|0|abbr=on}}&lt;br&gt;2001–02 SC: {{convert|68.2|in|0|abbr=on}}&lt;br&gt;2000–02 SL: {{convert|66.4|in|0|abbr=on}}
+|height=2000–01 SW: {{convert|55.6|in|0|abbr=on}}&lt;br&gt;2000–02 SL: {{convert|55|in|0|abbr=on}}&lt;br&gt;2001–02 SC: {{convert|53|in|0|abbr=on}}
+|transmission=4-speed ''[[Saturn MP transmission#MP6|Saturn MP6]]'' automatic&lt;br&gt;4-speed ''[[Saturn MP transmission#MP7|Saturn MP7]]'' automatic&lt;br&gt;5-speed ''[[Saturn MP transmission#MP2|Saturn MP2]]'' manual&lt;br&gt;5-speed ''[[Saturn MP transmission#MP3|Saturn MP3]]'' manual
+}}
+
+===Third generation SL and SW===
+[[File:00-02 Saturn SL 2.jpg|thumb|left|2000-2002 Saturn SL]]
+
+In 1999 for the 2000 model year, the Saturn S-series had been redesigned for the final time before being discontinued in 2002. This resulted in the third generation Saturn S-series.
+
+The exterior of the Saturn SL sedans revived new body panels from the belt-line down. The rear end of the SL sedans received a redesigned applique on the trunk, and the headlights of the SL sedans had received orange turn signal indicators.
+
+The interior of all the Saturn S-series models received a completely redesigned dashboard, center console, and steering wheel, but the rest of the interiors were mostly unchanged. The SL2, SW2, and SC2 got the storage compartment with a sliding arm rest in the center console as standard, where as the SL1, SW1, and SC1 did not.&lt;ref&gt;http://oldcarbrochures.org/index.php/New-Brochures---Nov/2001-Saturn-S-Series-Prestige-Brochure/2001-Saturn-S-Series-Prestige-17&lt;/ref&gt;
+
+Like the 1999 model year SL sedans and the 1999 model year SW station wagons that were made in late in 1999, the 2000 model year SL sedans and the 2000 model year SW station wagons had also included a digital trip odometer, which did not cause any issues like the analog trip odometers that were used in the 1991-early 1999 model year S-series vehicles.
+
+The third generation Saturn S-series was also the first Saturn to use the body control module (BCM), and the powertrain control module (PCM) systems in tandem with each other. In the third generation Saturn S-series models, the PCM system was used strictly for the vehicle's transmission and engine, whereas the BCM system was used strictly for the vehicle's interior functions such as the digital trip odometer and speedometer.
+
+Beginning with the 2001 model year, side curtain airbags became available as an optional feature. The optional side curtain airbags were only available on the 2001 to 2002 model Saturn SL1 and SL2 sedans.
+
+===Third generation SC ===
+[[File:01-02 Saturn SC-b.jpg|thumb|left|2001–2002 Saturn SC]]
+The third generation of Saturn SC maintained the SC1 and SC2 models. They were essentially identical to the second generation SC in all terms except appearance where minor updates were done to improve the lines&lt;ref&gt;{{cite web|last=unknown|title=2002 Saturn SC|url=http://www.cars.com/saturn/sc/|work=cars.com|accessdate=7 April 2014}}&lt;/ref&gt; and a PCM and BCM were added. A new GT trim package had become available for the Saturn SC coupes for the 2001 model year, along with the option of American Racing Wheels that was only available on the GT version of the Saturn SC coupes. A rear spoiler on the vehicle's rear trunk lid was also made available for the 2001 to 2002 model year Saturn SC GT coupes.
+
+==Special edition Saturns==
+[[File:1991-1995 Saturn SL2 -- 03-16-2012.JPG|left|thumb|1994 SL2 Homecoming Edition]]
+A special Homecoming edition of the SL2 was released for 1994. It had special Pearl White paint (a "silver-tint" pearl, shared with Cadillac models of this year), black Saturn emblems, [[Spoiler (automotive)|spoiler]], {{convert|15|in||0|abbr=on|adj=on}} "teardrop" wheels, anti-lock four-wheel disc brakes, grey leather/cloth interior, rear headrests, fog lamps, and power locks and [[window]]s. Options included a sunroof, CD player, and the 4-speed automatic with traction control.
+
+In 1998 and 1999, prospective buyers of a red or white SC2 had the option of purchasing the "Black Top Coupe Package" for $225.00 (US). The models were referred to as the "Red Hot Coupe" or "White Hot Coupe", based on the exterior color. The package came with a black roof panel, black outside rear view mirrors, black emblems, white face gauges and black accented teardrop wheels. These are extremely rare.
+{{clear}}
+In 1999, a second Homecoming Edition was produced in a special "Mint Color" with tan leather interior, special off-white gauge faceplates, and black Saturn badges to commemorate the second "Homecoming" visit to the Spring Hill, Tennessee manufacturing facility. The 1999 Homecoming Edition also had the same features offered as the 1994 Homecoming Edition.
+
+[[File:Saturn Limited Edition Interior-Seat.jpg|thumb|left|The interior of a Saturn Limited Edition SC2.]]
+In 2001, a special yellow SC2 coupé model was also built. The model was officially named "Limited Edition", but soon became known as the "Bumblebee Edition". 99 were produced, each with a certificate of authenticity. The "Bumblebee Edition" included embroidered headrests, black leather interior with yellow leather inserts on the seats and door panels, black roof and mirrors, number designation inside fuel filler door and certificate of authenticity. These are not to be confused with the regular issue Yellow Sport Coupe.
+{{clear}}
+
+For the 2001 model year only, a special edition of the Saturn SL2 sedan that was called the Saturn SL2 10th Anniversary Edition (also known as the Silver Anniversary Edition) was made available. The Saturn SL2 10th Anniversary Edition had included several upscale features that were not available on any other Saturn S-series vehicles like power windows, leather interior, standard side curtain airbags, and several other upscale features. The Saturn SL2 10th Anniversary Edition also had "Saturn 10th Anniversary" stitched onto the front seat adjustable leather headrests. The Saturn SL2 10th Anniversary Edition had also featured a rear spoiler on the vehicle's rear trunk lid.
+
+{| class="wikitable"
+|+Special Edition Production Numbers
+|-
+|1994 Homecoming Edition||3,500
+|-
+|1998 White Hot Coupe||213
+|-
+|1998 Red Hot Coupe||657
+|-
+|1999 White Hot Coupe||285
+|-
+|1999 Red Hot Coupe||284
+|-
+|1999 Homecoming Edition||4,000
+|-
+|2001 Limited Edition SC2||99
+|-
+|2001 10th Anniversary Edition||1,000
+|-
+|2001 Bright Red||664
+|}
+
+==Right-hand drive==
+In addition to the above-mentioned "Special Edition" Saturns; there was also the 1999–2001 Saturn SWP "Postal" station wagon that were produced (450 in 1999), intended to be marketed to rural route mail carriers. These station wagons were right-hand-drive vehicles.
+
+There were also a limited number of Saturns that were exported to Japan as right-hand-drive vehicles circa between 1997 and 2000. Aside from having the steering wheel on the other side, Japanese market Saturns were also fitted with slightly different light units. The rear lamps had amber turn signals and the front indicators were mounted closer to the corners rather than inboard.
+
+The Saturn faced a hard time in Japan, where it played directly into the strengths of the Japanese manufacturers, comparing unfavorably with better-priced and more competent Japanese compact cars.&lt;ref name="latham1"&gt;{{citation | title = Grinding Gears: The Japanese Auto Dealer Network and American Trade Complaints | url = http://njkk.com/library/latham_98.pdf | last = Latham | first = Scott | date = 1998-05-13 | publisher = Scott Latham Associates | location = Chester Springs, PA | page = 60 }}&lt;/ref&gt; The interior, especially, received criticism.&lt;ref&gt;Latham, p. 64&lt;/ref&gt; A mere 602 units were sold in Saturn's first year in Japan (April to December 1997).&lt;ref&gt;Latham, p. 59&lt;/ref&gt;
+
+Another problem was that Japanese car dealers have always excelled at customer service; this meant that Saturn's main sales argument in the United States was meaningless in the Japanese market.&lt;ref&gt;Latham, p. 62&lt;/ref&gt; The introduction of Saturn was also ill-timed, as the economy was in the midst of a [[recession]] due to the effects of the 1980s "[[Japanese asset price bubble|bubble economy]]". As the Japanese had less money to spend on "luxury goods", as imported products are regarded, Saturn found very few buyers.
+
+==Theft==
+The 1995 Saturn SL was the most stolen vehicle in 2003, while the 1994 SL took third place in CCC Information Services's 2003 [[Motor vehicle theft#Vehicles most frequently stolen|most stolen vehicle]] report.&lt;ref name="saturnfans.com"&gt;{{cite web|url=http://www.saturnfans.com/Company/2004/1995slmoststolen.shtml|title=1995 Saturn SL Tops Most Stolen Vehicle List|accessdate=2008-04-03|work=saturnfans.com/}}&lt;/ref&gt; According to the Lynnwood, Washington police department, when use of the key wears on the door and ignition mechanisms, a filed blank key can be used to open the door and start the engine. {{citation needed|date=April 2010}}
+
+==Racing==
+Saturn SC's competed in the [[SCCA World Challenge]] in the 1990s, winning several races from 1995 to 1997.&lt;ref&gt;{{cite web|url=http://scca.cdn.racersites.com/prod/Documents/Pro%20Racing/Archives/1995-SCCA-WorldChallenge.pdf|format=PDF|title=1995 World Challenge : Round 1|publisher=Scca.cdn.racersites.com|accessdate=23 February 2015|url-status=dead|archiveurl=https://web.archive.org/web/20130524142007/http://scca.cdn.racersites.com/prod/Documents/Pro%20Racing/Archives/1995-SCCA-WorldChallenge.pdf|archivedate=24 May 2013}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://scca.cdn.racersites.com/prod/Documents/Pro%20Racing/Archives/1996-SCCA-WorldChallenge.pdf|format=PDF|title=1996 World Challenge|publisher=Scca.cdn.racersites.com|accessdate=23 February 2015|url-status=dead|archiveurl=https://web.archive.org/web/20130524224759/http://scca.cdn.racersites.com/prod/Documents/Pro%20Racing/Archives/1996-SCCA-WorldChallenge.pdf|archivedate=24 May 2013}}&lt;/ref&gt;&lt;ref&gt;{{cite web |url=http://scca.cdn.racersites.com/prod/Documents/Pro%20Racing/Archives/1997-SCCA-WorldChallenge.pdf |format=PDF |title=SCCA Pro Racing Results : 1997 World Challenge Touring 1 Class |publisher=Scca.cdn.racersites.com |accessdate=2013-10-13 |url-status=dead |archiveurl=https://web.archive.org/web/20130524180446/http://scca.cdn.racersites.com/prod/Documents/Pro%20Racing/Archives/1997-SCCA-WorldChallenge.pdf |archivedate=2013-05-24 }}&lt;/ref&gt;
+Several S-series cars have been used as rally race cars. S-Series cars are also popular in dirt oval racing and auto cross.{{citation needed|date=April 2010}}
+
+==Safety==
+===Insurance Institute for Highway Safety (IIHS)===
+{| class="wikitable"
+|+1995-2002 SL [[Insurance Institute for Highway Safety|IIHS]] scores&lt;ref&gt;{{cite web|url=http://www.iihs.org/ratings/ratingsbyseries.aspx?id=456 |title=IIHS-HLDI: Saturn SL |publisher=Iihs.org |date= |accessdate=2013-03-22}}&lt;/ref&gt;
+|-
+|Moderate overlap frontal offset||Acceptable
+|-
+|Small overlap frontal offset||Not Tested
+|-
+|Side impact||Not Tested
+|-
+|Roof strength||Not Tested
+|}
+
+===NHTSA===
+{| class="wikitable"
+|+1991-2002 SL [[National Highway Traffic Safety Administration|NHTSA]] scores&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3008 |title=1991 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3064 |title=1992 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3222 |title=1993 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3297 |title=1994 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3474 |title=1995 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3613 |title=1996 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3659 |title=1997 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=3906 |title=1998 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4000 |title=1999 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4065 |title=2000 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4263 |title=2001 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4649 |title=2002 Saturn SL 4-DR. &amp;#124; Safercar – NHTSA |publisher=Safercar.gov |date= |accessdate=2013-03-22}}&lt;/ref&gt;
+|-
+! Year
+! Frontal Driver
+! Frontal Passenger
+! Side Driver
+! Side Passenger
+! 4x2 Rollover
+|-
+| 1991
+| {{rating|3|5}}
+| {{rating|3|5}}
+| Not Rated
+| Not Rated
+| Not Rated
+|-
+| 1992
+| {{rating|4|5}}
+| {{rating|3|5}}
+| Not Rated
+| Not Rated
+| Not Rated
+|-
+| 1993
+| {{rating|4|5}}
+| {{rating|3|5}}
+| Not Rated
+| Not Rated
+| Not Rated
+|-
+| 1994
+| {{rating|4|5}}
+| {{rating|3|5}}
+| Not Rated
+| Not Rated
+| Not Rated
+|-
+| 1995
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+| Not Rated
+| Not Rated
+|-
+| 1996
+| {{rating|4|5}}
+| {{rating|4|5}}
+| Not Rated
+| Not Rated
+| Not Rated
+|-
+| 1997
+| {{rating|4|5}}
+| {{rating|4|5}}
+| {{rating|3|5}}
+| {{rating|3|5}}
+| Not Rated
+|-
+| 1998
+| {{rating|5|5}}
+| {{rating|4|5}}
+| {{rating|3|5}}
+| {{rating|3|5}}
+| Not Rated
+|-
+| 1999
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|3|5}}
+| Not Rated
+|-
+| 2000
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|2|5}}
+| Not Rated
+|-
+| 2001
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|2|5}}
+| {{rating|4|5}}
+|-
+| 2002
+| {{rating|5|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|2|5}}
+| {{rating|4|5}}
+|}
+
+==Production numbers==
+Listed below is a rough estimate on the numbers of S series produced from 1990 to 2002.&lt;ref&gt;{{cite book |first=|last=Auto Editors of ''Consumer Guide''|year=2002|publisher=Publications International|title=The Encyclopedia of American Cars}}&lt;/ref&gt;
+
+{| class="wikitable"
+|-
+! Year !!colspan=4|Coupe!! colspan=4|Sedan!! colspan=3|Wagon!! Total
+|-
+!!!SC!!SC1!!SC2!!Total!!SL!!SL1!!SL2!!Total!!SW1!!SW2!!Total!!
+|-
+|1991||~10,000||-||-||~20,000||||||||~38,629||-||-||-||~48,629
+|-
+|1992||||-||-||||||||||||-||-||-||169,959
+|-
+|1993||-||||||||||||||||||||||244,621
+|-
+|1994||-||||||||||||||||||||||267,518
+|-
+|1995||-||||||62,434||||||||221,102||||||19,452||302,988
+|-
+|1996||-||||||||||||||||||||||294,198
+|-
+|1997||-||||||70,711||||||||213,182||||||31,099||314,992
+|-
+|1998||-||||||38,591||||||||160,759||||||20,415||219,765
+|-
+|1999||-||||||52,965||||||||203,578||||||19,090||275,633
+|-
+|2000||-||8,517||8,724||17,241||||||68,907||142,992||||||9,633||169,866
+|-
+|2001||-||23,584||17,414||40,998||||||||73,428||||||3,416||117,842
+|-
+|2002||-|||||||||||||||||-||-||-||
+|}
+
+==References==
+{{Reflist|colwidth=30em}}
+{{commons category}}
+
+{{Saturn Corporation}}
+
+[[Category:Compact cars]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Saturn vehicles|S series]]
+[[Category:Coupés]]
+[[Category:Sedans]]
+[[Category:Station wagons]]
+[[Category:1990s cars]]
+[[Category:2000s cars]]
+[[Category:Cars introduced in 1990]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>61ovwa4wwyi5fa4ok28n96x9v38srz9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Saturn L series</title>
+    <ns>0</ns>
+    <id>857890</id>
+    <revision>
+      <id>920092778</id>
+      <parentid>917282948</parentid>
+      <timestamp>2019-10-07T16:52:14Z</timestamp>
+      <contributor>
+        <ip>216.16.54.134</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="9621" xml:space="preserve">{{Refimprove|date=December 2009}}
+{{Infobox automobile
+| name           = Saturn L series
+| image          = 00-02 Saturn L-Series sedan.jpg
+| manufacturer   = [[Saturn Corporation]]
+| aka            = {{ubl |Saturn L100|Saturn L200|Saturn L300|Saturn LS|Saturn LS1|Saturn LS2|Saturn LW1|Saturn LW2|Saturn LW200|Saturn LW300}}
+| production     = May 1999–June 17, 2004
+| model_years    = 2000–2005
+| assembly       = [[Wilmington, Delaware]], United States ([[Wilmington Assembly]])
+| designer = 
+| class          = [[Mid-size]]
+| body_style     = {{ubl |4-door [[sedan (car)|sedan]]|5-door [[station wagon]]}}
+| platform       = [[GM2900 platform]]
+| related        = [[Opel Vectra B]]&lt;br&gt;[[Saab 9-3]]&lt;br&gt;[[Saab 9-5]]
+| layout         = [[Front-engine, front-wheel-drive layout|Transverse front-engine, front-wheel drive]]
+| engine         = {{ubl |2.2 L ''[[GM Ecotec engine#L61|L61]]'' [[Straight-4|I4]] ([[gasoline]])|3.0 L ''[[GM 54-Degree V6 engine#L81|L81]]'' [[V6]] (gasoline)}}
+| transmission   = {{ubl |5-speed ''[[Saab F35 transmission|F35]]'' manual|4-speed ''[[GM 4T40 transmission|GM 4T40-E]]'' automatic|4-speed ''[[GM 4T40 transmission#4T45|GM 4T45-E]]'' automatic}}
+| wheelbase      = {{convert|2705|mm|in|1|order=flip|abbr=on}}
+| length         = {{convert|4836|mm|in|1|order=flip|abbr=on}}
+| width          = {{ubl |{{convert|1753|mm|in|1|order=flip|abbr=on}} (2000–2002)|{{convert|1763|mm|in|1|order=flip|abbr=on}} (2003–2005)}}
+| height         = {{ubl |{{convert|1432|mm|in|1|order=flip|abbr=on}} (sedan)|{{convert|1455|mm|in|1|order=flip|abbr=on}} (wagon)}}
+| weight         = 
+| sp = us
+| successor      = [[Saturn Aura]]
+}}
+
+The '''Saturn L series''' is a line of [[automobile]]s, sedans and station wagons that were made by [[Saturn Corporation]] in [[Wilmington, Delaware]].
+
+Poor sales of the L-series cars caused GM to cancel the line for 2005. The first L-series car was built in May 1999, and the last one rolled off the Wilmington line on June 17, 2004, after a short run of 2005 models. About 406,300 L-series cars were built in this period. The plant was then retooled to build the [[Pontiac Solstice]] and [[Saturn Sky]] roadsters.
+
+The replacement for the L series, the [[Saturn Aura]], arrived in August 2006 for the 2007 model-year. The Aura was built on the [[GM Epsilon platform|Epsilon platform]], also shared by the [[Pontiac G6]], and the Chevrolet Malibu.
+
+==Model history==
+*2000: In May 1999 for the 2000 model year, Saturn Corporation introduced the Saturn L series as a lineup of sedan and station wagon vehicle models – three sedan models and two station wagon models. The sedan L-series models were the '''LS''', the '''LS1''', and the '''LS2''', and the station wagons were the '''LW1''' and the '''LW2'''.
+*2001: For the 2001 model year, all of the L-series sedan and station wagon models were renamed for 2001. For the sedans, the '''LS''' was renamed as the '''L100''', the '''LS1''' was renamed as the '''L200''', and the '''LS2''' was renamed as the '''L300'''. For the station wagons, the '''LW1''' was renamed as the '''LW200''', and the '''LW2''' was renamed as the '''LW300'''. Optional side curtain airbags were made available for the sedan models only.
+*2002: Side curtain airbags were made available as standard equipment for the 2002 model year for the sedan models only. The Saturn L100 was discontinued after the 2002 model year.
+[[File:Saturn LW300.jpg|thumb|left|2000–2002 Wagon]]
+[[File:03-05 Saturn L300.jpg|thumb|right|2003–2005 facelift]]
+
+*2003: Sedans were facelifted, front and rear; wagons received the new front along with new taillights. Silver dash trim replaced wood trim, and a new available alloy wheel design (borrowed from Saab) were also both added for the 2003 model year. Anti-lock brakes with traction control were made optional again.
+*2004: For the 2004 model year, the '''LW200''' and the '''LW300''' station wagons were both renamed as the '''Saturn L300 station wagon''' so that it would match the '''Saturn L300 sedan'''. The L series had also adopted a type of a trim level structure that was similar to the trim level structure on the [[Saturn Ion|Saturn ION]]. The L300 sedan and the L300 station wagon models both used the L300.1, the L300.2, and the L300.3 for both the L300 sedan and the L300 station wagon models. The Saturn L300 station wagon was discontinued after the 2004 model year.
+*2005: For the 2005 model year, the Saturn L series was now trimmed down to only one model: the L300.2 sedan. The last Saturn L-series model (the L300.2 sedan) rolled off the assembly line on June 17, 2004.
+
+==Quality issues==
+The L series was troubled early in production by a number of quality issues, often related to engine failures, transmission failures and overall fit and finish issues.  Consumers reported repeat problems with tire noise and vibration linked to poorly designed control arm bushings and nonadjustable rear alignments.  A retrofit kit was released to address these concerns.
+
+[[File:Interior of 2003 Saturn L200.jpg|thumb|Interior of a 2003 Saturn L200 sedan]]
+
+In 2005, a recall was issued pursuant to a defect petition by the North Carolina Consumers Council, a consumer nonprofit advocacy organization, alleging repeat brake and tail light failures.  The resulting recall affected more than 300,000 vehicles in the United States and Canada.&lt;ref name="saturn tail light recall"&gt;[http://www.ncconsumer.org/news-articles/saturn-l-series-tail-light-recall-is-result-of-nccc-involvement.html Saturn Tail Light Recall is Result of NCCC Involvement], North Carolina Consumers Council website. Retrieved August 2012.&lt;/ref&gt;  Later that same year, the North Carolina Consumers Council petitioned for an investigation into timing chain failures and subsequent engine failures across the model lineup for vehicles using the 2.2L engine.  The resulting recall affected only a small number of vehicles built in a four-month period in late 2000 and early 2001.  The organization reported that complaints of engine failure due to a defective timing chain design persist to this day and requests for recall expansions have largely been ignored.  The organization has gone so far as to make its first recommendation against the purchase of a vehicle in its more than forty year history due in part to this timing chain defect.&lt;ref name="saturn do not buy"&gt;[http://www.ncconsumer.org/news-articles/nccc-advises-consumers-to-avoid-2.2l-saturn-l-series-vehicles.html NCCC Advises Consumers to Avoid 2.2L Saturn L-Series Vehicles], North Carolina Consumers Council website. Retrieved August 2012.&lt;/ref&gt;
+
+==Safety==
+
+===Insurance Institute for Highway Safety (IIHS)===
+
+{| class="wikitable"
+|+2000–2005 L series [[Insurance Institute for Highway Safety|IIHS]] scores&lt;ref&gt;{{cite web|url=http://www.iihs.org/iihs/ratings/vehicle/v/saturn/l-series |title=IIHS-HLDI: Saturn L-Series |publisher=Iihs.org |date= |accessdate=2013-12-20}}&lt;/ref&gt;
+|-
+|Moderate overlap frontal offset||Acceptable
+|-
+|Small overlap frontal offset||Not tested
+|-
+|Side impact||Poor
+|-
+|Roof strength||Marginal
+|}
+
+===NHTSA===
+
+{| class="wikitable"
+|+2000–2005 L series [[National Highway Traffic Safety Administration|NHTSA]] scores
+&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4066 |title=2000 Saturn LS 4-DR.|publisher=Safercar.gov |date= |accessdate=2013-12-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4221 |title=2001 Saturn LS 4-DR.|publisher=Safercar.gov |date= |accessdate=2013-12-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4648 |title=2002 Saturn L Series 4-DR.|publisher=Safercar.gov |date= |accessdate=2013-12-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=4991 |title=2003 Saturn L Series 4-DR.|publisher=Safercar.gov |date= |accessdate=2013-12-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1269 |title=2004 Saturn L Series 4-DR. w/SAB|publisher=Safercar.gov |date= |accessdate=2013-12-20}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=http://www.safercar.gov/Vehicle+Shoppers/5-Star+Safety+Ratings/1990-2010+Vehicles/Vehicle-Detail?vehicleId=1655 |title=2005 Saturn L Series 4-DR. w/SAB|publisher=Safercar.gov |date= |accessdate=2013-12-20}}&lt;/ref&gt;
+|-
+! Year
+! Frontal driver
+! Frontal passenger
+! Side driver
+! Side passenger
+! 4x2 rollover
+|-
+| 2000
+| {{rating|4|5}}
+| {{rating|5|5}}
+| {{rating|2|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+| 2001
+| {{rating|4|5}}
+| {{rating|5|5}}
+| {{rating|2|5}}
+| {{rating|4|5}}
+| Not Rated
+|-
+| 2002
+| {{rating|4|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+|-
+| 2003
+| {{rating|4|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+|-
+| 2004
+| {{rating|4|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+|-
+| 2005
+| {{rating|4|5}}
+| {{rating|5|5}}
+| {{rating|3|5}}
+| {{rating|5|5}}
+| {{rating|4|5}}
+|}
+==References==
+{{reflist}}
+
+==External links==
+{{commons Category|Saturn L-series}}
+{{clear}}
+
+{{Saturn Corporation}}
+
+[[Category:Saturn vehicles|L series]]
+[[Category:Front-wheel-drive vehicles]]
+[[Category:Mid-size cars]]
+[[Category:Sedans]]
+[[Category:Station wagons]]
+[[Category:2000s cars]]
+[[Category:Cars introduced in 2000]]
+[[Category:Motor vehicles manufactured in the United States]]</text>
+      <sha1>mxgij1ptpjh9707ox9tak9u9s6vvzks</sha1>
+    </revision>
+  </page>
+</mediawiki>

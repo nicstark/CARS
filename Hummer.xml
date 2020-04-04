@@ -1,0 +1,550 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>enwiki</dbname>
+    <base>https://en.wikipedia.org/wiki/Main_Page</base>
+    <generator>MediaWiki 1.35.0-wmf.26</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal talk</namespace>
+      <namespace key="108" case="first-letter">Book</namespace>
+      <namespace key="109" case="first-letter">Book talk</namespace>
+      <namespace key="118" case="first-letter">Draft</namespace>
+      <namespace key="119" case="first-letter">Draft talk</namespace>
+      <namespace key="446" case="first-letter">Education Program</namespace>
+      <namespace key="447" case="first-letter">Education Program talk</namespace>
+      <namespace key="710" case="first-letter">TimedText</namespace>
+      <namespace key="711" case="first-letter">TimedText talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Hummer H1</title>
+    <ns>0</ns>
+    <id>1215818</id>
+    <revision>
+      <id>944962201</id>
+      <parentid>941220356</parentid>
+      <timestamp>2020-03-10T23:36:32Z</timestamp>
+      <contributor>
+        <ip>2601:602:8481:11A0:C0B6:2F85:547:2AEA</ip>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="13347" xml:space="preserve">{{Refimprove|date=March 2015}}
+{{Infobox automobile
+|name=Hummer H1
+|image=H1opentop.jpg
+|manufacturer=[[AM General]]
+|aka=Hummer HMC (1992–2002)&lt;br&gt; [[VLF_Automotive#HUMVEE_C-Series|HUMVEE C-Series]] (2017-current)
+|production=1992–2006
+|model_years=1992–2004, 2006
+|assembly=[[Mishawaka, Indiana]], U.S.
+|class=Large [[truck]]/[[SUV]]
+|body_style=4-door Open Top - HMCO&lt;br /&gt;4-door SUV - HMCS&lt;br /&gt;4-door Hard Top - HMC4&lt;br /&gt;2-door Fleet - KSC2&lt;br /&gt;2-door Enlarged Cab - XLC2
+|related=[[Humvee]] military vehicle
+|layout=[[Front-engine design|Front-mid engine]], [[four-wheel drive]]
+|engine=6.2&amp;nbsp;L ''[[Detroit Diesel V8 engine|Detroit Diesel]]'' [[V8 engine|V8]]&lt;br /&gt;6.5&amp;nbsp;L ''[[Detroit Diesel V8 engine|Detroit Diesel]]'' [[V8 engine|V8]]&lt;br /&gt;5.7&amp;nbsp;L ''[[Chevrolet small-block engine#5700|Vortec]]'' [[V8 engine|V8]]&lt;br /&gt;6.5&amp;nbsp;L turbo ''[[Detroit Diesel V8 engine|Detroit Diesel]]'' [[V8 engine|V8]]&lt;br /&gt;6.6&amp;nbsp;L turbo ''[[Duramax V8 engine#LLY|DMAX Diesel]]'' [[V8 engine|V8]]
+|transmission=[[twine Turbo-Hydramatic|GM TH400]]/[[GM 3L80 transmission|3L80]] 3-speed [[Automatic transmission|automatic]]&lt;br /&gt;[[GM 4L80-E transmission|GM 4L80-E]] 4-speed automatic&lt;br /&gt;[[Allison 1000 transmission|Allison 1000]] 5-speed automatic
+|wheelbase= {{convert|130|in|mm|0|abbr=on}}
+|length= {{convert|184.5|in|mm|0|abbr=on}}&lt;ref&gt;{{cite book |title=Hummer |date=July 1999 |url=http://oldcarbrochures.org/index.php/New-Brochures---July/1999-Hummer-H1-Brochure}}&lt;/ref&gt;
+|width= {{convert|86.5|in|mm|0|abbr=on}}
+|height={{convert|77|in|mm|0|abbr=on}}&lt;br&gt;2004–06: {{convert|79|in|mm|0|abbr=on}}&lt;br&gt;Pre-2003 Wagon: {{convert|75|in|mm|0|abbr=on}}
+}}
+
+The '''Hummer H1''' is a [[four-wheel-drive]] utility vehicle based on the M998 [[Humvee]], which was created by [[AM General]]. The vehicle was produced from 1992 through 2006, and was the first of what became the [[Hummer]] line. Originally designed strictly for military use, the [[off-road vehicle]] was released to the civilian market due to market demand. It was initially known as the "Hummer"; however, under a 1999 deal, GM bought marketing rights to the Hummer name and called the vehicle the Hummer H1.&lt;ref&gt;{{cite web|url= http://www.nbcnews.com/id/12758767/ns/business-autos/t/gm-discontinue-original-hummer-h-model/ |title=GM to discontinue original Hummer H1 model |work=NBC News |agency=Associated Press |date=May 12, 2006 |accessdate=September 12, 2017}}&lt;/ref&gt; At the time, GM began marketing the [[Hummer H2]] that was also assembled by AM General on a modified GMC 2500HD chassis. AM General continued to build the H1 and Humvee in its [[Mishawaka, Indiana]] facility. GM stopped marketing the H1 in 2006 model year, but AM General continued production of the military Humvee versions.
+
+==History==
+Originally released in the civilian market March 14, 1992, the Hummer H1 became known from photographs published during [[Operation Desert Storm]] and the enthusiastic campaign from actor/politician [[Arnold Schwarzenegger]].
+
+AM General announced that 2006 would be the last model year for the Hummer H1, with production winding down in June 2006 due to a new emission law for diesel engine vehicles, which took effect in 2007. The final model year of 2006 had the most powerful engine and improved fuel efficiency—about {{convert|10|mpgus|L/100 km mpgimp|abbr=on}}.&lt;ref&gt;{{cite web|url= https://www.usatoday.com/money/autos/2006-05-12-h1_x.htm |title=Big, militaristic Hummer H1 on its way out |date=May 14, 2006 |work=USAToday |agency=Associated Press |accessdate=May 22, 2017}}&lt;/ref&gt;
+
+==Specifications==
+The Hummer H1 was available in three major variants: a convertible-like soft top, a four-door hard top [[Sport Utility Truck]] and an "Alpha Wagon" body version. Less known variants were a two-door [[pickup truck]] and a four-door slantback, which shares the same body style of the Humvee employed by the U.S. Military. The convertible/soft top and the station SUV versions were the last types available to individual consumers.
+
+Currently, five engine types and three automatic transmission types can be found in Hummer H1s. The common engine/[[automatic transmission]] combinations are:
+* 6.2&amp;nbsp;L ''[[GM Diesel V8 engine|GM Diesel]]'' [[V8 engine|V8]]/[[Turbo-Hydramatic|GM TH400]]/[[GM 3L80 transmission|3L80]] 3-speed
+* 6.5&amp;nbsp;L ''[[GM Diesel V8 engine|GM Diesel]]'' [[V8 engine|V8]]/[[GM 4L80-E transmission|GM 4L80-E]] 4-speed
+* 5.7&amp;nbsp;L ''[[Chevrolet small-block engine#5700|Vortec 5700]]'' gasoline V8 TBI/[[GM 4L80-E transmission|GM 4L80-E]] 4-speed
+* 6.5&amp;nbsp;L turbo ''[[Detroit Diesel V8 engine|GM Diesel]]'' [[V8 engine|V8]]/[[GM 4L80-E transmission|GM 4L80-E]] 4-speed
+* 6.6&amp;nbsp;L turbo ''[[Duramax V8 engine#LLY|Duramax LLY]]'' [[V8 engine|V8]] turbo [[Diesel engine|Diesel]]/[[Allison 1000 transmission|Allison 1000]] 5-speed (model year 2006)
+
+The Hummer H1 shares some common driveline parts with the [[Humvee|HMMWV]]. These include brakes, axles, frame and major body panels (hood, tailgate and quarter panels) are shared between the HMMWV and Hummer H1. All H1s and HMMWVs were produced on the same assembly line; of which civilian H1s were then painted and finished in a separate building opposite the parking lot.
+
+The H1 models are inherently stable due to their wide [[Axle track|track]]. They can [[ford (river)|ford]] 30&amp;nbsp;inches (76&amp;nbsp;cm) of water and climb a 22-inch (56&amp;nbsp;cm) step. Their stock ground clearance of 16&amp;nbsp;inches (41&amp;nbsp;cm) is made possible by tucking driveline components inside a channel in the central space between the left and right seats. They have high approach/departure angles of 72/37.5 degrees. Most H1s are equipped with a [[Central Tire Inflation System]] (CTIS), which enables the driver to increase or decrease the tire air pressure at the push of a button, since lower tire pressures are more suited for off-road, and higher tire pressures are desirable on-road.&lt;ref&gt;{{cite web|url=http://www.edmunds.com/hummer/h1/review.html |title=Hummer H1 Review |publisher=Edmunds.com |date= |accessdate=2009-09-27}}&lt;/ref&gt;
+
+Hummer H1s have other unusual features, such as [[inboard brake]]s and [[portal gear]]s that allow the [[Powertrain|drivetrain]]'s [[half shaft]]s a higher placement, for greater ground clearance. The radiator is up high, sloping over the engine on a forward-hinged hood. The air intake is high-mount, enabling the H1 to ford waist-level water. Rather than using simple [[Run-flat tire|runflat tires]], magnesium-aluminum alloy or rubber inserts are an optional feature for runflat ability.&lt;ref&gt;{{cite book |title=Hummer |date=July 1999 |url=http://oldcarbrochures.org/index.php/New-Brochures---July/1999-Hummer-H1-Brochure}}&lt;/ref&gt; Options included leather seats, a winch kit, and running boards.&lt;ref&gt;{{cite book |title=Hummer |date=July 1999 |url=http://oldcarbrochures.org/index.php/New-Brochures---July/1999-Hummer-H1-Brochure}}&lt;/ref&gt;
+
+==2006 Hummer H1 Alpha==
+[[File:Hummer H1 Alpha Wagon.jpg|thumb|Hummer H1]]
+The "Alpha" was an extensively re-engineered H1 that was equipped with [[General Motors|GM]]'s [[Duramax V8 engine|Duramax]] [[Diesel engine|Diesel]] and 5-speed Allison transmission. The previous turbo-diesel engine suffered from sluggish sales; lack of power was one of the reasons for customer resistance. In 2002, AM General CEO Jim Armour took the idea of repowering the H1 to Bob Lutz and the GM Luxury Vehicle committee. GM soon approved the use of their Duramax/Allison powertrain for the H1. This would support the continuation of the H1; it would also represent an updating in terms of power, torque, refinement and the ability to meet 2004 heavy duty EPA emissions requirements.
+
+The update program commenced in late 2002 with production launch slated to be fall of 2004. The engineering team chose the engine variant out of the GMT560 truck (the C4500) because it packaged better into the H1 engine bay; however, 23 engine component changes were required and the team had to do a {{convert|2.0|in|mm|0|abbr=on}} body lift to accommodate the taller engine and its turbo housing (a prior {{convert|0.5|in|mm|0|abbr=on}} lift had been done for MY96 to accommodate the turbo on the 6.5L engine). The 8th digit of the VIN is 3, setting this version of the 6.6L Duramax apart from the versions used in pickup trucks.&lt;ref&gt;{{cite web|url= http://www.dupontregistry.com/autos/results/hummer/h1|title=Hummer H1 For Sale|website=duPontREGISTRY|access-date=2017-01-13}}&lt;/ref&gt; The GMT560 engine calibration was used with minimal modification; engine output was {{convert|300|hp|kW|-1|abbr=on}} and {{convert|520|lbft|Nm|0|abbr=on}} of torque. The Duramax engine was equipped with cooled [[exhaust gas recirculation]] and an internal engine oil cooler, thus, requiring a 40 percent heat rejection increase to engine coolant. Because space was limited between the air-lift brackets that protrude from the hood, the fan system was modified by putting it directly under the coolpack and driving it through a special gearbox directly off the crankshaft damper pulley. Several other cooling system modifications were required to assist with cold starting from {{convert|-30|°F|°C}}.
+
+Other major modifications included the use of special high-strength steel in the chassis frame, a more powerful steering gear; quieter axle differentials, redesign of the geared hubs to use quieter helical gears, new induction, exhaust and electrical power systems; and re-engineering of the fuel supply and filtration system.
+
+The Duramax engine delivered more torque at lower engine speeds than the 6.5L, combined with a lower gearing ratio (about 44.5 to 1 in low lock) made the vehicle more powerful. Other changes included centralized tire inflation and a new interior.
+
+Production launch was early in 2005, and continued until production ceased in mid-2006.  All vehicles built during this time are classified as model year 2006 (10th digit in VIN is a 6.)
+
+The program was cancelled May 12, 2006 because GM decided to withdraw technical and financial support for future engineering and recertification.
+
+[[File:Hummer H1 Alpha Convertible.JPG|thumb|A Hummer H1 [[convertible]]]]
+
+==The Hummer brand==
+On June 2, 2009, General Motors attempted a sale of its Hummer brand to a Chinese company, [[Sichuan Tengzhong Heavy Industrial Machinery Company|Tengzhong]], as part of its bankruptcy settlement. GM stated at the time that it hoped the sale would save about 3,000 jobs in the US.
+
+On February 24, 2010, General Motors announced that the company was shutting down its Hummer brand due to Tengzhong withdrawing its bid. Tengzhong stated that the bid was withdrawn due to a failure to get approval from the Chinese government.&lt;ref&gt;[https://www.nytimes.com/2010/02/25/business/25hummer.html?hp G.M. to Close Hummer After Sale Fails]&lt;/ref&gt;
+
+== Yearly production ==
+{| class="wikitable"
+!Model year
+!Total production
+|-
+|1992
+|316
+|-
+|1993
+|612
+|-
+|1994
+|718
+|-
+|1995
+|1,432
+|-
+|1996
+|1,374
+|-
+|1997
+|1,209
+|-
+|1998
+|945
+|-
+|1999
+|831
+|-
+|2000
+|1,333
+|-
+|2001
+|869
+|-
+|2002
+|704
+|-
+|2003
+|494
+|-
+|2004
+|252
+|-
+|2005
+|0 
+|-
+|2006
+|729
+|-
+|Total
+|11,818
+|}
+While there is no 2005 model year Hummer H1, the 2006 model year H1 Alphas were manufactured in both 2005 and 2006. 448 H1 Alphas were produced from January through May 2005, and 281 H1 Alphas were produced from September 2005 through May 2006, when the production for the Hummer H1 officially ended.&lt;ref&gt;Hummer H1 2006 Model Year Changes, www.lynchhummer.com/Changes/h1.changes/06/2006.html&lt;/ref&gt;
+
+==Gallery==
+&lt;gallery caption="Hummer H1 models" widths="220px" heights="200px" perrow="3"&gt;
+File:Hummer under carriage.JPG|2004 Hummer undercarriage
+File:Hummer H1.jpg|A modified, red Hummer H1 in a [[parking lot]]
+File:2002-09-11-Marbella-22.jpg|A Hummer H1 in [[Puerto Banús]], a luxury marina in southern [[Spain]]
+File:Camo Hummer H1 front.JPG|A camouflaged Humvee military version of hummer in San Francisco
+File:Hummer H1 mud 1.jpg|A Hummer H1 [[Sport Utility Truck]] driving through mud and water
+File:2006 Hummer H3 H1 and H2.jpg|A [[Hummer H3]], a Hummer H1, and a [[Hummer H2]], showing the H1 in comparison to the other two models
+&lt;/gallery&gt;
+
+==See also==
+* [[Humvee]]
+* [[Hummer]]
+* [[General Motors]]
+* [[GAZ Tiger]]
+* [[FMC XR311]]
+* [[Toyota Mega Cruiser]]
+* [[Land Rover Defender]]
+* [[Iveco LMV]]
+* [[Tiuna]]
+* [[Lamborghini LM002]]
+* [[Hummer H2]]
+* [[VLF Automotive#Humvee C-Series|VLF Humvee C-Series]] and [[AM General]] Hummvee C-series kit cars – based on Hummer H1
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commons category}}
+* {{Official website|www.amgeneral.com|AM General}}
+* [https://www.nsncenter.com/Library/HMMWV Hummer H1 Maintenance Manuals] Hummer H1 Maintenance Manuals and Parts
+* [http://www.flashoffroad.com/features/ChangesByYear/Year-by-YearDifferences.htm Year-by-Year Differences]
+* Production Numbers - &lt;nowiki&gt;http://www.lynchhummer.com/Changes/h1.changes/production.numbers.html&lt;/nowiki&gt;
+
+{{Hummer}}
+{{Hummer timeline}}
+{{AM General}}
+
+[[Category:Hummer vehicles|H1]]
+[[Category:All-wheel-drive vehicles]]
+[[Category:Full-size sport utility vehicles]]
+[[Category:Off-road vehicles]]
+[[Category:Retro-style automobiles]]
+[[Category:Motor vehicles manufactured in the United States]]
+[[Category:Sport utility vehicles]]
+[[Category:Cars introduced in 1992]]</text>
+      <sha1>dvdf2fbtn5fqgyw588yqm6eibho88s9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Hummer H2</title>
+    <ns>0</ns>
+    <id>895075</id>
+    <revision>
+      <id>948287991</id>
+      <parentid>942573881</parentid>
+      <timestamp>2020-03-31T05:50:51Z</timestamp>
+      <contributor>
+        <username>Gaius Cornelius</username>
+        <id>293907</id>
+      </contributor>
+      <minor/>
+      <comment>Fix dashes, non-breaking spaces etc and tidy</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="13822" xml:space="preserve">{{Infobox automobile
+| name = Hummer H2
+| image = Hummer H2 .jpg
+| manufacturer = [[General Motors]]
+| production = 2002–2009
+| model_years = 2003–2009
+| assembly = [[Mishawaka, Indiana|Mishawaka]], [[Indiana]], U.S.&lt;br/&gt;[[Kaliningrad]], [[Russia]] ([[Avtotor]])
+| designer = Clay Dean (2000)&lt;ref&gt;{{cite web|last=Clavey |first=William |title=The Hummer H2 Is A Grand And Opulent Bad Idea |url= http://jalopnik.com/the-hummer-h2-is-a-grand-and-opulent-bad-idea-1796613645 |website=Jalopnik |date=12 July 2017 |accessdate=25 September 2017}}&lt;/ref&gt;
+| class = [[Full-size]] [[SUV]]
+| body_style = 5-door truck&lt;br&gt;5-door [[Sport utility vehicle|SUV]]
+| platform = [[GMT800|GMT820]]
+| related = {{unbulleted list | [[Chevrolet Silverado|Chevrolet Silverado/GMC Sierra]] | [[Chevrolet Avalanche]]/[[Cadillac Escalade EXT]] | [[Chevrolet Tahoe|Chevrolet Tahoe/GMC Yukon]] | [[Chevrolet Suburban|Chevrolet Suburban/GMC Yukon XL]] | [[Cadillac Escalade]]/[[Cadillac Escalade ESV]] }}
+| layout = [[Front-engine design|Front engine]] [[Four-wheel drive]]
+| engine = {{unbulleted list | 6.0&amp;nbsp;L [[V8 engine|V8]] (2002–07) | 6.2&amp;nbsp;L V8 (2008–09) }}
+| transmission = {{unbulleted list | 4L60E 4-speed (2002–2004) | 4l65E 4-speed (2005-2007)|
+6L80E 6-speed (2008–2009) | [[automatic transmission|automatic]] }}
+| wheelbase = {{convert|122.8|in|mm|0|abbr=on}}
+| length = {{convert|203.5|in|mm|0|abbr=on}}
+| width = {{convert|81.3|in|mm|0|abbr=on}}
+| height = {{unbulleted list | 2002–03: {{convert|77.8|in|mm|0|abbr=on}}| 2004–09: {{convert|79.0|in|mm|0|abbr=on}}}}
+| weight = {{unbulleted list | {{convert|6400|lb|kg|0|abbr=on}} - 6.0&amp;nbsp;L| {{convert|6614|lb|kg|0|abbr=on}} - 6.2&amp;nbsp;L}}
+| successor = {{unbulleted list | '''For SUV:''' | [[GMC Yukon]]/[[GMC Yukon XL|Yukon XL]] | [[Chevy Tahoe]] | [[Chevy Suburban]] | '''For Pickup (H2 SUT):''' | [[Chevrolet Avalanche]]}}
+}}
+
+The '''Hummer H2''' is a large [[sport utility vehicle|SUV]] that was marketed by [[Hummer]] and built by [[AM General]] from 2002 to 2009, it was based on a modified [[GMT800|GMT820]] Chevrolet 2500 HD in front and 1500 frame in back. A four-door [[pickup truck]] version with a midgate that opens the vehicle's interior to the external cargo bed was introduced for 2005 as the '''H2 SUT''' (sport utility truck).&lt;ref&gt;{{cite web|last=McCraw |first=Jim |title= Hummer H2 SUT - A paramilitary pickup for those who have little or nothing to pick up |url= http://www.caranddriver.com/reviews/hummer-h2-sut-first-drive-review |work=Car and Driver |date=August 2004 |accessdate=25 September 2017}}&lt;/ref&gt;
+
+==Background==
+[[File:2003-2007 Hummer H2 02.jpg|thumb|Hummer H2 SUV]]
+[[File:2005 blue Hummer H2 rear.JPG|right|thumb|Hummer H2 [[sport utility truck]] ]]
+
+In 2001 and 2002, GM allowed journalists to examine early versions of the Hummer H2, which was still under development at the time.&lt;ref&gt;{{cite web|url= https://www.newcartestdrive.com/reviews/2003-hummer-h2/ |date=June 30, 2002|title=2003 Hummer H2 Review|work=New Car Test Drive|access-date=September 20, 2017|url-status=bot: unknown|archiveurl= https://archive.today/20170920102713/https://www.newcartestdrive.com/reviews/2003-hummer-h2/ |archivedate=September 20, 2017}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url= http://articles.chicagotribune.com/2001-04-12/business/0104120005_1_hummer-h1-sut-hummer-h2 |title=GM Tames Hummer With H2 Concept|work=The Chicago Tribune|date=April 12, 2001|location=Illinois}}&lt;/ref&gt;
+
+The H2 was built by AM General under contract with [[General Motors]] at AM General Military Assembly Plant in [[Mishawaka, Indiana|Mishawaka]], [[Indiana]].
+
+==Engines==
+* 2002–2003 [[GM small-block engine#6000|Vortec 6000]] 6.0&amp;nbsp;LQ4 (366&amp;nbsp;in³) [[V8 engine|V8]]
+:- {{convert|316|hp|kW PS|0|abbr=on}} at&amp;nbsp;5200&amp;nbsp;rpm
+:- 0-60 times:&lt;ref name=AutoRooster&gt;{{cite web|title=AutoRooster 0-60 times|url=http://www.autorooster.com/0-60-times/hummer/h2/|work=Auto Specs|publisher=AutoRooster|accessdate=23 January 2013}}&lt;/ref&gt; 10.9 sec
+* 2004–2007 [[GM small-block engine#6000|Vortec 6000]] 6.0&amp;nbsp;LQ4 (366&amp;nbsp;in³) [[V8 engine|V8]]
+:- {{convert|325|hp|kW PS|0|abbr=on}} at&amp;nbsp;5200&amp;nbsp;rpm
+:- 0-60 times:&lt;ref name="AutoRooster"/&gt; 10.7 sec
+* 2008–2009 [[GM small-block engine#6200|Vortec 6200]] 6.2&amp;nbsp;L92 [[V8 engine|V8]]
+:- {{convert|393|hp|kW PS|0|abbr=on}} at&amp;nbsp;5700&amp;nbsp;rpm
+:- 0-60 times:&lt;ref name="AutoRooster"/&gt; 9.1 sec
+
+==Features==
+
+=== Standard ===
+Standard features include air conditioning with tri-zone climate controls, tilt leather-wrapped steering wheel with radio controls, cruise control, leather upholstery, heated front and rear seats, 8-way power front seats, dual memory system, BOSE premium sound system, single-CD/cassette player and later in 2004, a 6-disc CD changer, then in 2008,a single CD-player with MP3 capability, an auxiliary input jack and DVD player, outside-temperature indicator, compass, rear radio controls, independent front torsion bar suspension, rear 5-link coil spring suspension specially created for the H2, oversized tires with HUMMER wheels, universal garage door opener and remote engine start (2008–2009).
+
+=== Optional ===
+Options for the H2 include adjustable rear suspension [which is included within the Adventure Package], a wide power sunroof, rearview camera, DVD entertainment system, navigation system, ladder, custom grilles, side step bars, Air compressor with road assistance kit, and 20" chrome wheels (slightly different from stock wheels).
+
+==2008 updates==
+For 2008, the Hummer H2 and H2 SUT received an update. While largely unchanged on the exterior, the H2 and H2 SUT interiors were redesigned. This included new instrument cluster with improved gauges and Driver Information Center (DIC), a new leather-wrapped steering wheel, three new radios with a [[Bose Corporation|Bose]] premium audio system and auxiliary audio inputs (including a new touchscreen GPS navigation radio with DVD audio and video playback while in park, and XM Nav-Traffic capabilities), a new rear seat DVD entertainment system, [[Bluetooth]] hands-free calling capabilities, enhanced voice activation, new [[OnStar]] hardware with buttons moved from the rearview mirror to the overhead console, a lower dashboard-mounted radio, new dual-zone climate controls, new rear seat audio system controls, a new dash-mounted control knob for the 4X4 system to replace the old pushbutton controls, brushed aluminum interior trim panels, new interior color options, available remote engine start, and a center dashboard-mounted analog clock.
+
+Also for 2008, a new 393-horsepower, 6.2&amp;nbsp;L V8 gasoline engine replaced the old 325-horsepower, 6.0&amp;nbsp;L V8 gasoline unit, with a new "6L80-E" six-speed automatic transmission replaced the old "4L65-E" four-speed automatic unit.
+
+Hummer launched a special 2009 Black Chrome Limited Edition version.&lt;ref&gt;{{cite web|url=https://www.youtube.com/watch?v=7UMWCkZsyKQ|title=2009 Hummer H2 Black Chrome Limited Edition (Sedona Metallic Ext./Sedona Int.) Quick Look|first=|last=Saabkyle04|date=27 May 2010|publisher=|via=YouTube}}&lt;/ref&gt;&lt;ref&gt;{{cite web|url=https://www.youtube.com/watch?v=19ba4mIHh18|title=2009 Hummer H2 Sedona Metallic Black Chrome Edition Start Up, Exhaust, and In Depth Review|first=|last=Saabkyle04|date=4 June 2010|publisher=|via=YouTube}}&lt;/ref&gt;
+
+==Fuel economy==
+General Motors is not required to provide official fuel economy ratings for the H2 due to the vehicle's heavy [[gross vehicle weight rating]] (GVWR).&lt;ref&gt;{{cite web|url= http://www.gmbuypower.com/pages/shopBy/HUMMER_byBodyStyle.jsp |title=Vehicle Showroom - H2 |website=GM Buy Power |archiveurl= https://web.archive.org/web/20070501062438/http://www.gmbuypower.com/pages/shopBy/HUMMER_byBodyStyle.jsp |archivedate=May 1, 2007 |accessdate=July 18, 2018}}&lt;/ref&gt;&lt;ref&gt;{{cite web |last=Frank |first=Michael |title=Hummer H2 |url= https://www.forbes.com/2003/02/17/cx_mf_0217test.html |website=Forbes |date=17 February 2013 |quote=Estimated, because the H2, like the Ford Excursion, is so heavy and features such a high gross vehicle weight that the EPA doesn't even bother to test its fuel efficiency. |accessdate=July 18, 2018}}&lt;/ref&gt; Prior to 2011, the [[United States Environmental Protection Agency]] (EPA) exempted vehicles with a GVWR over {{convert|8500|lb|kg|abbr=on}} from fuel economy standards and testing.&lt;ref&gt;{{cite web|title=Which Vehicles Are Tested |url=https://www.fueleconomy.gov/feg/which_tested.shtml |website=www.fueleconomy.gov |accessdate=18 July 2018}}&lt;/ref&gt;
+
+{| class="wikitable"
+|-
+! Publisher
+! Observation
+|-
+| Motortrend&lt;ref&gt;{{Cite web|url=http://www.motortrend.com/roadtests/coupe/112_0410_mismatch_comparison/specs_price.html |title=Motor Trend |publisher=Motor Trend |date= |accessdate=2010-08-08}}&lt;/ref&gt;
+| {{convert|10|mpgus|L/100 km mpgimp|abbr=on}} / 4.3&amp;nbsp;km/l
+|-
+| Car and Driver&lt;ref name="Car and Driver"&gt;{{cite web|url=http://www.caranddriver.com/article.asp?section_id=33&amp;article_id=2420&amp;page_number=2|title=Car and Driver|publisher=}}&lt;/ref&gt;
+| {{convert|9|mpgus|L/100 km mpgimp|abbr=on}} / 3.8&amp;nbsp;km/l
+|-
+| about.com&lt;ref&gt;{{Cite web|url=http://trucks.about.com/od/2006truckintrosspecs/ss/06_h2sut_5.htm |title=Trucks at About.com |publisher=Trucks.about.com |date=2010-06-19 |accessdate=2010-08-08}}&lt;/ref&gt;
+| {{convert|9|mpgus|L/100 km mpgimp|abbr=on}} / 3.8&amp;nbsp;km/l
+|-
+| Edmunds&lt;ref&gt;{{Cite web|url=http://www.edmunds.com/hummer/h2/2007/review.html |title=Edmunds |publisher=Edmunds |accessdate=2010-08-08 |url-status=dead |archiveurl=https://web.archive.org/web/20090204213847/http://www.edmunds.com/hummer/h2/2007/review.html |archivedate=2009-02-04 }}&lt;/ref&gt;
+| {{convert|9.2|mpgus|L/100 km mpgimp|abbr=on}} / 3.9&amp;nbsp;km/l
+|-
+| Four Wheeler&lt;ref&gt;{{Cite web|url=http://www.fourwheeler.com/roadtests/129_0608_2005_hummer_h2_sut/ |title=Four Wheeler |publisher=Four Wheeler |date= |accessdate=2010-08-08}}&lt;/ref&gt;
+| {{convert|10.8|mpgus|L/100 km mpgimp|abbr=on}} / 4.6&amp;nbsp;km/l
+|}
+
+==Tax benefits in the United States==
+Under the [[United States]] [[income tax]] code, the cost of vehicles with a GVWR over {{convert|6000|lb}} can be deducted from specific forms of income. This deduction was enacted decades prior to assist self-employed people in purchasing a vehicle for business use. The weight minimum was intended to limit the deduction to commercial-type trucks. For many years, the deduction remained below the average cost of a new vehicle, since large trucks were relatively inexpensive. Since it is a reduction in taxable income, the actual value of this deduction averages 30% of the price of the vehicle in question.
+
+The increasing popularity of these commercial vehicles in the late 1990s and early 2000s, however, pushed their average price to nearly double the average passenger car cost. In response, the 2002 Tax Act increased this "[[Section 179 depreciation deduction]]" to US$75,000, and it rose again to [[United States dollar|US$]]102,000 for the 2004 tax year. This is more than three times the current average cost of a passenger car in the United States and covers a large number of luxury models, including the Hummer H2. In late 2006, the deduction was again reduced to US$25,000 for vehicles with GVWR between {{convert|6000|and|14000|lb|abbr=on}}.
+
+==Yearly American sales==
+{| class="wikitable sortable"
+|-
+! Calendar Year
+! Total American sales
+|-
+| 2002&lt;ref&gt;{{Cite web|url=http://media.gm.com/news/sales/030103_decsales.html |title=mediaOnline |publisher=Media.gm.com |date=2003-01-03 |accessdate=2009-09-27 |url-status=dead |archiveurl=https://archive.is/20080327035819/http://media.gm.com/news/sales/030103_decsales.html |archivedate=March 27, 2008 }}&lt;/ref&gt;
+| 18,861
+|-
+| 2003
+| 34,529
+|-
+| 2004&lt;ref&gt;{{cite web|url=http://www.theautochannel.com/news/2006/01/05/205609.html|title=GM Reports December 2005 and Year Results|website=www.theautochannel.com}}&lt;/ref&gt;
+| 29,898
+|-
+| 2005
+| 33,140
+|-
+| 2006&lt;ref&gt;{{Cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=6&amp;docid=31596 |title=GM Media Online |publisher=Media.gm.com |date=2007-01-03 |accessdate=2009-09-27 |archiveurl = https://archive.is/20090221044819/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do%3Fdomain=6&amp;docid=31596 |archivedate = February 21, 2009}}&lt;/ref&gt;
+| 17,472
+|-
+| 2007
+| 12,431
+|-
+| 2008&lt;ref&gt;{{Cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=2&amp;docid=51161 |title=GM Media Online |publisher=Media.gm.com |date=2009-01-05 |accessdate=2009-09-27 |url-status=dead |archiveurl=https://archive.is/20090831002223/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do%3Fdomain=2&amp;docid=51161 |archivedate=August 31, 2009 }}&lt;/ref&gt;
+| 6,095
+|-
+| 2009&lt;ref&gt;{{Cite web|url=http://media.gm.com/content/Pages/news/us/en/2010/Jan/0105_Dec_Sales/_jcr_content/iconrow/textfile/file.res/Deliveries%20December%2009.xls|title=Chevrolet, Buick, GMC and Cadillac Post Sales Gains|publisher=GM Media|date=2010-01-05}}&lt;/ref&gt;
+| 1,513
+|-
+| Total
+| 153,026
+|}
+
+==References==
+{{Reflist|2}}
+
+==External links==
+{{Commons inline|Hummer H2}}
+
+{{Hummer}}
+{{Hummer timeline}}
+{{AM General}}
+
+[[Category:Hummer vehicles|H2 H6]]
+[[Category:Cars introduced in 1999]]
+[[Category:Rear-wheel-drive vehicles]]
+[[Category:All-wheel-drive vehicles]]
+[[Category:Pickup trucks]]
+[[Category:Sport utility vehicles]]
+[[Category:Mid-size sport utility vehicles]]
+[[Category:2000s cars]]
+[[Category:Motor vehicles manufactured in the United States]]
+[[Category:Sport utility trucks]]
+[[Category:Light trucks]]
+[[Category:Luxury sport utility vehicles]]
+[[Category:Off-road vehicles]]
+[[Category:Retro-style automobiles]]</text>
+      <sha1>d35ztwzxtbingkumy8dny7pdwmhappd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Hummer H3</title>
+    <ns>0</ns>
+    <id>1633865</id>
+    <revision>
+      <id>947212141</id>
+      <parentid>947103238</parentid>
+      <timestamp>2020-03-24T23:51:09Z</timestamp>
+      <contributor>
+        <username>CZmarlin</username>
+        <id>1606992</id>
+      </contributor>
+      <comment>/* Capabilities */ Remove unreferenced Boastful Superlatives</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text bytes="17441" xml:space="preserve">{{short description|Off-road vehicle produced from 2005 to 2010}}
+{{Infobox automobile
+| name = Hummer H3
+| image = 2007 Hummer H3 -- NHTSA.jpg
+| caption = 2007 Hummer H3
+| manufacturer = [[General Motors]]
+| production = April 2005–May 24, 2010
+| model_years = 2006-2010
+| assembly = {{ubl | [[Shreveport, Louisiana]], U.S. | [[Port Elizabeth, Eastern Cape|Port Elizabeth]], South Africa 
+| [[Kaliningrad]], Russia (Avtotor)&lt;ref&gt;{{cite web|url=http://www.avtotor.ru/gm/ |title=Группа компаний Автотор :: Автомобили GM |publisher=Avtotor.ru |language=Russian |accessdate=2010-05-25 |url-status=dead |archiveurl=https://web.archive.org/web/20160210120547/http://www.avtotor.ru/gm/ |archivedate=February 10, 2016 }}&lt;/ref&gt; }}
+| class = [[Mid-size]] [[Sport utility vehicle|SUV]] / [[Pickup truck]]
+| body_style = 4-door [[SUV]]&lt;br&gt;4-door pickup truck
+| platform = [[GM GMT platform#GMT 355|GM GMT345 platform]]
+| related = {{ubl | [[Chevrolet Colorado]] | [[GMC Canyon]] | [[Isuzu i-Series]] }}
+| layout = [[Front-engine design|Front engine]], [[four-wheel drive]]
+| engine = {{ubl | 3.5&amp;nbsp;L (211&amp;nbsp;CID) [[GM Atlas engine#L52|L52]] [[Straight-5|I5]] | 3.7&amp;nbsp;L (223&amp;nbsp;CID) [[GM Atlas engine#LLR|LLR]] I5 | 5.3&amp;nbsp;L (325&amp;nbsp;CID) [[GM small-block engine#LH8|LH8]] [[V8 engine|V8]] }}
+| transmission = 5-speed manual&lt;br/&gt;4-speed automatic
+| wheelbase = {{ubl | H3: {{convert|111.9|in|mm|0|abbr=on}} | H3T: {{convert|134.2|in|mm|0|abbr=on}} }}
+| length = {{ubl |H3 {{convert|188.1|in|mm|0|abbr=on}} with rear tire carrier | H3T {{convert|212.7|in|mm|0|abbr=on}} }}
+| width = {{convert|74.7|in|mm|0|abbr=on}}
+| height = {{ubl | 2006–07: {{convert|73.7|in|mm|0|abbr=on}} | 2008–2010: {{convert|73.2|in|mm|0|abbr=on}} }}
+| weight = {{convert|4600|-|4900|lb|abbr=on}}
+| successor = {{ubl | '''For SUV:''' | [[Chevrolet Traverse]] | [[GMC Acadia]] | '''For Pickup (H3T):''' | [[Chevrolet Colorado|Chevrolet Colorado/GMC Canyon]]}}
+}}
+
+The '''Hummer H3''' is an off-road vehicle that was produced from 2005 to 2010 by [[General Motors]]. The smallest model of the Hummer lineup, it was offered as a 5-door SUV or a 4-door pickup truck known as the '''H3T'''. Unlike the larger [[Hummer H1|H1]] and [[Hummer H2|H2]] models, the H3 was not developed by [[AM General]].  It was introduced for the 2006 [[model year]], based on a modified [[GM GMT platform#GMT 355|GMT355]] that underpinned the [[Chevrolet Colorado|Chevrolet Colorado/GMC Canyon]] compact pickup trucks that were also built at GM's [[Shreveport Operations]] in [[Shreveport, Louisiana]] and the [[Port Elizabeth]] plant in South Africa. While mechanically related to the Colorado and Canyon, GM claims they share only 10% of their components, with the chassis modified and reinforced for heavy off-road duties.
+
+== Powertrains ==
+The H3 was launched with a 3.5 liter [[straight-5]] cylinder [[GM Atlas engine#L52|L52]] engine that produced {{convert|220|hp|abbr=on|lk=in}} and {{convert|225|lbfft|abbr=on}} of torque and was mated to a standard five-speed Aisin AR5 [[manual transmission]] or an optional [[GM 4L60-E transmission|Hydra-Matic 4L60-E]] four-speed [[automatic transmission]]. In 2007 this engine was replaced by the 3.7 liter [[GM Atlas engine#LLR|LLR]] that produced {{convert|242|hp|abbr=on}} and {{convert|242|lbfft|abbr=on}} of torque, figures that were revised in 2009 to {{convert|239|hp|abbr=on}} and {{convert|241|lbfft|abbr=on}}. Under [[Fuel economy in automobiles#EPA testing procedure: 2008 and beyond|revised EPA testing standards]] when equipped with either transmission this straight-5 engine achieved {{convert|14|mpgus|l/100 km|abbr=on}} in the city and {{convert|18|mpgus|l/100 km|abbr=on}} on the highway with a combined average of {{convert|15|mpgus|l/100 km|abbr=on}}. Available solely with the automatic transmission, a 5.3 liter [[GM small-block engine#LH8|LH8]] V8 engine producing {{convert|300|hp|abbr=on|0}} and {{convert|320|lbfft|abbr=on|0}} of torque was added in 2008 for the Alpha model. The V8 version had lower fuel economy, estimated at {{convert|13|mpgus|l/100 km|abbr=on}} in the city, {{convert|16|mpgus|l/100 km|abbr=on}} on the highway, with a combined average of {{convert|14|mpgus|l/100 km|abbr=on}}.&lt;ref&gt;{{cite web|url= http://www.fueleconomy.gov/feg/PowerSearch.do?action=noform&amp;path=1&amp;year1=2008&amp;year2=2008&amp;make=Hummer&amp;model=H3%204WD&amp;srchtyp=ymm |title=2008 Hummer H3 4WD fuel economy estimates |publisher=fueleconomy.gov |accessdate=28 October 2014}}&lt;/ref&gt;
+
+In 2007, a H3X edition was added. It included the luxury package, 18-inch chrome wheels with unique center caps, chrome trim, chrome tube steps, a body-colored grille and a hard tire cover. The H3X also came with exclusive colors of Sonoma Red Metallic or Desert Orange Metallic.&lt;ref&gt;https://autoweek.com/article/car-news/2007-hummer-h3x-hummer-adds-some-bling-h3-line-h3x&lt;/ref&gt;
+
+== Capabilities ==
+[[File:Hummer H3 rear.jpg|right|thumb|Hummer H3 showing external [[spare tire]]]]
+
+The H3 featured a two-speed, electronically controlled full-time [[Four-wheel drive#Center differential with mechanical lock|four-wheel drive system]] that made it for both on-road and off-road driving. Electronic locking front and rear differentials were optional. Like the [[Hummer H2]], the H3 can ford {{convert|27|in}} of water (tested in depths up to {{convert|34|in|0|disp=or|abbr=on}}) at a speed of {{convert|5|mph|abbr=on}} and {{convert|20|in|0|abbr=on}} of water at a speed of {{convert|20|mph|abbr=on}}. Standard ground clearance with the 31-inch tires was {{convert|9.7|in|0|abbr=on}} while the approach, departure, and breakover angles were 37.4°, 34.7°, and 22.1° respectively, allowing the H3 to scale a {{convert|16|in|0|adj=on}} vertical wall and negotiate grades of 60% and side slopes of 40%. Front and rear recovery hooks were standard, with an optional trailer hitch and wiring harness. The H3 features a traction control that can use the brakes independently to stop wheelspin and improve traction while adjusting to road conditions. It is also equipped with Stabilitrak stability control and ABS with variable brake force distribution assist.
+
+The optional Adventure or Off Road package included 33-inch tires, off-road shocks, differential lockers and 4:1 low range gearing. These upgrades increased ground clearance, suspension articulation, approach and departure angles, and increased the H3's undercarriage protection.
+
+Maximum towing capacities were {{convert|3000|lb|0|abbr=on}} for the straight-5 with manual transmission, {{convert|4500|lb|0|abbr=on}} for the straight-5 with automatic transmission, and {{convert|6000|lb|0|abbr=on}} for the V8 with automatic transmission. Cargo volume with the second-row seats in the upright position was {{convert|25.0|cuft}} that could be expanded to a maximum of {{convert|62.8|cuft}} when the seats are folded down. The V8 models featured the least payload capacity of just over {{convert|1100|lb|0|abbr=on}} while the straight-5, manual transmission models were rated at {{convert|1300|lb|0|abbr=on}} payload.
+
+== Safety ==
+[[Electronic stability control]], anti-lock four-wheel disc brakes, brake-controlled traction control, [[Isofix|LATCH]] child-seat anchors, and tire-pressure monitoring were standard features on the H3. Side-curtain airbags were optional until 2008 when they were made standard across. The H3 was rated ''Acceptable'', the second highest rating, by the [[Insurance Institute for Highway Safety]] in both frontal offset and side-impact crashes (with side airbags) and ''Poor'', the lowest rating, for rear-crash protection/head restraints.&lt;ref&gt;{{cite web|url= http://www.iihs.org/iihs/ratings/vehicle/v/hummer/h3 |title=2010 Hummer H3 |publisher= Insurance Institute for Highway Safety |accessdate=28 October 2014}}&lt;/ref&gt;
+
+The U.S. [[National Highway Traffic Safety Administration]] (NHTSA) gave the 2008 H3 the following scores:
+: Frontal Driver: {{rating|5|5}}
+: Frontal Passenger: {{rating|4|5}}
+: Side Driver: {{rating|5|5}}
+: Side Rear Passenger: {{rating|5|5}}
+: AWD Rollover: {{rating|3|5}}
+
+== H3T ==
+[[File:Hummer H3T NY.jpg|thumb|right|2009 Hummer H3T]]
+
+The Hummer '''H3T''' is a [[mid-size]] [[pickup truck]] that was available during the 2009&lt;ref&gt;{{cite web|url= http://blogs.automobilemag.com/6293612/car-news/2009-hummer-h3t-production-starts/index.html |first=Evan |last=McCausland |title=2009 Hummer H3T Production Starts |publisher=blogs.automobilemag.com |date=8 September 2008 |archiveurl= https://web.archive.org/web/20090222002957/http://blogs.automobilemag.com/6293612/car-news/2009-hummer-h3t-production-starts/index.html |archivedate=22 February 2009 |accessdate=28 October 2014}}&lt;/ref&gt; and 2010 model years.
+
+The vehicle was originally developed as a regular cab (two-door) [[concept car|concept]] pickup truck in 2003, that was shown at the 2004 [[Los Angeles Auto Show]].&lt;ref&gt;{{cite journal|url= http://www.motortrend.com/future/concept_cars/112_0312_hummer_h3t/viewall.html |title=First Look: Hummer H3T Concept |journal=Motor Trend |date=December 2003 |accessdate=28 October 2014}}&lt;/ref&gt; The five-passenger four-door crew-cab production version appeared at the 2008 [[Chicago Auto Show]].&lt;ref&gt;{{cite web|first=Matt |last=DeLorenzo |title=2009 Hummer H3T – 2008 Chicago Auto Show |url=http://www.roadandtrack.com/auto-shows/chicago/2009-hummer-h3t |publisher=Road &amp; Track |date=7 February 2008 |accessdate=28 October 2014 |url-status=dead |archiveurl=https://web.archive.org/web/20121106052811/http://www.roadandtrack.com/auto-shows/chicago/2009-hummer-h3t |archivedate=6 November 2012 }}&lt;/ref&gt;
+The H3T featured a 5-foot bed with built-in storage boxes and came in standard H3T, H3T Adventure, H3T Luxury, and H3T Alpha (with cloth or leather trim) [[trim package]]s.
+
+A road test by ''[[Motor Trend]]'' reported the 2009 truck "crawled up rock steps, ran through sand washes, and navigated steep ledges with confidence and capability to spare." They described its [[turning radius]] "uncomfortably wide" and said "at highway cruising it would've been nice to have a faster, firmer feel.&lt;ref&gt;{{cite journal|url= http://www.motortrend.com/roadtests/suvs/112_0806_2009_hummer_h3t_first_drive/ |title=First Drive: 2009 Hummer H3T |journal=Motor Trend |first= Mark |last=Williams |date=June 2008 |accessdate=28 October 2014}}&lt;/ref&gt;
+
+==Features and Options==
+
+The Hummer H3 and H3T were intended to be a smaller and more affordable version of the larger [[Hummer H2]] and H2 SUT. Therefore, many of the luxury features that were standard on the H2 and H2 SUT were optional on the H3 and H3T.
+
+Even though the Hummer H3 and H3T were not as luxurious as their H2 and H2 SUT counterparts, they still came well-equipped. Standard features included alloy wheels, leather-wrapped steering wheel, premium cloth seating surfaces, an A/M-F/M-CD player audio system with a six-speaker audio system, keyless entry, power windows and door locks, air conditioning, four-wheel-drive, a five-speed manual transmission, dual front bucket seats, a folding rear bench seat, aluminum interior trim, a Driver Information Center (DIC) in the gauge cluster, and a 3.5L Inline Five-Cylinder (I5) gasoline engine.
+
+Options available on the H3 and H3T included chrome-clad alloy wheels, additional chrome exterior trim, AM/FM radio with single-CD player with MP3 capability (later, an AM/FM stereo with an in dash 6-disc changer with MP3 capability) radios with auxiliary audio inputs, a touchscreen GPS navigation system, [[SiriusXM]] [[Satellite Radio]], [[OnStar]], remote vehicle start, a security system, luxury leather-trimmed seating surfaces with dual heated front bucket seats, a dual-zone climate control system, a [[Bluetooth]] hands-free phone system (later models only), a Monsoon premium audio system with amplifier and subwoofer, an automatic transmission, and a 5.3L [[Vortec]] V8 gasoline engine (H3 Alpha and H3T Alpha only).
+
+==Yearly U.S. sales==
+{| class="wikitable"
+|-
+! Calendar year
+! H3
+! H3T
+! Total
+|-
+| 2005
+| 33,140
+| N/A
+| 33,140
+|-
+| 2006&lt;ref&gt;{{cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do?domain=6&amp;docid=31596 |title=GM Media Online |publisher=Media.gm.com |date=3 January 2007 |archiveurl=https://archive.is/20070428205137/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewmonthlyreleasedetail.do%3Fdomain=6&amp;docid=31596 |archivedate=28 April 2007 |accessdate=28 October 2014 |url-status=dead }}&lt;/ref&gt;
+| 54,052
+| N/A
+| 54,052
+|-
+| 2007
+| 43,431
+| N/A
+| 43,431
+|-
+| 2008&lt;ref&gt;{{cite web|url=http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do?domain=2&amp;docid=51161 |title=GM Media Online |publisher=Media.gm.com |date=5 January 2009 |archiveurl=https://archive.is/20090221044821/http://media.gm.com/servlet/GatewayServlet?target=http://image.emerald.gm.com/gmnews/viewpressreldetail.do%3Fdomain=2&amp;docid=51161 |archivedate=21 February 2009 |accessdate=28 October 2014 |url-status=dead }}&lt;/ref&gt;
+| 20,681
+| 692
+| 21,373
+|-
+| 2009&lt;ref&gt;{{cite web|url= http://media.gm.com/content/Pages/news/us/en/2010/Jan/0105_Dec_Sales/_jcr_content/iconrow/textfile/file.res/Deliveries%20December%2009.xls|title=Chevrolet, Buick, GMC and Cadillac Post Sales Gains |publisher=GM Media Online |date=5 January 2010 |accessdate=28 October 2014}}&lt;/ref&gt;
+| 5,487
+| 2,046
+| 7,533
+|-
+| Total
+| 156,791
+| 2,738
+| 159,529
+|}
+
+== International markets ==
+In 2007, GM South Africa launched Hummer production in [[Port Elizabeth]]. The plant manufactured the Hummer H3 for the South African market, as well as units exported to Europe, Asia and Australia.&lt;ref&gt;{{cite web|url= http://www.automotoportal.com/article/hummer-h3-comes-to-australia-in-2007 |title=Hummer H3 comes to Australia in 2007 |publisher=Automotoportal.com |date=26 October 2006 |author=GM |accessdate=28 October 2014}}&lt;/ref&gt; In Australia, Hummer vehicles were only sold by special [[Holden]]-Saab-Hummer dealerships.
+
+The H3 was qualified in 2010 by the [[Ministry of Land, Infrastructure, Transport and Tourism|Japanese Transport Ministry]] for tax breaks that set easier fuel-efficiency standards for heavier vehicles.&lt;ref name="NYT-Tabuchi"&gt;{{cite news|url= https://www.nytimes.com/2010/02/13/business/global/13hummer.html?_r=0 |title=Japan Calls Hummer H3 Fuel-Efficient|first=Hiroko |last=Tabuchi |date=12 February 2010 |publisher=The New York Times |accessdate=28 October 2014}}&lt;/ref&gt; The {{convert|4700|lb|kg|0|adj=on}} H3's {{convert|16|mpgus|L/100 km mpgimp|abbr=on}} average in city traffic cleared the required Japanese emissions standards relative to its weight.&lt;ref name="NYT-Tabuchi"/&gt; A total of 723 Hummers were sold in Japan during the 12 months before March 2009.&lt;ref name="NYT-Tabuchi"/&gt;
+
+==Motorsports==
+[[Robby Gordon]] competed in the [[2010 Dakar Rally]] in a purpose built, tube frame chassis H3, finishing eighth overall.&lt;ref&gt;{{cite web| title=N° 302 – Team Robby Gordon Motorsports |publisher=Dakar Rally |url= http://www.dakar.com/us/DAKAR/2010/teams/starters/302.html |accessdate=28 October 2014}}&lt;/ref&gt;
+
+== Plug-in hybrid ==
+In early 2009, [[Raser Technologies]] and FEV built a prototype [[plug-in hybrid]] H3 that could achieve up to 100 MPG equivalent, using its battery.&lt;ref&gt;{{cite web|last=June |first=Laura|url= https://www.engadget.com/2009/04/28/raser-technologies-develops-100mpg-hummer-h3-just-to-spite-al-go/ |title=Raser Technologies develops 100MPG Hummer H3 just to spite Al Gore |publisher=Engadget.com |date=28 April 2009 |accessdate=28 October 2014}}&lt;/ref&gt; This vehicle was renamed the Electric Hummer H3, and later showcased by California State Governor [[Arnold Schwarzenegger]] at a press conference at the State Capitol in Sacramento as part of a campaign to promote greener vehicles.&lt;ref&gt;{{cite web|url= http://www.theautochannel.com/news/2009/05/29/463397.html |title=Schwarzenegger Introduces Raser's 100-MPG Electric Hummer H3 |publisher=Theautochannel.com |date=29 May 2009 |accessdate=28 October 2014}}&lt;/ref&gt;
+
+== End of the H3 ==
+At the end of February 2010, General Motors announced it would dismantle the Hummer brand.&lt;ref&gt;{{cite journal|last=Ramzy |first=Austin |title=A Deal Sours, and the Hummer Bites the Dust |journal=Time |date=25 February 2010 |url= http://www.time.com/time/world/article/0,8599,1967957,00.html |accessdate=28 October 2014}}&lt;/ref&gt; After filling a rental-car [[Fleet vehicle|fleet]] order, the last Hummer&amp;nbsp;H3T rolled off the assembly line at Shreveport on May 24, 2010.&lt;ref&gt;{{cite web |last=Roy |first=Carolyn |url=http://www.ksla.com/Global/story.asp?S=12533107 |title=Last Hummer rolls off line at Shreveport GM plant |publisher=KSLA-TV |date=24 May 2010 |accessdate=28 October 2014 |archive-url=https://web.archive.org/web/20130512115557/http://www.ksla.com/Global/story.asp?S=12533107 |archive-date=12 May 2013 |url-status=dead }}&lt;/ref&gt;
+
+== References ==
+{{reflist|colwidth=30em}}
+
+== External links ==
+{{Commons category|Hummer H3}}
+
+{{Hummer}}
+{{Hummer timeline}}
+[[Category:Cars introduced in 2005]]
+[[Category:All-wheel-drive vehicles]]
+[[Category:Hummer vehicles|H3]]
+[[Category:Sport utility vehicles]]
+[[Category:Mid-size sport utility vehicles]]
+[[Category:Pickup trucks]]
+[[Category:Light trucks]]
+[[Category:Motor vehicles manufactured in the United States]]
+[[Category:Retro-style automobiles]]</text>
+      <sha1>a6032uwut4gd5kn8man5nyl9qitzgjw</sha1>
+    </revision>
+  </page>
+</mediawiki>
