@@ -64,7 +64,7 @@ def fileParse():
                                     transmission= None
                                     transmissions= None
                                     assembly = None
-                                    char_list = ['\[', '\]', '\&nbsp\;L', '\/\>', '\}', '\{', 'unbulleted list', '\&nbsp\;'];
+                                    char_list = ['\[', '\]', '\&nbsp\;L', '\/\>', '\}', '\{', 'unbulleted list', '\&nbsp\;']
                                     try:
                                         generation = str(template.get("name").value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
                                     except Exception as e:
