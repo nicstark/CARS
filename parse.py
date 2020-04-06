@@ -7,136 +7,298 @@ import re
 import pandas as pd
 from io import StringIO, BytesIO
 import mwparserfromhell
+import linecache
+
 
 myDict = {}
 
 root_path = "C:/Users/eufou/Desktop/CARS/"
 
 
-# def checkDupes(check,against,key):
-#     for x in against:
-#         if check == x[key]:
-#             return True
 cars = {};
 
 def find_between(s, start, end):
   return (s.split(start))[1].split(end)[0]
 
-# def findall(p, s):
-#     i = s.find(p)
-#     while i != -1:
-#         yield i
-#         i = s.find(p, i+1)
+def PrintException():
+    exc_type, exc_obj, tb = sys.exc_info()
+    f = tb.tb_frame
+    lineno = tb.tb_lineno
+    filename = f.f_code.co_filename
+    linecache.checkcache(filename)
+    line = linecache.getline(filename, lineno, f.f_globals)
+    print 'EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj)
 
-def fileParse():
-    for filename in os.listdir(root_path):
-        manufacturer = str(filename.split('.')[0].encode('ascii', 'ignore'))
-        # print(manufacturer)
-        cars[manufacturer] = {}
-        if filename.endswith("Buick.xml"):
-
-            with open (root_path + filename, 'r') as vehicles_file:
-
-
-                mainsoup = BeautifulSoup(vehicles_file,features="lxml")
-                #page = soup.find_all('page')
-                pages = mainsoup.find_all('page')
-                for page in pages:
-                    model = str(page.find('title').get_text().encode('ascii', 'ignore'))
-                    # print(title)
-                    # print(title)
-                    cars[manufacturer][model] = {}
-                    texts = page.find_all('text')
-
-                    for text in texts:
-                        try:
-                            wikicode = mwparserfromhell.parse(text.get_text().encode('ascii', 'ignore'))
-                            templates = wikicode.filter_templates(recursive = True)
-
-                            for template in templates:
-
-                                if 'Infobox' in template.name:
-                                    generation = None
-                                    production = None
-                                    designer= None
-                                    engine= None
-                                    engines= None
-                                    transmission= None
-                                    transmissions= None
-                                    assembly = None
-                                    char_list = ['\[', '\]', '\&nbsp\;L', '\/\>', '\}', '\{', 'unbulleted list', '\&nbsp\;']
-                                    try:
-                                        generation = str(template.get("name").value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        production = str(template.get('production').value.lstrip().rstrip().encode('ascii', 'ignore'))
-                                        if production:
-                                            cars[manufacturer][model][generation] = {'production': production}
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        assembly = str(template.get('assembly').value.lstrip().rstrip().encode('ascii', 'ignore'))
-                                        if assembly:
-                                            cars[manufacturer][model][generation] = {'assembly': assembly}
-                                            # print(assembly)
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        designer = str(template.get('designer').value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
-                                        if designer:
-                                            cars[manufacturer][model][generation] = {'designer': designer}
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        engine = str(template.get('engine').value.lstrip().rstrip().encode('ascii', 'ignore'))
-                                        if engine:
-                                            engine = re.sub("|".join(char_list), "", engine).rstrip('\r\n')
-                                            cars[manufacturer][model][generation] = {'engine': engine}
-                                            # print(engine)
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        transmission = str(template.get('transmission').value.lstrip().rstrip().encode('ascii', 'ignore'))
-
-                                        if transmission:
-                                            transmission = re.sub("|".join(char_list), "", transmission).rstrip('\r\n')
-                                            cars[manufacturer][model][generation] = {'transmission': transmission}
-                                            # print(transmission)
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        wheelbase = str(template.get('wheelbase').value.lstrip().rstrip().encode('ascii', 'ignore'))
-
-                                        if wheelbase:
-                                            wheelbase = re.sub("|".join(char_list), "", wheelbase).rstrip('\r\n')
-                                            cars[manufacturer][model][generation] = {'wheelbase': wheelbase}
-                                            print(wheelbase)
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        length = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
-
-                                        if length:
-                                            length = re.sub("|".join(char_list), "", length).rstrip('\r\n')
-                                            cars[manufacturer][model][generation] = {'length': length}
-                                            # print(transmission)
-                                    except Exception as e:
-                                        continue
-                                    try:
-                                        length = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
-
-                                        if length:
-                                            length = re.sub("|".join(char_list), "", length).rstrip('\r\n')
-                                            cars[manufacturer][model][generation] = {'length': length}
-                                            # print(transmission)
-                                    except Exception as e:
-                                        continue
+def filterNumber(n):
+	if(len(n)==N):
+		return True
+	else:
+		return False
 
 
-                        except Exception as e:
-                            print(e)
-                            continue
+def purify(numbers, productionbackup):
+    if len(numbers[0]) == 2:
+        numbers.remove(numbers[0])
+
+    for i in numbers:
+        if len(i) < 2:
+            # print(i)
+            numbers.remove(i)
+        elif int(len(i)) > 8:
+            numbers.remove(i)
+        elif int(len(i)) == 3:
+            numbers.remove(i)
+        elif int(len(i)) > 2 and int(i[0]) > 3:
+            numbers.remove(i)
+
+    # if len(numbers) == 2 and len(numbers[1]) == 2:
+    #     numbers.remove(numbers[])
+    if len(numbers) == 2 and len(numbers[0]) == 2 and len(numbers[1]) == 2:
+        # print(productionbackup)
+        # print(numbers)
+        numbers.remove(numbers[1])
+        numbers.remove(numbers[0])
+    if len(numbers) == 3 and len(numbers[1]) == 2 and len(numbers[2]) == 2:
+        # print(productionbackup)
+        # print(numbers)
+        numbers.remove(numbers[2])
+    if len(numbers) == 3 and len(numbers[1]) == 2:
+        # print(productionbackup)
+        # print(numbers)
+        numbers.remove(numbers[1])
+    return numbers
+
+
+
+def productionParse(template):
+    try:
+        # print('a')
+        production = str(template.get('production').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        # print(1)
+        productionbackup = str(template.get('production').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        # print(2)
+        if production:
+            try:
+                production = production.replace('present', '2020')
+            except Exception as e:
+                # print(production)
+                print('replace present', e)
+            try:
+                production = production.replace('-', '')
+            except Exception as e:
+                # print(production)
+                print('replace present', e)
+            try:
+                production = production.replace('&ndash', '')
+            except Exception as e:
+                # print(production)
+                print('replace ndash', e)
+            try:
+                production = production.replace('&ndash;', '')
+            except Exception as e:
+                # print(production)
+                print('replace ndash', e)
+
+            try:
+                production = re.findall(r'[0-9]+', production)
+
+                production = purify(production, productionbackup)
+
+            except Exception as e:
+                print('split', e)
+                pass
+
+
+            if len(production) == 2 and all(len(flag) == 4 for flag in production):
+                # print(productionbackup)
+                # print(production)
+                newproduction = str(production[0]) + str(production[1])
+                production = [newproduction]
+                cars[manufacturer][model][generation] = {'production': production}
+            elif all(len(flag) == 8 for flag in production):
+                cars[manufacturer][model][generation] = {'production': production}
+            elif len(production) == 1 and all(len(flag) == 4 for flag in production):
+                cars[manufacturer][model][generation] = {'production': production}
+
+            else:
+                print(productionbackup)
+                print(production)
+
+    except Exception as e:
+        print('function', e , '\n', production)
+        return
+
+
+for filename in os.listdir(root_path):
+    manufacturer = str(filename.split('.')[0].encode('ascii', 'ignore'))
+    # print(manufacturer)
+    cars[manufacturer] = {}
+    if filename.endswith(".xml"):
+
+        with open (root_path + filename, 'r') as vehicles_file:
+
+
+            mainsoup = BeautifulSoup(vehicles_file,features="lxml")
+            #page = soup.find_all('page')
+            pages = mainsoup.find_all('page')
+            for page in pages:
+                model = str(page.find('title').get_text().encode('ascii', 'ignore'))
+                # print(title)
+                # print(title)
+                cars[manufacturer][model] = {}
+                texts = page.find_all('text')
+
+                for text in texts:
+                    try:
+                        wikicode = mwparserfromhell.parse(text.get_text().encode('ascii', 'ignore'))
+                        templates = wikicode.filter_templates(recursive = True)
+
+                        for template in templates:
+
+                            # if 'Infobox automobile' or 'Infobox electric' or 'Infobox racing' in template.name:
+                            namecheck = ['Infobox automobile', 'Infobox electric', 'Infobox racing']
+                            if any(x in template.name for x in namecheck):
+
+                                electric = None
+                                generation = None
+                                production = None
+                                designer= None
+                                engine= None
+                                engines= None
+                                transmission= None
+                                transmissions= None
+                                assembly = None
+                                wheelbase = None
+                                length = None
+                                lengthbackup = None
+                                width = None
+                                widthbackup = None
+                                char_list = ['\[', '\]', '\&nbsp\;L', '\/\>', '\}', '\{', 'unbulleted list', '\&nbsp\;']
+
+                                if 'electric' in template.name:
+                                    electric = True
+                                else:
+                                    electric = False
+                                try:
+                                    generation = str(template.get("name").value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
+                                except Exception as e:
+                                    continue
+
+                                productionParse(template)
+
+                                try:
+                                    assembly = str(template.get('assembly').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    if assembly:
+                                        cars[manufacturer][model][generation] = {'assembly': assembly}
+                                        # print(assembly)
+                                except Exception as e:
+                                    continue
+
+                                try:
+                                    designer = str(template.get('designer').value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
+                                    if designer:
+                                        cars[manufacturer][model][generation] = {'designer': designer}
+                                except Exception as e:
+                                    continue
+
+                                try:
+                                    engine = str(template.get('engine').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    if engine:
+                                        engine = re.sub("|".join(char_list), "", engine).rstrip('\r\n')
+                                        cars[manufacturer][model][generation] = {'engine': engine}
+                                        # print(engine)
+                                except Exception as e:
+                                    continue
+
+                                try:
+                                    transmission = str(template.get('transmission').value.lstrip().rstrip().encode('ascii', 'ignore'))
+
+                                    if transmission:
+                                        transmission = re.sub("|".join(char_list), "", transmission).rstrip('\r\n')
+                                        cars[manufacturer][model][generation] = {'transmission': transmission}
+                                        # print(transmission)
+                                except Exception as e:
+                                    continue
+
+                                try:
+                                    wheelbase = str(template.get('wheelbase').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    # print(wheelbase)
+                                    if wheelbase:
+                                        # print(wheelbase)
+                                        check = ['convert','Convert']
+                                        if any(x in wheelbase for x in check):
+                                            # print(wheelbase + '\n')
+                                            wheelbase = wheelbase.split('|')
+                                            if 'mm' in wheelbase[2]:
+                                                wheelbase[1] = round(float(wheelbase[1])*0.039370, 1)
+                                            wheelbase = wheelbase[1]
+                                            # wheelbase = re.sub("|".join(char_list), "", wheelbase).rstrip('\r\n')
+                                        else:
+                                            wheelbase = wheelbase.split('&')[0]
+                                        if bool(re.match('[a-zA-Z]', wheelbase)):
+                                            wheelbase = wheelbase.split(' ')[1]
+                                        if wheelbase < 40:
+                                            wheelbase = None
+                                            continue
+                                        cars[manufacturer][model][generation] = {'wheelbase': wheelbase}
+                                        # print(wheelbase)
+
+                                except Exception as e:
+                                    continue
+
+                                try:
+                                    length = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    lengthbackup = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    if length:
+                                        length = re.search('(\d)(\d)(\d)?(\.\d*)?', length)
+                                        length = length.group(0)
+                                        if float(length) > 300:
+                                            length = re.search(r'\((.*?)\)', lengthbackup)
+                                            length = length.group(0).split(' ')[0][1]
+                                        cars[manufacturer][model][generation] = {'length': length}
+
+                                except Exception as e:
+                                    # print(e, manufacturer, model, length)
+                                    # print(lengthbackup)
+                                    continue
+
+                                try:
+                                    width = str(template.get('width').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    widthbackup = str(template.get('width').value.lstrip().rstrip().encode('ascii', 'ignore'))
+                                    if width:
+
+                                        width = re.search('(\d)(\d)(\d)?(\.\d*)?', width)
+                                        width = width.group(0)
+
+                                        if float(width) > 100:
+                                            try:
+                                                width = widthbackup.split('{{')[1]
+                                                if 'ubl' in width:
+                                                    width = widthbackup.split('{{')[3]
+                                            except:
+                                                width = widthbackup.split(' ')[1]
+                                            try:
+                                                width = width.split('|')[1]
+                                            except:
+
+                                                cars[manufacturer][model][generation] = {'width': width}
+                                                continue
+                                            width = re.search('(\d)(\d)(\d)?(\d)?(\.\d*)?', str(width))
+                                            width = width.group(0)
+                                            if float(width) > 1000:
+                                                width = round(float(width)*0.039370, 1)
+
+                                        cars[manufacturer][model][generation] = {'width': width}
+
+                                except Exception as e:
+                                    # print(e, manufacturer, model, width)
+                                    # print(widthbackup)
+                                    continue
+
+
+                    except Exception as e:
+                        # print(e)
+                        continue
                     # root = etree.fromstring(str(text))
                     # for bits in root:
 
@@ -255,22 +417,22 @@ def fileParse():
                 #         print ("error: ", filename)
 
 #EXPORT_________________________________________
-
-dir = ('C:/Users/eufou/Desktop/CARS/parsed')
-if not os.path.exists(dir):
-    os.mkdir(dir)
-
-for key in myDict:
-    subdir = (dir +"/" + key)
-    if not os.path.exists(subdir):
-        os.mkdir(subdir)
-
-def jsonOutput(subdir,filename,data):
-    if data:
-        with open(os.path.join(dir + subdir, filename + '.txt'), mode='w') as outfile:
-            json.dump(data, outfile)
-    else:
-        pass
+#
+# dir = ('C:/Users/eufou/Desktop/CARS/parsed')
+# if not os.path.exists(dir):
+#     os.mkdir(dir)
+#
+# for key in myDict:
+#     subdir = (dir +"/" + key)
+#     if not os.path.exists(subdir):
+#         os.mkdir(subdir)
+#
+# def jsonOutput(subdir,filename,data):
+#     if data:
+#         with open(os.path.join(dir + subdir, filename + '.txt'), mode='w') as outfile:
+#             json.dump(data, outfile)
+#     else:
+#         pass
 
 
 #EXPORT ACTIVITY____________________
@@ -292,8 +454,8 @@ def jsonOutput(subdir,filename,data):
 #
 
 
-fileParse()
-# print(cars)
+# fileParse()
+# print(len(cars))
 # print(vehicles)
 
 # exporter()
