@@ -1,4 +1,5 @@
 import os
+import sys
 import os.path
 from bs4 import BeautifulSoup, SoupStrainer
 import lxml
@@ -14,26 +15,21 @@ myDict = {}
 root_path = "C:/Users/eufou/Desktop/CARS/"
 
 
+
 cars = {};
+
+class FlowException(Exception):
+    pass
 
 def find_between(s, start, end):
   return (s.split(start))[1].split(end)[0]
 
-def PrintException():
-    exc_type, exc_obj, tb = sys.exc_info()
-    f = tb.tb_frame
-    lineno = tb.tb_lineno
-    filename = f.f_code.co_filename
-    linecache.checkcache(filename)
-    line = linecache.getline(filename, lineno, f.f_globals)
-    print 'EXCEPTION IN ({}, LINE {} "{}"): {}'.format(filename, lineno, line.strip(), exc_obj)
 
 def filterNumber(n):
 	if(len(n)==N):
 		return True
 	else:
 		return False
-
 
 def purify(numbers, productionbackup):
     if len(numbers[0]) == 2:
@@ -170,6 +166,242 @@ def manufacturerParse(template):
         # print('manu error', e)
         pass
 
+def bodystyleParse(template):
+    try:
+        bodystyle = str(template.get('body_style').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        bodystylebackup = str(template.get('body_style').value.lstrip().rstrip().encode('ascii', 'ignore'))
+
+        newbodystyle = []
+        if 'ubl ' in bodystyle or 'list' in bodystyle or '{ubl' in bodystyle or 'unbulleted' in bodystyle:
+            bodystyle = bodystyle.split('|')[1:]
+            for item in bodystyle:
+                if '[[' in item:
+                    item = item.split('[[')
+                    paraname = item[0].lstrip()
+                    # print(bodystyle)
+                    paravalue = item[1].replace(']', '').replace('\n*', '').split('|')
+                    newItem = { paraname : paravalue}
+                    newbodystyle.append(newItem)
+                else:
+                    item = item.split('<')[0]
+                    try:
+                        item = item.replace(')', '')
+                    except:
+                        pass
+                    try:
+                        item = item.replace(']', '')
+                    except:
+                        pass
+                    try:
+                        item = item.replace('}', '')
+                    except:
+                        pass
+                    # print(item)
+                    newbodystyle.append(item)
+                    # pass
+        else:
+            bodystyle = re.split('<br>|<br/>|<br />', bodystyle)
+            for item in bodystyle:
+                item = item.replace('two', '2')
+                item = item.replace('four', '4')
+                try:
+                    item = item.split('<')[0]
+                except:
+                    pass
+                # print(bodystyle[2:6])
+                item = re.findall(r'\[\[(.*?)\]\]', item)
+                for subitem in item:
+                    subitem = subitem.split('|')
+                    for subsub in subitem:
+                        newbodystyle.append(subsub)
+        # print(newbodystyle)
+        cars[make][model][generation] = {'bodystyle': newbodystyle}
+
+    except Exception as e:
+        print(e, 'bodystyle', bodystyle)
+        # print(item)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+
+def classParse(template):
+    try:
+        classy = str(template.get('class').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        classybackup = str(template.get('class').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        classy = classy.replace('#', ' ')
+        classy = re.findall(r'\[\[(.*?)\]\]', classy)
+
+            # print(classy.group(1))
+        for classes in classy:
+            try:
+                classes = classes.split('|')
+                cars[make][model][generation] = {'class': classes}
+            except:
+                cars[make][model][generation] = {'class': classes}
+
+    except Exception as e:
+        print(e, 'class', classy)
+        # print(item)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+
+def modelyearsParse(template):
+    try:
+        modelyears = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        modelyearsbackup = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        if modelyears:
+            modelyears = re.split('<br>|<br/>|<br />', modelyears)
+            newmodelyears = []
+            for item in modelyears:
+                paraname = None
+                easyvalue = None
+                easyname = None
+                if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                    item = item.split('|')[1:]
+                    for subitem in item:
+                        subitem = subitem.lstrip().rstrip()
+
+                        try:
+                            subitem = subitem.replace('-', '')
+                        except:
+                            pass
+                        try:
+                            subitem = subitem.replace('}', '')
+                        except:
+                            pass
+                        try:
+                            subitem = subitem.replace('[', '')
+                        except:
+                            pass
+                        try:
+                            subitem = subitem.replace(']', '')
+                        except:
+                            pass
+                        try:
+                            subitem = subitem.replace('&ndash;', '')
+
+                        except:
+                            pass
+
+                        try:
+                            subitem = subitem.replace('present', '2020')
+                        except:
+                            pass
+
+                        try:
+                            subitem = subitem.replace('Present', '2020')
+                        except:
+                            pass
+
+                        if len(subitem) is 8 or  len(subitem) is 6 or len(subitem) is 4:
+                            newmodelyears.append(int(subitem))
+                        else:
+                            newItem = []
+                            paraname = re.search(r'\((.*?)\)', subitem)
+                            subitem = subitem.split('<')[0]
+                            if paraname:
+                                # print(subitem)
+                                paraname = str(paraname.group(0))[1:-1]
+                                value = subitem.split(' ')[0].strip(',')
+                                try:
+                                    newItem  =  {paraname : int(value)}
+                                    newmodelyears.append(newItem)
+                                except:
+                                    pass
+                                # print(newItem)
+                            else:
+                                if ':' in subitem:
+                                    easyname = subitem.split(':')[0]
+                                    easyvalue = subitem.split(':')[1]
+                                    newItem  =  {easyname : int(easyvalue)}
+                                    newmodelyears.append(newItem)
+
+                                elif len(subitem.strip()) is 8 or  len(subitem.strip()) is 6 or len(subitem.strip()) is 4:
+                                    newmodelyears.append(int(subitem.strip()))
+                                else:
+                                    print(subitem)
+                else:
+                    item = item.lstrip().rstrip()
+
+                    try:
+                        item = item.replace('-', '')
+                    except:
+                        pass
+                    try:
+                        item = item.replace('&ndash;', '')
+
+                    except:
+                        pass
+
+                    try:
+                        item = item.replace('present', '2020')
+                    except:
+                        pass
+                    try:
+                        item = item.replace('Present', '2020')
+                    except:
+                        pass
+
+                    if len(item) is 8 or  len(item) is 6 or len(item) is 4:
+                        newmodelyears.append(int(item))
+                        # print(item)
+                    else:
+                        newItem = []
+                        paraname = re.search(r'\((.*?)\)', item)
+                        item = item.split('<')[0]
+                        if paraname:
+                            paraname = str(paraname.group(0))[1:-1]
+                            value = item.split(' ')[0].strip(',')
+                            newItem  =  {paraname : int(value)}
+                            newmodelyears.append(newItem)
+                            # print(newItem)
+                        else:
+                            if ':' in item:
+                                easyname = item.split(':')[0]
+                                easyvalue = item.split(':')[1]
+                                newItem  =  {easyname : int(easyvalue)}
+                                newmodelyears.append(newItem)
+                            else:
+                                item = item.lstrip().rstrip()
+                                if len(item) is 8 or  len(item) is 6 or len(item) is 4:
+                                    newmodelyears.append(int(item))
+                                else:
+                                    if 'and' in item:
+                                        item = item.split('and')
+                                        for subitem in item:
+                                            # print(subitem.strip())
+                                            newmodelyears.append(subitem.strip())
+                                    elif ',' in item:
+                                        item = item.split(',')
+                                        for subitem in item:
+                                            # print(subitem.strip())
+                                            newmodelyears.append(subitem.strip())
+                                    else:
+                                        if '.5' in item:
+                                            item = item.replace('.5', '')
+                                            newmodelyears.append(item)
+                                        elif len(item.replace(' ', '')) is 8:
+                                            newmodelyears.append(item)
+                                        else:
+                                            paravalue = re.search(r'[0-9]{8}', item)
+                                            if paravalue:
+                                                newItem  =  {item[8:] : int(paravalue.group(0))}
+                                                newmodelyears.append(newItem)
+                                            else:
+                                                newmodelyears.append(2020)
+
+
+            modelyears = newmodelyears
+            cars[make][model][generation] = {'model_years': modelyears}
+
+    except Exception as e:
+        print(e, 'model_years', modelyears)
+        print(item)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+
 def designerParse(template):
     try:
         designer = str(template.get('designer').value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
@@ -209,17 +441,16 @@ def wheelbaseParse(template):
     try:
         wheelbase = str(template.get('wheelbase').value.lstrip().rstrip().encode('ascii', 'ignore'))
         wheelbasebackup = str(template.get('wheelbase').value.lstrip().rstrip().encode('ascii', 'ignore'))
-        # print(wheelbase)
         if wheelbase:
             wheelbase = re.split('<br>|<br/>|<br />', wheelbase)
+            newwheelbase = []
             for item in wheelbase:
                 if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
-                    newwheelbase = []
                     item = re.split(r'(\s\|\s)', item)
+                    # print(item)
 
                     if len(item) is 1:
                         item = re.split(r'(\|\{)', item[0])
-                        # print(item)
                     for subitem in item:
                         cvtcheck = [':', 'Convert', 'convert', 'cvt']
                         if any(x in subitem for x in cvtcheck):
@@ -266,7 +497,6 @@ def wheelbaseParse(template):
                                         newwheelbase.append(newItem)
                                         # print(newItem)
 
-                    item = newwheelbase
                 elif '|' in str(item):
                     item = re.split('\|', item)
                     if ':' in item[0]:
@@ -275,7 +505,7 @@ def wheelbaseParse(template):
                         if float(item[1]) > 1000:
                             item[1] = round(float(item[1])*0.039370, 1)
                         newItem[item[0]] = item[1]
-                        item = newItem
+                        newwheelbase.append(newItem)
                     elif '}}' in item[-1]:
                         modelindicator = re.search(r'\((.*?)\)', item[-1])
                         if modelindicator:
@@ -285,11 +515,13 @@ def wheelbaseParse(template):
                             if float(item[1]) > 1000:
                                 item[1] = round(float(item[1])*0.039370, 1)
                             newItem[modelindicator] = item[1]
-                            item = newItem
+                            newwheelbase.append(newItem)
                         else:
                             if float(item[1]) > 1000:
                                 item[1] = round(float(item[1])*0.039370, 1)
                             item = item[1]
+                            newwheelbase.append(item)
+
                     else:
                         pass
                 else:
@@ -301,16 +533,21 @@ def wheelbaseParse(template):
                         # print(modelvalue)
                         if float(modelvalue) > 1000:
                             modelvalue = round(float(modelvalue)*0.039370, 1)
-                        item = {modelname : modelvalue}
+                        newItem = {modelname : modelvalue}
+                        newwheelbase.append(newItem)
+
+
                     else:
                         if '(' in item:
-                            parans = re.search(r'\((.*?)\)', item)
-                            # print(parans.groups())
-                            for paran in parans.groups():
+                            parans = re.findall(r'\((.*?\))', item)
+                            # print(parans)
+                            for paran in parans:
+                                modelname = None
+                                modelvalue = None
                                 if 'mm' in paran:
-                                    pass
+                                    continue
                                 else:
-                                    modelname = str(paran)
+                                    modelname = str(paran).strip(')')
                                     # modelvalue = re.sub(r'\((.*?)\)', '', item)
                                     item = wheelbasebackup.split(',')
                                     if len(item) is 3:
@@ -324,83 +561,834 @@ def wheelbaseParse(template):
                                                 modelvalue = round(float(modelvalue)*0.039370, 1)
                                             newItem = {modelname : modelvalue}
                                             newwheelbase.append(newItem)
-                                            # print(newItem)
                                         item = newwheelbase
+                                        # print(item)
+
                                     else:
-                                        modelvalue = item[0].split(' ')[1]
-                                        item = {modelname : modelvalue}
-                        # else:
-            print(item)
-                        # print(item)
-                            # if float(item[1]) > 1000:
-                            #     item[1] = round(float(item)*0.039370, 1)
-                        # print(item)
+                                        # print(modelname)
+                                        # item = item[0].replace(r'\((.*?\s?.*?\))', '')
+                                        item = re.sub(r'\((.*?\s?.*?\))', '', item[0])
+                                        modelvalue = item.split(' ')[0]
+                                        newItem = {modelname : modelvalue}
+                                        newwheelbase.append(newItem)
 
-                    # elif 'vert' in item[0] or 'cvt' in item[0]:
-                    #     item = item[1].split('-')[0]
-                    #     if float(item) > 1000:
-                    #         item = round(float(item)*0.039370, 1)
-                    #
-                    # else:
-                    #     pass
-                # else:
-                #     if ':' in item:
-                #         print(item)
+                if type(item) is str:
+                    item = re.sub(r'\((.*?\s?.*?\))', '', item)
+                    item = item.split('<')[0]
+                    # print(item)
+                    # item = re.sub(r'\<(.*?\s?.*?)\>', '', item)
+                    item = item.lstrip().split(' ')
+                    if len(item) is 4:
+                        modelname = item[3]
+                        modelvalue = item[0]
+                        if float(modelvalue) > 1000:
+                            modelvalue = round(float(modelvalue)*0.039370, 1)
+                        newItem = {modelname : modelvalue}
+                        newwheelbase.append(newItem)
+
+                    else:
+                        newItem = item[0]
+                        newwheelbase.append(newItem)
 
 
+                # print(item)
+            # print(newwheelbase)
 
-            # print(wheelbase)
-            #     item = item.split(':')
-            #     # if item
-            #     # item = {item[0]:item[1]}
-            #     if len(item) == 3 or len(item) == 5:
-            #         print(item)
-            # char_list = ['<br>| <br/> | <br />']
-            # manufacturer = re.sub("|".join(char_list), " ", manufacturer)
-            # check = ['convert','Convert', 'cvt']
-            # if any(x in wheelbase for x in check):
-            #     # print(wheelbase + '\n')
-            #     wheelbase = wheelbase.split('|')
-            #     if 'mm' in wheelbase[2]:
-            #         wheelbase[1] = round(float(wheelbase[1])*0.039370, 1)
-            #     wheelbase = wheelbase[1]
-            #     # wheelbase = re.sub("|".join(char_list), "", wheelbase).rstrip('\r\n')
-            # else:
-            #     wheelbase = wheelbase.split('&')[0]
-            # if bool(re.match('[a-zA-Z]', wheelbase)):
-            #     wheelbase = wheelbase.split(' ')[1]
-            # if wheelbase < 40:
-            #     wheelbase = None
-                # continue
-            cars[make][model][generation] = {'wheelbase': wheelbase}
-            # print(wheelbase)
+            cars[make][model][generation] = {'wheelbase': newwheelbase}
 
     except Exception as e:
         print('wheelbase', wheelbase, e)
-
 
 def lengthParse(template):
     try:
         length = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
         lengthbackup = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
         if length:
-            length = re.search('(\d)(\d)(\d)?(\.\d*)?', length)
-            length = length.group(0)
-            if float(length) > 300:
-                length = re.search(r'\((.*?)\)', lengthbackup)
-                length = length.group(0).split(' ')[0][1]
-            cars[make][model][generation] = {'length': length}
+            length = re.split('<br>|<br/>|<br />', length)
+            newlength = []
+            for item in length:
+                if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                    item = re.split(r'(\s\|\s)', item)
+                    # print(item)
+
+                    if len(item) is 1:
+                        item = re.split(r'(\|\{)', item[0])
+                    for subitem in item:
+                        cvtcheck = [':', 'Convert', 'convert', 'cvt']
+                        if any(x in subitem for x in cvtcheck):
+                            subitem = re.sub(r'\'', ' ', subitem)
+                            subitem = subitem.split('<')[0]
+                            newItem = {}
+                            if ':' in subitem:
+                                # print(subitem)
+                                subitem = subitem.split(':')
+                                easyname = subitem[0]
+                                easyname = easyname.replace('{{ubl\n|' , '').lstrip()
+                                try:
+                                    easyvalue = subitem[1].split('|')[1]
+                                except:
+                                    easyvalue = re.search(r'\((.*?\s?.*?)\)', subitem[1])
+                                    easyvalue = str(easyvalue.group(0))[1:-1]
+                                    easyvalue = easyvalue.split(' ')[0]
+                                    # newItem = {easyname : easyvalue}
+                                newItem = {easyname : easyvalue}
+                                newlength.append(newItem)
+                                # print(newItem)
+
+                            else:
+                                if 'ubl' in subitem:
+                                    subitem = subitem.split('|')
+                                    subitem[1] = subitem[1].split(' ')[0]
+                                    # easyname = subitem[1]
+                                    newItem = {subitem[1] : subitem[2]}
+                                    newlength.append(newItem)
+                                    # print(newItem)
+                                else:
+                                    # print(subitem)
+                                    easyname = re.search(r'\((.*?\s?.*?)\)', subitem)
+                                    if easyname:
+                                        easyname = str(easyname.group(0))[1:-1]
+                                        subitem = subitem.split(' ')[0]
+                                        easyvalue = subitem.split('|')[1]
+                                        if '+' in easyvalue:
+                                            easyvalue = easyvalue.split('+')[0]
+                                        newItem = {easyname : easyvalue}
+                                        newlength.append(newItem)
+                                    else:
+                                        # subitem = subitem.split(' ')
+                                        subitem = subitem.split('|')
+                                        easyname = subitem[0].split(' ')[0]
+                                        easyvalue = subitem[1]
+                                        newItem = {easyname : easyvalue}
+                                        newlength.append(newItem)
+
+                else:
+                    item = item.split('<')[0]
+                    if ':' in item:
+                        item = item.split(':')
+                        easyname = item[0]
+                        if '|' in item[1]:
+                            easyvalue = item[1].split('|')[1]
+                        else:
+                            # print(item)
+                            easyvalue = item[1].split(' ')[1]
+                        easyvalue = easyvalue.replace('in', '')
+                        if float(easyvalue) > 1000:
+                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                        newItem = {easyname : easyvalue}
+                        newlength.append(newItem)
+                    else:
+                        if '&nbsp;' in item:
+                            item = item.replace('&nbsp;', ' ')
+                            # easyname = re.search(r'\((.*?)\)', item)
+                            easyname = item.count('(')
+                            item = item.split(' ')
+                            easyvalue = item[0]
+                            if float(easyvalue) > 1000:
+                                easyvalue = round(float(easyvalue)*0.039370, 1)
+                            # print(easyname.groups())
+                            if easyname is 2:
+                                easyname = item[0][1:-1]
+                                easyvalue = item[1]
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                newItem = {easyname : easyvalue}
+                                newlength.append(newItem)
+                            else:
+                                newItem = easyvalue
+                                newlength.append(newItem)
+
+                        else:
+                            if '|' in item:
+                                easyvalue = item.split('|')[1]
+                                easyvalue = easyvalue.split('-')[0]
+                                easyvalue = easyvalue.split('+')[0]
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                if '(' in item:
+                                    easyname = re.search(r'\((.*?)\)', item)
+                                    try:
+                                        easyname = easyname.group(0)[1:-1]
+                                    except:
+                                        item = item.split('(')
+                                        easyname = item[1]
+                                        easyvalue = item[0].split('|')[1]
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        # print(item)
+                                    newItem = {easyname : easyvalue}
+                                    newlength.append(newItem)
+                                else:
+                                    newItem = easyvalue
+                                    newlength.append(newItem)
+                            else:
+                                item = item.split(' ')
+                                easyvalue = item[0]
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                try:
+                                    easyname = item[4][1:-1]
+                                    newItem = {easyname : easyvalue}
+                                    newlength.append(newItem)
+                                except:
+                                    newItem = easyvalue
+                                    newlength.append(newItem)
+
+                length = newlength
+                # print(length)
+
+
+            cars[make][model][generation] = {'length': newlength}
 
     except Exception as e:
-        print(e, make, model, length)
-        # print(lengthbackup)
+        print(e, 'length', length)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
 
+def widthParse(template):
+    try:
+        width = str(template.get('width').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        widthbackup = str(template.get('width').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        if width:
+            width = re.split('<br>|<br/>|<br />', width)
+            newwidth = []
+            for item in width:
+                if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                    item = re.split(r'(\s\|\s)', item)
+                    # print(item)
+
+                    if len(item) is 1:
+                        item = re.split(r'(\|\{)', item[0])
+                    for subitem in item:
+                        cvtcheck = [':', 'Convert', 'convert', 'cvt']
+                        if any(x in subitem for x in cvtcheck):
+                            subitem = re.sub(r'\'', ' ', subitem)
+                            subitem = subitem.split('<')[0]
+                            newItem = {}
+                            if ':' in subitem:
+                                # print(subitem)
+                                subitem = subitem.split(':')
+                                easyname = subitem[0]
+                                easyname = easyname.replace('{{ubl\n|' , '').lstrip()
+                                try:
+                                    easyvalue = subitem[1].split('|')[1]
+                                except:
+                                    easyvalue = re.search(r'\((.*?\s?.*?)\)', subitem[1])
+                                    easyvalue = str(easyvalue.group(0))[1:-1]
+                                    easyvalue = easyvalue.split(' ')[0]
+                                    # newItem = {easyname : easyvalue}
+                                easyvalue = easyvalue.replace(',','')
+                                easyvalue = easyvalue.replace('mm','')
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                newItem = {easyname : easyvalue}
+                                newwidth.append(newItem)
+                                # print(newItem)
+
+                            else:
+                                if 'ubl' in subitem:
+                                    subitem = subitem.split('|')
+                                    subitem[1] = subitem[1].split(' ')[0]
+                                    easyvalue = subitem[2]
+                                    easyvalue = easyvalue.replace(',','')
+                                    easyvalue = easyvalue.replace('mm','')
+                                    if float(easyvalue) > 1000:
+                                        easyvalue = round(float(easyvalue)*0.039370, 1)
+                                    newItem = {subitem[1] : easyvalue}
+                                    newwidth.append(newItem)
+                                    # print(newItem)
+                                else:
+                                    # print(subitem)
+                                    easyname = re.search(r'\((.*?\s?.*?)\)', subitem)
+                                    if easyname:
+                                        easyname = str(easyname.group(0))[1:-1]
+                                        subitem = subitem.split(' ')[0]
+                                        easyvalue = subitem.split('|')[1]
+                                        if '+' in easyvalue:
+                                            easyvalue = easyvalue.split('+')[0]
+                                        easyvalue = easyvalue.replace(',','')
+                                        easyvalue = easyvalue.replace('mm','')
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        newItem = {easyname : easyvalue}
+                                        newwidth.append(newItem)
+                                    else:
+                                        # subitem = subitem.split(' ')
+                                        subitem = subitem.split('|')
+                                        easyname = subitem[0].split(' ')[0]
+                                        easyvalue = subitem[1]
+                                        easyvalue = easyvalue.replace(',','')
+                                        easyvalue = easyvalue.replace('mm','')
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        newItem = {easyname : easyvalue}
+                                        newwidth.append(newItem)
+
+                else:
+                    item = item.split('<')[0]
+                    if ':' in item:
+                        item = item.split(':')
+                        easyname = item[0]
+                        if '|' in item[1]:
+                            easyvalue = item[1].split('|')[1]
+                        else:
+                            # print(item)
+                            easyvalue = item[1].split(' ')[1]
+                        easyvalue = easyvalue.replace('in', '')
+                        easyvalue = easyvalue.replace(',','')
+                        easyvalue = easyvalue.replace('mm','')
+                        if float(easyvalue) > 1000:
+                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                        newItem = {easyname : easyvalue}
+                        newwidth.append(newItem)
+                    else:
+                        if '&nbsp;' in item:
+                            item = item.replace('&nbsp;', ' ')
+                            # easyname = re.search(r'\((.*?)\)', item)
+                            easyname = item.count('(')
+                            item = item.split(' ')
+                            easyvalue = item[0]
+                            easyvalue = easyvalue.replace(',','')
+                            easyvalue = easyvalue.replace('mm','')
+                            if float(easyvalue) > 1000:
+                                easyvalue = round(float(easyvalue)*0.039370, 1)
+                            # print(easyname.groups())
+                            if easyname is 2:
+                                easyname = item[0][1:-1]
+                                easyvalue = item[1]
+                                easyvalue = easyvalue.replace(',','')
+                                easyvalue = easyvalue.replace('mm','')
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                newItem = {easyname : easyvalue}
+                                newwidth.append(newItem)
+                            else:
+                                newwidth.append(easyvalue)
+
+                        else:
+                            if '|' in item:
+                                easyvalue = item.split('|')[1]
+                                easyvalue = easyvalue.split('-')[0]
+                                easyvalue = easyvalue.split('+')[0]
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                if '(' in item:
+                                    easyname = re.search(r'\((.*?)\)', item)
+                                    try:
+                                        easyname = easyname.group(0)[1:-1]
+                                    except:
+                                        item = item.split('(')
+                                        easyname = item[1]
+                                        easyvalue = item[0].split('|')[1]
+                                        easyvalue = easyvalue.replace(',','')
+                                        easyvalue = easyvalue.replace('mm','')
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        # print(item)
+                                    newItem = {easyname : easyvalue}
+                                    newwidth.append(newItem)
+                                else:
+                                    newwidth.append(easyvalue)
+                            else:
+                                item = item.split(' ')
+                                easyvalue = item[0]
+                                easyvalue = easyvalue.replace(',','')
+                                easyvalue = easyvalue.replace('mm','')
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                try:
+                                    easyname = item[4][1:-1]
+                                    newItem = {easyname : easyvalue}
+                                    newwidth.append(newItem)
+                                except:
+                                    newwidth.append(easyvalue)
+
+                width = newwidth
+
+            cars[make][model][generation] = {'width': newwidth}
+
+    except Exception as e:
+        print(e, 'width', width)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+
+def heightParse(template):
+    try:
+        height = str(template.get('height').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        heightbackup = str(template.get('height').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        if height:
+            height = re.split('<br>|<br/>|<br />', height)
+            newheight = []
+            for item in height:
+                if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                    item = re.split(r'(\s\|\s)', item)
+                    # print(item)
+
+                    if len(item) is 1:
+                        item = re.split(r'(\|\{)', item[0])
+                    for subitem in item:
+                        subitem = subitem.replace('&nbsp;', ' ')
+
+                        cvtcheck = [':', 'Convert', 'convert', 'cvt']
+                        if any(x in subitem for x in cvtcheck):
+                            subitem = re.sub(r'\'', ' ', subitem)
+                            subitem = subitem.split('<')[0]
+                            newItem = {}
+                            if ':' in subitem:
+                                # print(subitem)
+                                subitem = subitem.split(':')
+                                easyname = subitem[0]
+                                easyname = easyname.replace('{{ubl\n|' , '').lstrip()
+                                try:
+                                    easyvalue = subitem[1].split('|')[1]
+                                except:
+                                    easyvalue = re.search(r'\((.*?\s?.*?)\)', subitem[1])
+                                    easyvalue = str(easyvalue.group(0))[1:-1]
+                                    easyvalue = easyvalue.split(' ')[0]
+                                    # newItem = {easyname : easyvalue}
+                                easyvalue = easyvalue.replace(',','')
+                                easyvalue = easyvalue.replace('mm','')
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                newItem = {easyname : easyvalue}
+                                newheight.append(newItem)
+                                # print(newItem)
+
+                            else:
+                                if 'ubl' in subitem:
+                                    subitem = subitem.split('|')
+                                    subitem[1] = subitem[1].split(' ')[0]
+                                    easyvalue = subitem[2]
+                                    easyvalue = easyvalue.replace(',','')
+                                    easyvalue = easyvalue.replace('mm','')
+                                    if float(easyvalue) > 1000:
+                                        easyvalue = round(float(easyvalue)*0.039370, 1)
+                                    newItem = {subitem[1] : easyvalue}
+                                    newheight.append(newItem)
+                                    # print(newItem)
+                                else:
+                                    # print(subitem)
+                                    easyname = re.search(r'\((.*?\s?.*?)\)', subitem)
+                                    if easyname:
+                                        easyname = str(easyname.group(0))[1:-1]
+                                        subitem = subitem.split(' ')[0]
+                                        easyvalue = subitem.split('|')[1]
+                                        if '+' in easyvalue:
+                                            easyvalue = easyvalue.split('+')[0]
+                                        easyvalue = easyvalue.replace(',','')
+                                        easyvalue = easyvalue.replace('mm','')
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        newItem = {easyname : easyvalue}
+                                        newheight.append(newItem)
+                                    else:
+                                        # subitem = subitem.split(' ')
+                                        subitem = subitem.split('|')
+                                        easyname = subitem[0].split(' ')[0]
+                                        easyvalue = subitem[1]
+                                        easyvalue = easyvalue.replace(',','')
+                                        easyvalue = easyvalue.replace('mm','')
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        newItem = {easyname : easyvalue}
+                                        newheight.append(newItem)
+
+                else:
+                    item = item.replace('&nbsp;', ' ')
+
+                    item = item.split('<')[0]
+                    if ':' in item:
+                        item = item.split(':')
+                        easyname = item[0]
+                        if '|' in item[1]:
+                            easyvalue = item[1].split('|')[1]
+                        else:
+                            # print(item)
+
+
+                            easyvalue = item[1].split(' ')[1]
+                        easyvalue = easyvalue.replace('in', '')
+                        easyvalue = easyvalue.replace(',','')
+                        easyvalue = easyvalue.replace('mm','')
+                        if float(easyvalue) > 1000:
+                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                        newItem = {easyname : easyvalue}
+                        newheight.append(newItem)
+                    else:
+                        if '&nbsp;' in item:
+                            item = item.replace('&nbsp;', ' ')
+                            # easyname = re.search(r'\((.*?)\)', item)
+                            easyname = item.count('(')
+                            item = item.split(' ')
+                            easyvalue = item[0]
+                            easyvalue = easyvalue.replace(',','')
+                            easyvalue = easyvalue.replace('mm','')
+                            if float(easyvalue) > 1000:
+                                easyvalue = round(float(easyvalue)*0.039370, 1)
+                            # print(easyname.groups())
+                            if easyname is 2:
+                                easyname = item[0][1:-1]
+                                easyvalue = item[1]
+                                easyvalue = easyvalue.replace(',','')
+                                easyvalue = easyvalue.replace('mm','')
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                newItem = {easyname : easyvalue}
+                                newheight.append(newItem)
+                            else:
+                                newheight.append(easyvalue)
+
+                        else:
+                            if '|' in item:
+                                easyvalue = item.split('|')[1]
+                                easyvalue = easyvalue.split('-')[0]
+                                easyvalue = easyvalue.split('+')[0]
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                if '(' in item:
+                                    easyname = re.search(r'\((.*?)\)', item)
+                                    try:
+                                        easyname = easyname.group(0)[1:-1]
+                                    except:
+                                        item = item.split('(')
+                                        easyname = item[1]
+                                        easyvalue = item[0].split('|')[1]
+                                        easyvalue = easyvalue.replace(',','')
+                                        easyvalue = easyvalue.replace('mm','')
+                                        if float(easyvalue) > 1000:
+                                            easyvalue = round(float(easyvalue)*0.039370, 1)
+                                        # print(item)
+                                    newItem = {easyname : easyvalue}
+                                    newheight.append(newItem)
+                                else:
+                                    newheight.append(easyvalue)
+                            else:
+                                item = item.split(' ')
+                                easyvalue = item[0]
+                                easyvalue = easyvalue.replace(',','')
+                                easyvalue = easyvalue.replace('mm','')
+                                if float(easyvalue) > 1000:
+                                    easyvalue = round(float(easyvalue)*0.039370, 1)
+                                try:
+                                    easyname = item[4][1:-1]
+                                    newItem = {easyname : easyvalue}
+                                    newheight.append(newItem)
+                                except:
+                                    newheight.append(easyvalue)
+
+                height = newheight
+
+            # print(newheight)
+
+            cars[make][model][generation] = {'height': newheight}
+
+    except Exception as e:
+        print(e, 'height', height)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
+
+def weightParse(template):
+    try:
+        weight = str(template.get('weight').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        weightbackup = str(template.get('weight').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        if weight:
+
+            # print(weight)
+            weight = re.split('<br>|<br/>|<br />', weight)
+            newweight = []
+            for item in weight:
+                newItem = {}
+                easyname = None
+                easyvalue = None
+                if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                    item = re.split(r'(\s\|\s)', item)
+
+                    if len(item) is 1:
+                        item = re.split(r'(\|\{)', item[0])
+                    for subitem in item:
+                        newItem = {}
+                        easyname = None
+                        easyvalue = None
+                        subitem = subitem.replace('&nbsp;', ' ')
+
+                        cvtcheck = [':', 'Convert', 'convert', 'cvt']
+                        if any(x in subitem for x in cvtcheck):
+                            subitem = re.sub(r'\'', ' ', subitem)
+                            subitem = subitem.split('<')[0]
+                            if '| ' in subitem:
+                                subsub = subitem.split('| ')
+                                for subsubsub in subsub:
+                                    if ':' in subsubsub:
+                                        # print(subitem, '\n')
+                                        subsubsub = subsubsub.split(':')
+                                        easyname = subsubsub[0]
+                                        easyname = easyname.replace('{{ubl\n|' , '').lstrip()
+                                        easyvalue = subsubsub[1]
+                                        # print(easyvalue)
+                                        easyvalue = easyvalue.split('|')
+                                        if 'lb' in easyvalue[2]:
+                                            easyvalue = easyvalue[1]
+                                        else:
+                                            easyvalue = round(float(easyvalue[1])/0.45359237, 0)
+                                        newItem = {easyname : easyvalue}
+                                        newweight.append(newItem)
+                            else:
+                                if ':' in subitem:
+                                    subitem = subitem.split(':')
+                                    easyname = subitem[0]
+                                    easyname = easyname.replace('{{ubl\n|' , '').lstrip()
+                                    easyvalue = subitem[1]
+                                    # print(easyvalue)
+                                    easyvalue = easyvalue.split('|')
+                                    if 'lb' in easyvalue[2]:
+                                        easyvalue = easyvalue[1]
+                                    else:
+                                        easyvalue = round(float(easyvalue[1])/0.45359237, 0)
+                                    newItem = {easyname : easyvalue}
+                                    newweight.append(newItem)
+                                else:
+                                    easyvalue = re.search(r'\{(.*?)\}', subitem)
+                                    easyvalue = easyvalue.group(1).split('|')
+                                    if 'kg' in easyvalue[2]:
+                                        easyvalue = int(round(float(easyvalue[1])/0.45359237))
+                                    elif 'lb' in easyvalue[2]:
+                                        easyvalue = easyvalue[1]
+                                    else:
+                                        easyvalue = str(easyvalue[1].replace(',','')) + '-' + str(easyvalue[3].replace(',',''))
+                                    easyname = re.search(r'\((.*?)\)', subitem)
+                                    if easyname:
+                                        easyname = easyname.group(1)
+                                        newItem = {easyname : easyvalue}
+                                        newweight.append(newItem)
+                                        # print(newItem)
+
+                                    else:
+                                        newweight.append(easyvalue)
+                                        # print(easyvalue)
+                        else:
+                            if '*' in subitem:
+                                easyvalue = subitem.split('\n')
+                                for subsub in easyvalue:
+                                    if '*' in subsub:
+                                        easyvalue = subsub.replace(',', '')[1:]
+                                        easyvalue = easyvalue.split(' ')
+                                        try:
+                                            easyname = re.search(r'\((.*?)\)', easyvalue[2])
+                                            easyvalue = easyvalue[0]
+                                            easyname = easyname.group(1)
+                                            newItem = {easyname : easyvalue}
+                                            newweight.append(newItem)
+                                        except:
+                                            newweight.append(easyvalue)
+                                    else:
+                                        # print(subsub)
+                                        pass
+                            else:
+                                # print(subitem)
+                                pass
+                else:
+                    item = item.split('<')[0]
+                    cvtcheck = [':', 'Convert', 'convert', 'cvt']
+                    if any(x in item for x in cvtcheck):
+                        if '-' in item:
+                            try:
+                                easyname = re.search(r'\((.*?)\)', item)
+                                easyname = easyname.group(1)
+                                easyvalue = item.split('(')[0]
+                                if '-' in easyvalue:
+                                    easyvalue1 = easyvalue.split('|')[1]
+                                    easyvalue2 = easyvalue.split('|')[3]
+                                    if 'kg' in easyvalue.split('|')[4]:
+                                        easyvalue1 = int(round(float(easyvalue1)/0.45359237))
+                                        easyvalue2 = int(round(float(easyvalue2)/0.45359237))
+                                        easyvalue = str(easyvalue1) + str(easyvalue2)
+                                        newweight.append({easyname : easyvalue})
+                                        # print(newweight)
+                                    else:
+                                        easyvalue = str(easyvalue1) + str(easyvalue2)
+                                        newweight.append({easyname : easyvalue})
+                                        # print(newweight)
+                                else:
+                                    easyvalue = easyvalue.split('|')[1]
+                                    newweight.append(easyvalue)
+                                    # print(easyvalue)
+
+
+                                # print(easyname, easyvalue)
+                            except:
+                                # print(item)
+                                if 'door' in item:
+                                    item = item.lstrip()
+                                    item = item.split(' ')
+                                    # print(item)
+                                    if len(item) is 3:
+                                        easyname = item[0]
+                                        easyvalue = item[2].split('|')
+                                        easyvalue = easyvalue[1]
+                                    else:
+                                        easyname = item[0]
+                                        easyvalue = item[1].split('|')
+                                        easyvalue = easyvalue[1]
+
+                                    # print(eas)
+
+                                    newItem = {easyname: easyvalue}
+                                    newweight.append(newItem)
+                                    # print(newItem)
+                                else:
+                                    item = item.replace('|-|', '-')
+                                    item = item.replace(',', '')
+                                    if '| - |' in item or '} - {' in item:
+                                        item = item.split(' - ')
+                                        item[0] = item[0].split('|')
+                                        item[1] = item[1].split('|')
+                                        easyvalue1 = int(round(float(item[0][1])/0.45359237))
+                                        easyvalue2 = int(round(float(item[1][1])/0.45359237))
+                                        easyvalue = str(easyvalue1).lstrip() + str(easyvalue2).rstrip()
+                                        newweight.append(easyvalue.strip())
+                                        # print(easyvalue)
+
+
+                                    elif '-' in item:
+                                        item = item.split('|')
+                                        if 'kg' in item[2]:
+                                            item[1] = item[1].split('-')
+                                            easyvalue1 = int(round(float(item[1][0])/0.45359237))
+                                            easyvalue2 = int(round(float(item[1][1])/0.45359237))
+                                            easyvalue = str(easyvalue1).lstrip() + str(easyvalue2).lstrip().rstrip()
+                                            newweight.append(easyvalue)
+                                            # print(easyvalue)
+                                        else:
+                                            easyvalue = item[1].replace('-', '').strip()
+                                            newweight.append(easyvalue.strip())
+                                            # print(easyvalue)
+                                    else:
+                                        # print(item)
+                                        pass
+                        else:
+                            if ':' in item:
+                                # item = re.sub(' +', '', item)
+                                item = item.split(':')
+                                if 'convert' in item[1] or 'Convert' in item[1]:
+                                    easyname = item[0]
+                                    easyname = easyname.replace('&nbsp;', '')
+                                    easyname = easyname.replace('\n', '')
+                                    easyvalue = item[1].split('|')[1]
+                                    newItem = {easyname:easyvalue}
+                                    newweight.append(newItem)
+                                else:
+                                    easyname = item[0]
+                                    easyname = easyname.replace('&nbsp;', '')
+                                    easyname = easyname.replace('\n', '')
+                                    print(item)
+                                    easyvalue = item[1].split(' ')
+                                    easyvalue = list(filter(None, easyvalue))
+                                    print(easyvalue)
+                                    easyvalue = easyvalue[0]
+                                    newItem = {easyname:easyvalue}
+                                    newweight.append(newItem)
+                                    print(newItem)
+                            # else:
+
+
+                                # pass
+                    else:
+                        item = item.replace('&nbsp;', ' ')
+                        item = item.replace('&ndash;', ' - ')
+                        item = item.replace(',','')
+                        try:
+                            easyname = re.search(r'\'\'\'(.*?)\'\'\'', item)
+                            easyname = easyname.group(1)
+                            easyvalue = item.lstrip().split(' ')[1]
+                            newItem = {easyname : easyvalue}
+                            newweight.append(newItem)
+
+                        except:
+                            paran = re.findall(r'\((.*?)\)', item)
+                            # print(paran)
+
+                            if len(paran) > 1:
+                                easyname = paran[1]
+                                easyvalue = paran[0].split(' ')[0]
+                                easyvalue = int(round(float(easyvalue)/0.45359237, 0))
+                                newItem = {easyname : easyvalue}
+                                newweight.append(newItem)
+                            elif len(paran) is 1:
+                                paran = paran[0]
+                                if '-' in paran:
+                                    if 'kg' in paran:
+                                        # print(paran)
+                                        paran = paran.replace('kg', '')
+                                        paran = paran.replace(',', '')
+                                        paran = paran.replace(' - ', '')
+                                        paran = paran.replace('-', ' ')
+                                        paran = paran.lstrip().rstrip()
+                                        paran = paran.split(' ')
+                                        for subparan in paran:
+                                            subparan = int(round(float(subparan)/0.45359237))
+                                        paran = str(paran[0]) + str(paran[1])
+                                        newweight.append(paran)
+                                        # print(paran)
+                                    else:
+                                        paran = paran.replace('lb', '')
+                                        paran = paran.replace('-', ' ')
+                                        paran = paran.lstrip().rstrip()
+                                        paran = paran.split(' ')                                        # paran = paran[0]
+                                        for subparan in paran:
+                                            subparan = int(round(float(subparan)/0.45359237))
+                                        paran = str(paran[0]) + str(paran[1])
+                                        newweight.append(paran)
+                                else:
+                                    paran = paran.split(' ')
+                                    if 'kg' in paran[1]:
+                                        if len(paran[0]) is 8:
+                                            paran1 = paran[0][:4]
+                                            paran1 = int(round(float(paran1)/0.45359237))
+                                            paran2 = paran[0][4:]
+                                            paran2 = int(round(float(paran2)/0.45359237))
+                                            paran = str(paran1) + str(paran2)
+                                            newweight.append(paran)
+                                        else:
+                                            paran = int(round(float(paran[0])/0.45359237))
+                                            newweight.append(paran)
+                                    else:
+                                        paran = paran[0]
+                                        newweight.append(paran)
+
+                            else:
+                                item = item.replace('-', ' ')
+                                item = item.replace('lbs.', '')
+                                item = item.replace('lb', '')
+                                ''.join(item.split())
+                                item = item.split(' ')
+                                if len(item) is 1:
+                                    newweight.append(item[0])
+                                else:
+                                    item = str(item[0]) + str(item[1])
+                                    newweight.append(item)
+
+                weight = newweight
+
+            # print(weightbackup)
+            # print(newweight)
+
+            cars[make][model][generation] = {'weight': newweight}
+
+    except Exception as e:
+        print(e, 'weight', weight)
+        exc_type, exc_obj, exc_tb = sys.exc_info()
+        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        print(exc_type, fname, exc_tb.tb_lineno)
 
 for filename in os.listdir(root_path):
     make = str(filename.split('.')[0].encode('ascii', 'ignore'))
     # print(make)
     cars[make] = {}
     if filename.endswith(".xml"):
+    # if filename.endswith("esla.xml"):
 
         with open (root_path + filename, 'r') as vehicles_file:
 
@@ -448,175 +1436,41 @@ for filename in os.listdir(root_path):
                                     electric = False
 
 
-                                generationParse(template)
-
-                                productionParse(template)
-
-                                assemblyParse(template)
-
-                                manufacturerParse(template)
-
-                                designerParse(template)
-
-                                engineParse(template)
-
-                                transmissionParse(template)
-
-                                wheelbaseParse(template)
-
-                                try:
-                                    width = str(template.get('width').value.lstrip().rstrip().encode('ascii', 'ignore'))
-                                    widthbackup = str(template.get('width').value.lstrip().rstrip().encode('ascii', 'ignore'))
-                                    if width:
-
-                                        width = re.search('(\d)(\d)(\d)?(\.\d*)?', width)
-                                        width = width.group(0)
-
-                                        if float(width) > 100:
-                                            try:
-                                                width = widthbackup.split('{{')[1]
-                                                if 'ubl' in width:
-                                                    width = widthbackup.split('{{')[3]
-                                            except:
-                                                width = widthbackup.split(' ')[1]
-                                            try:
-                                                width = width.split('|')[1]
-                                            except:
-
-                                                cars[make][model][generation] = {'width': width}
-                                                continue
-                                            width = re.search('(\d)(\d)(\d)?(\d)?(\.\d*)?', str(width))
-                                            width = width.group(0)
-                                            if float(width) > 1000:
-                                                width = round(float(width)*0.039370, 1)
-
-                                        cars[make][model][generation] = {'width': width}
-
-                                except Exception as e:
-                                    # print(e, make, model, width)
-                                    # print(widthbackup)
-                                    continue
-
+                                # generationParse(template)
+                                #
+                                # productionParse(template)
+                                #
+                                # modelyearsParse(template)
+                                #
+                                # assemblyParse(template)
+                                #
+                                # designerParse(template)
+                                #
+                                # classParse(template)
+                                #
+                                # bodystyleParse(template)
+                                #
+                                # manufacturerParse(template)
+                                #
+                                # engineParse(template)
+                                #
+                                # transmissionParse(template)
+                                #
+                                # wheelbaseParse(template)
+                                #
+                                # lengthParse(template)
+                                #
+                                # widthParse(template)
+                                #
+                                # heightParse(template)
+                                #
+                                weightParse(template)
 
                     except Exception as e:
                         # print(e)
                         continue
-                    # root = etree.fromstring(str(text))
-                    # for bits in root:
-
-                    # print(etree.tostring(root))
-                    # print(type(root[0]))
-                    # print(len(root))
 
 
-                    # cleantext = text.get_text().encode('ascii', 'ignore')
-                    # lines = cleantext.split('Infobox')
-                    # for line in lines:
-                    #     try:
-                    #         # print(re.split('name=' or 'name =', lines)[1])
-                    #         # print(lines[1].split('name')[1])
-                    #         if 'ref name' in line:
-                    #             fix = line.split('ref name')
-                    #             for fixline in fix:
-                    #                 if 'name =' in fixline:
-                    #                     fixline = fixline.split('name =')[1].lstrip()[:200]
-                    #                     newline= fixline.split('|')[0]
-                    #                     print(newline)
-                    #                 else:
-                    #                     fixline = fixline.split('name=')[1].lstrip()[:200]
-                    #                     newline= fixline.split('|')[0]
-                    #                     print(newline)
-                    #         else:
-                    #             for line in fix:
-                    #                 if 'name =' in line:
-                    #                     line = line.split('name =')[1].lstrip()[:200]
-                    #                     newline= line.split('|')[0]
-                    #                     print(newline)
-                    #                 else:
-                    #                     line = line.split('name=')[1].lstrip()[:200]
-                    #                     newline= line.split('|')[0]
-                    #                     print(newline)
-                    #     except Exception as e:
-                    #             # print(e)
-                    #             continue
-                    # regex = re.compile('\|(.*?)\|')
-                    # lines = re.findall(regex, cleantext)
-                    # print(lines[0], lines[1])
-                    # for line in lines[1:]:
-                    #     print(line.split('|')[0].lstrip()[2:])
-                    # if "name =" in cleantext:
-                    #     find_between(cleantext "name = ", )
-                    #     print(line)
-                #reg = r'\[^{\{]'
-                #result = [m.start() for m in re.finditer(texts[0].get_text(), 'Infobox')]
-
-                #result = [(i, cleantext[i:i+2]) for i in findall(start, cleantext)]
-                #regex = re.compile('Infobox (.*?) \}\}')
-                # regex = re.compile('Infobox(.*?)\|')
-                # regex = re.compile('\{\{Infobox(.*?)\}\}')
-                # regex = re.compile('name(.*?)\|')
-                # result = re.findall(regex, cleantext)
-                # print(result)
-                #print(result)
-
-                # for text in texts:
-                #     cleantext= text.get_text().encode('ascii', 'ignore')
-                #     try:
-                #         # result = re.search('{{Infobox automobile(.*)}}', text)
-                #         # print(result.group(1))
-                #         #result = re.search(r'\{\{\Infobox automobile(.*)\}\}', cleantext).group(1)
-                #         #result = text.partition('[')[-1].rpartition(']')[0]
-                #         #result = find_between(cleantext, start, end)
-                #         result = [m.start() for m in re.finditer(cleantext, start)]
-                #         print(result)
-                #
-                #     except Exception as e:
-                #         print("Phone ", e)
-                #         continue
-                # wikitables = page.find_all(".wikitable")
-                # print(right_table)
-                # for entry in page:
-                #     titles = entry.find_all('title')
-                #     # for title in titles:
-                #         # print(title
-                #     text = entry.find('text')
-                    #autobox = text.find_all('')
-                    # test = text.find_all(string = "Tesla")
-                    # if len(test) > 0:
-
-                    # s = 'asdf=5;iwantthis123jasd'
-                    # result = re.search('{{(.*)}}', s)
-                    # print(result.group(1))
-
-
-
-                    # test = text[text.find("{{")+1:myString.find("}}")]
-                    # print(test)
-
-
-
-                # currentvehicles = soup.find_all('title')
-                # for vehicle in currentvehicles:
-                #     vehicles.append(vehicle.get_text().encode('ascii', 'ignore'))
-                    # print(vehicle.get_text().encode('ascii', 'ignore'))
-                # date = soup.find('abbr')
-                # date = date.get('title')
-                # b = datetime.strptime(date[:-10], "%Y-%m-%dT%X")
-                # milliDate = unix_time_millis(b)
-                # phone_object['Date'] = int(milliDate)
-                # if title[:14] == "Placed call to":
-                #     phone_object['Type'] = "Placed"
-                #     title = title.split("to")
-                #
-                #     try:
-                #         phone_object['Person'] = title[1][1:]
-                #         duration = soup.find('abbr', 'duration').get_text()
-                #         b = datetime.strptime("1970,1,1," + duration[1:-1], "%Y,%m,%d,%X")
-                #         milliBegin = unix_time_millis(b)
-                #         phone_object['Duration'] = int(milliBegin)
-                #
-                #     except:
-                #         print ("error: ", filename)
 
 #EXPORT_________________________________________
 #
