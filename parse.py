@@ -1,6 +1,7 @@
 import os
 import sys
 import os.path
+import json
 from bs4 import BeautifulSoup, SoupStrainer
 import lxml
 from lxml import etree
@@ -65,16 +66,23 @@ def purify(numbers, productionbackup):
 
 def generationParse(template):
     try:
+        generation = None
         # print(str(template.get("name").value))
         generation = str(template.get("name").value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
         generation = re.sub('<br>', ' ', generation)
         generation = generation.split('<ref>')[0].lstrip()
-        # print(generation)
+
+        return generation
     except Exception as e:
         pass
+        # print(e, 'generation', generation)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def productionParse(template):
     try:
+        production = None
         # print('a')
         production = str(template.get('production').value.lstrip().rstrip().encode('ascii', 'ignore'))
         # print(1)
@@ -85,22 +93,26 @@ def productionParse(template):
                 production = production.replace('present', '2020')
             except Exception as e:
                 # print(production)
-                print('replace present', e)
+                # print('replace present', e)
+                pass
             try:
                 production = production.replace('-', '')
             except Exception as e:
                 # print(production)
-                print('replace present', e)
+                # print('replace present', e)
+                pass
             try:
                 production = production.replace('&ndash', '')
             except Exception as e:
                 # print(production)
-                print('replace ndash', e)
+                # print('replace ndash', e)
+                pass
             try:
                 production = production.replace('&ndash;', '')
             except Exception as e:
                 # print(production)
-                print('replace ndash', e)
+                # print('replace ndash', e)
+                pass
 
             try:
                 production = re.findall(r'[0-9]+', production)
@@ -108,7 +120,7 @@ def productionParse(template):
                 production = purify(production, productionbackup)
 
             except Exception as e:
-                print('split', e)
+                # print('split', e)
                 pass
 
 
@@ -117,30 +129,60 @@ def productionParse(template):
                 # print(production)
                 newproduction = str(production[0]) + str(production[1])
                 production = [newproduction]
-                cars[make][model][generation] = {'production': production}
             elif all(len(flag) == 8 for flag in production):
-                cars[make][model][generation] = {'production': production}
+                # cars[make][model][generation] = {'production': production}
+                production = production
             elif len(production) == 1 and all(len(flag) == 4 for flag in production):
-                cars[make][model][generation] = {'production': production}
+                # cars[make][model][generation] = {'production': production}
+                production = production
 
-            # else:
+            else:
+                production = None
                 # print(productionbackup)
                 # print(production)
 
+        return production
     except Exception as e:
-        print('function', e , '\n', production)
+        # print('function', e , '\n', production)
         return
 
+    # print(production)
+
 def assemblyParse(template):
+    assembly = None
     try:
         assembly = str(template.get('assembly').value.lstrip().rstrip().encode('ascii', 'ignore'))
         if assembly:
-            cars[make][model][generation] = {'assembly': assembly}
+            assembly = re.split('<br>|<br/>|<br />', assembly)
+            newassembly = []
+            for item in assembly:
+                item = item.split('<') [0]
+                if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                    item = item.split('|')[1:]
+                    for subitem in item:
+                        char_list = ['\*', '\[', '\]', '\|', '\<br\>', '\<br\/\>', '\n', '\<br \/\>', '\{', '\}', 'unbulleted list','bulleted list','Unbulleted list', 'ubl']
+
+                        subitem = re.sub("|".join(char_list), "", subitem)
+                        newassembly.append(subitem)
+                else:
+                    char_list = ['\*', '\[', '\]', '\|', '\<br\>', '\<br\/\>', '\n', '\<br \/\>', '\{', '\}', 'unbulleted list','bulleted list','Unbulleted list', 'ubl']
+                    item = re.sub("|".join(char_list), "", item)
+                    assembly = item
+            # print(item)
+
+            # print(assembly)
+            assembly = newassembly
+            return assembly
+        else:
+            return None
             # print(assembly)
     except Exception as e:
-        print(assembly)
-        print('assembly error', e)
+        # print(assembly)
         pass
+        # print('assembly error', e)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def manufacturerParse(template):
     try:
@@ -154,13 +196,15 @@ def manufacturerParse(template):
 
             manufacturer = re.sub("|".join(char_list), " ", manufacturer)
             manufacturer = re.sub(r'\s+', ' ', manufacturer).rstrip().lstrip()
-            manufacturer.split('.')[0]
-            manufacturer.split('#')[0]
+            manufacturer = manufacturer.split('.')[0]
+            manufacturer = manufacturer.split('#')[0]
+            manufacturer = manufacturer.split('<')[0]
             # manufacturer = manufacturer.split('<br')
             # for item in manufacturer:
             #     item = str(item).replace(r'\[\[', '')
             #     print(item)
-            cars[make][model][generation] = {'manufacturer': manufacturer}
+            # cars[make][model][generation] = {'manufacturer': manufacturer}
+            return manufacturer
             # print(manufacturer)
     except Exception as e:
         # print('manu error', e)
@@ -168,6 +212,7 @@ def manufacturerParse(template):
 
 def bodystyleParse(template):
     try:
+        bodystlye = None
         bodystyle = str(template.get('body_style').value.lstrip().rstrip().encode('ascii', 'ignore'))
         bodystylebackup = str(template.get('body_style').value.lstrip().rstrip().encode('ascii', 'ignore'))
 
@@ -179,7 +224,11 @@ def bodystyleParse(template):
                     item = item.split('[[')
                     paraname = item[0].lstrip()
                     # print(bodystyle)
-                    paravalue = item[1].replace(']', '').replace('\n*', '').split('|')
+                    paravalue = item[1].replace(']', '').replace('\n*', '').split('|')[0]
+                    char_list = ['\*', '\#', '\[', '\]', '\|', '\<br\>', '\<br\/\>', '\n', '\<br \/\>', '\{', '\}', 'unbulleted list','bulleted list','Unbulleted list', 'ubl']
+                    paravalue = re.sub("|".join(char_list), "", paravalue)
+                    paravalue = paravalue.split('<')[0]
+                    # print(paravalue)
                     newItem = { paraname : paravalue}
                     newbodystyle.append(newItem)
                 else:
@@ -215,14 +264,15 @@ def bodystyleParse(template):
                     for subsub in subitem:
                         newbodystyle.append(subsub)
         # print(newbodystyle)
-        cars[make][model][generation] = {'bodystyle': newbodystyle}
-
+        # cars[make][model][generation] = {'bodystyle': newbodystyle}
+        return newbodystyle
     except Exception as e:
-        print(e, 'bodystyle', bodystyle)
-        # print(item)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'bodystyle', bodystyle)
+        # # print(item)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def classParse(template):
     try:
@@ -230,21 +280,25 @@ def classParse(template):
         classybackup = str(template.get('class').value.lstrip().rstrip().encode('ascii', 'ignore'))
         classy = classy.replace('#', ' ')
         classy = re.findall(r'\[\[(.*?)\]\]', classy)
-
+        newclass= []
             # print(classy.group(1))
         for classes in classy:
             try:
                 classes = classes.split('|')
-                cars[make][model][generation] = {'class': classes}
+                # cars[make][model][generation] = {'class': classes}
+                for subclass in classes:
+                    newclass.append(subclass)
             except:
-                cars[make][model][generation] = {'class': classes}
-
+                newclass.append(classes)
+                # cars[make][model][generation] = {'class': classes}
+        return newclass
     except Exception as e:
-        print(e, 'class', classy)
-        # print(item)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'class', classy)
+        # # print(item)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def modelyearsParse(template):
     try:
@@ -320,7 +374,8 @@ def modelyearsParse(template):
                                 elif len(subitem.strip()) is 8 or  len(subitem.strip()) is 6 or len(subitem.strip()) is 4:
                                     newmodelyears.append(int(subitem.strip()))
                                 else:
-                                    print(subitem)
+                                    newmodelyears.append(subitem.strip(')'))
+                                    # print(subitem)
                 else:
                     item = item.lstrip().rstrip()
 
@@ -393,23 +448,30 @@ def modelyearsParse(template):
 
 
             modelyears = newmodelyears
-            cars[make][model][generation] = {'model_years': modelyears}
+            return modelyears
+            # cars[make][model][generation] = {'model_years': modelyears}
 
     except Exception as e:
-        print(e, 'model_years', modelyears)
-        print(item)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'model_years', modelyears)
+        # print(item)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def designerParse(template):
+    designer = None
     try:
         designer = str(template.get('designer').value.lstrip().split('<')[0].rstrip().encode('ascii', 'ignore'))
         # print(designer)
-
         if designer:
-            cars[make][model][generation] = {'designer': designer}
+
+            # cars[make][model][generation] = {'designer': designer}
             # print(designer)
+            char_list = ['\*', '\[', '\]', '\|', '\<br\>', '\<br\/\>', '\n', '\<br \/\>', '\{', '\}', 'unbulleted list','bulleted list','Unbulleted list', 'ubl']
+
+            designer = re.sub("|".join(char_list), "", designer)
+            return designer
     except Exception as e:
         # print('designer error', e)
         pass
@@ -418,8 +480,69 @@ def engineParse(template):
     try:
         engine = str(template.get('engine').value.lstrip().rstrip().encode('ascii', 'ignore'))
         if engine:
-            engine = re.sub("|".join(char_list), "", engine).rstrip('\r\n')
-            cars[make][model][generation] = {'engine': engine}
+            char_list = ['\*', '\#', '\[', '\]', '\&nbsp;', '\n', 'unbulleted list','bulleted list','Unbulleted list', 'ubl']
+            engine = re.sub("|".join(char_list), '', engine).rstrip('\r\n')
+            engine = re.split('<br>|<br/>|<br />', engine)
+            newengine = []
+            # engine = list(engine.filter(None))
+            # engine = list(engine.filter(' '))
+            for item in engine:
+                # print(item)
+                # if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
+                #     item = item.split(' | ')
+                #     for subitem in item:
+                #         if 'diesel' in subitem:
+                #             print(subitem)
+                item = item.split('<')[0]
+                item = re.findall(r'\{\{(.*?)\}\}', item)
+                # print(item)
+                for subitem in item:
+                    if 'cid' in subitem or 'Cid' in subitem or 'CID' in subitem or 'cuin' in subitem:
+                        if 'convert' in subitem.lower() or 'cvt' in subitem.lower():
+                            subitem = subitem.split('|')
+                            blanksub = [x for x in subitem if x != '']
+                            newsub = [x for x in blanksub if x != None]
+                            subitem = [x for x in newsub if x != ' ']
+
+                            # subitem = list(subitem.filter(' '))
+                            # print(subitem)
+                            # subitem = list(subitem.filter(None))
+                            metric = subitem[2]
+                            if 'cid' in metric or 'Cid' in metric or 'CID' in metric or 'cuin' in metric:
+                                easyvalue = round(float(subitem[1])*0.016387064, 1)
+                                # print(easyvalue)
+                            elif 'cc' in metric:
+                                easyvalue = round(float(subitem[1])*0.001, 1)
+                                # print(easyvalue)
+                            elif 'L' in metric or 'l' in metric:
+                                easyvalue = round(float(subitem[1]), 1)
+                                # print(easyvalue)
+                            elif '-' in subitem[2]:
+                                easyvalue = (subitem[1] + subitem[2])/2
+                                # print(easyvalue)
+                            else:
+                                easyvalue = subitem[2]
+                            newengine.append(easyvalue)
+                        else:
+                            subitem = re.findall(r'([0-9]\.[0-9])', subitem)
+                            # subitem = re.findall(r'\d{1}(\.\d{1})', subitem)
+                            for subsub in subitem:
+                                newengine.append(subsub)
+                    else:
+                        subitem = re.findall(r'([0-9]\.[0-9])', subitem)
+                        # subitem = re.findall(r'\d{1}(\.\d{1})', subitem)
+                        for subsub in subitem:
+                            newengine.append(subsub)
+
+                        # print(subitem)
+
+                            # if 'metric[3]
+                        # else:
+                        #     print(subitem)
+            # print(engine)
+
+            # cars[make][model][generation] = {'engine': engine}
+            return newengine
             # print(engine)
     except Exception as e:
         # print('engine', e)
@@ -427,11 +550,17 @@ def engineParse(template):
 
 def transmissionParse(template):
     try:
+        transmission = None
         transmission = str(template.get('transmission').value.lstrip().rstrip().encode('ascii', 'ignore'))
 
         if transmission:
+            newtransmission = []
+            char_list = ['\*', '\#', '\[', '\]', '\&nbsp;', '\<br\>', '\<br\/\>', '\n', '\<br \/\>', '\{', '\}', 'unbulleted list','bulleted list','Unbulleted list', 'ubl', 'convert', 'cvt', 'Convert', 'abbr=on']
             transmission = re.sub("|".join(char_list), "", transmission).rstrip('\r\n')
-            cars[make][model][generation] = {'transmission': transmission}
+            transmission = transmission.split('|')
+            for item in transmission:
+                newtransmission.append(item)
+            return newtransmission
             # print(transmission)
     except Exception as e:
         # print('transmission', e)
@@ -561,7 +690,7 @@ def wheelbaseParse(template):
                                                 modelvalue = round(float(modelvalue)*0.039370, 1)
                                             newItem = {modelname : modelvalue}
                                             newwheelbase.append(newItem)
-                                        item = newwheelbase
+                                        # item = newwheelbase
                                         # print(item)
 
                                     else:
@@ -572,33 +701,33 @@ def wheelbaseParse(template):
                                         newItem = {modelname : modelvalue}
                                         newwheelbase.append(newItem)
 
-                if type(item) is str:
-                    item = re.sub(r'\((.*?\s?.*?\))', '', item)
-                    item = item.split('<')[0]
-                    # print(item)
-                    # item = re.sub(r'\<(.*?\s?.*?)\>', '', item)
-                    item = item.lstrip().split(' ')
-                    if len(item) is 4:
-                        modelname = item[3]
-                        modelvalue = item[0]
-                        if float(modelvalue) > 1000:
-                            modelvalue = round(float(modelvalue)*0.039370, 1)
-                        newItem = {modelname : modelvalue}
-                        newwheelbase.append(newItem)
-
-                    else:
-                        newItem = item[0]
-                        newwheelbase.append(newItem)
+                # if type(item) is str:
+                #     item = re.sub(r'\((.*?\s?.*?\))', '', item)
+                #     item = item.split('<')[0]
+                #     # print(item)
+                #     # item = re.sub(r'\<(.*?\s?.*?)\>', '', item)
+                #     item = item.lstrip().split(' ')
+                #     if len(item) is 4:
+                #         modelname = item[3]
+                #         modelvalue = item[0]
+                #         if float(modelvalue) > 1000:
+                #             modelvalue = round(float(modelvalue)*0.039370, 1)
+                #         newItem = {modelname : modelvalue}
+                #         newwheelbase.append(newItem)
+                #
+                #     else:
+                #         newItem = item[0]
+                #         newwheelbase.append(newItem)
 
 
                 # print(item)
             # print(newwheelbase)
-
-            cars[make][model][generation] = {'wheelbase': newwheelbase}
+            return newwheelbase
+            # cars[make][model][generation] = {'wheelbase': newwheelbase}
 
     except Exception as e:
-        print('wheelbase', wheelbase, e)
-
+        # print('wheelbase', wheelbase, e)
+        pass
 def lengthParse(template):
     try:
         length = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
@@ -734,17 +863,18 @@ def lengthParse(template):
                                     newItem = easyvalue
                                     newlength.append(newItem)
 
-                length = newlength
+                # length = newlength
                 # print(length)
 
-
-            cars[make][model][generation] = {'length': newlength}
+                return newlength
+            # cars[make][model][generation] = {'length': newlength}
 
     except Exception as e:
-        print(e, 'length', length)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'length', length)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def widthParse(template):
     try:
@@ -904,15 +1034,16 @@ def widthParse(template):
                                 except:
                                     newwidth.append(easyvalue)
 
-                width = newwidth
-
-            cars[make][model][generation] = {'width': newwidth}
+                # width = newwidth
+            return newwidth
+            # cars[make][model][generation] = {'width': newwidth}
 
     except Exception as e:
-        print(e, 'width', width)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'width', width)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def heightParse(template):
     try:
@@ -1078,17 +1209,18 @@ def heightParse(template):
                                 except:
                                     newheight.append(easyvalue)
 
-                height = newheight
+            return newheight
 
             # print(newheight)
 
-            cars[make][model][generation] = {'height': newheight}
+            # cars[make][model][generation] = {'height': newheight}
 
     except Exception as e:
-        print(e, 'height', height)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'height', height)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
 
 def weightParse(template):
     try:
@@ -1283,15 +1415,71 @@ def weightParse(template):
                                     easyname = item[0]
                                     easyname = easyname.replace('&nbsp;', '')
                                     easyname = easyname.replace('\n', '')
-                                    print(item)
-                                    easyvalue = item[1].split(' ')
-                                    easyvalue = list(filter(None, easyvalue))
-                                    print(easyvalue)
+                                    item[1] = item[1].lstrip()
+                                    item = list(filter(None, item))
+                                    easyvalue = item[1].lstrip().split(' ')
                                     easyvalue = easyvalue[0]
                                     newItem = {easyname:easyvalue}
                                     newweight.append(newItem)
-                                    print(newItem)
-                            # else:
+                            else:
+                                if '|' in item:
+                                    try:
+                                        easyname = re.search(r'\((.*?)\)', item)
+                                        easyname = easyname.group(1)
+                                        easyvalue = item.lstrip().split('|')[1]
+                                        if 'kg' in item.split('|')[2]:
+                                            easyvalue = int(round(float(easyvalue)/0.45359237))
+                                        elif 'lb' in item.split('|')[2]:
+                                            pass
+                                        else:
+                                            easyvalue1 = easyvalue
+                                            easyvalue2 = item.split('|')[3]
+                                            easyvalue = str(easyvalue1.strip()) + str(easyvalue2.strip())
+                                        newItem = {easyname : easyvalue}
+                                        newweight.append(newItem)
+                                        # print(newItem)
+
+                                    except:
+                                        item = item.replace(',', '')
+                                        item = item.split('|')
+                                        easyvalue = item[1]
+                                        if 'kg' in item[2]:
+                                            if len(easyvalue) is 8:
+                                                easyvalue1 = easyvalue[:4]
+
+                                                easyvalue2 = easyvalue[4:]
+                                                # print(easyvalue1,easyvalue2)
+                                                easyvalue1 = int(round(float(easyvalue1)/0.45359237))
+                                                easyvalue2 = int(round(float(easyvalue2)/0.45359237))
+                                                easyvalue = str(easyvalue1) + str(easyvalue2)
+                                            else:
+                                                easyvalue = int(round(float(easyvalue)/0.45359237))
+                                        elif 'lb' in item[2]:
+                                            pass
+                                        else:
+                                            easyvalue1 = item[1]
+                                            easyvalue2 = item[3]
+                                            easyvalue = str(easyvalue1.strip()) + str(easyvalue2.strip())
+                                        newweight.append(easyvalue)
+                                        # print(easyvalue)
+                                else:
+                                    if 'lb' in item:
+                                        item = item.split(' ')[0]
+
+                                    # print(weightbackup)
+                                    # print(item)
+                                    newweight.append(item)
+
+                                # try:
+                                #     easyname = re.search(r'\'\'\'(.*?)\'\'\'', item)
+                                #     easyname = easyname.group(1)
+                                #     easyvalue = item.lstrip().split(' ')[1]
+                                #     newItem = {easyname : easyvalue}
+                                #     newweight.append(newItem)
+                                #     print(newItem)
+                                #
+                                # except:
+                                #     pass
 
 
                                 # pass
@@ -1370,23 +1558,44 @@ def weightParse(template):
                                     item = str(item[0]) + str(item[1])
                                     newweight.append(item)
 
-                weight = newweight
+                # weight = newweight
 
             # print(weightbackup)
             # print(newweight)
-
-            cars[make][model][generation] = {'weight': newweight}
+            # if len(newweight) is 0:
+            #     newweight = None
+            return newweight
+            # cars[make][model][generation] = {'weight': newweight}
 
     except Exception as e:
-        print(e, 'weight', weight)
-        exc_type, exc_obj, exc_tb = sys.exc_info()
-        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-        print(exc_type, fname, exc_tb.tb_lineno)
+        pass
+        # print(e, 'weight', weight)
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
+def imageParse(template):
+    try:
+        image = str(template.get('image').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        imagebackup = str(template.get('image').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        if image:
+            if ':' in image:
+                image = image.split(':')[1]
+                image = image.split('|')[0]
 
+
+            return image
+    except Exception as e:
+        pass
+        # print(e, 'image')
+        # exc_type, exc_obj, exc_tb = sys.exc_info()
+        # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        # print(exc_type, fname, exc_tb.tb_lineno)
+
+cars = []
 for filename in os.listdir(root_path):
     make = str(filename.split('.')[0].encode('ascii', 'ignore'))
     # print(make)
-    cars[make] = {}
+    # cars = []
     if filename.endswith(".xml"):
     # if filename.endswith("esla.xml"):
 
@@ -1399,7 +1608,7 @@ for filename in os.listdir(root_path):
                 model = str(page.find('title').get_text().encode('ascii', 'ignore'))
                 # print(title)
                 # print(title)
-                cars[make][model] = {}
+                # cars = []
                 texts = page.find_all('text')
 
                 for text in texts:
@@ -1413,7 +1622,7 @@ for filename in os.listdir(root_path):
                             # if 'Infobox automobile' or 'Infobox electric' or 'Infobox racing' in template.name:
                             namecheck = ['Infobox automobile', 'Infobox electric', 'Infobox racing']
                             if any(x in template.name for x in namecheck):
-
+                                car = {}
                                 electric = None
                                 generation = None
                                 production = None
@@ -1431,69 +1640,62 @@ for filename in os.listdir(root_path):
                                 char_list = ['\[', '\]', '\&nbsp\;L', '\/\>', '\}', '\{', 'unbulleted list', '\&nbsp\;']
 
                                 if 'electric' in template.name:
-                                    electric = True
+                                    car['electric'] = True
                                 else:
-                                    electric = False
+                                    car['electric'] = False
+                                    # electric = False
 
 
-                                # generationParse(template)
-                                #
-                                # productionParse(template)
-                                #
-                                # modelyearsParse(template)
-                                #
-                                # assemblyParse(template)
-                                #
-                                # designerParse(template)
-                                #
-                                # classParse(template)
-                                #
-                                # bodystyleParse(template)
-                                #
-                                # manufacturerParse(template)
-                                #
-                                # engineParse(template)
-                                #
-                                # transmissionParse(template)
-                                #
-                                # wheelbaseParse(template)
-                                #
-                                # lengthParse(template)
-                                #
-                                # widthParse(template)
-                                #
-                                # heightParse(template)
-                                #
-                                weightParse(template)
+                                car['generation'] = generationParse(template)
+                                car['production'] = productionParse(template)
+                                car['assembly'] = assemblyParse(template)
+                                car['modelyears'] = modelyearsParse(template)
+                                car['designer'] = designerParse(template)
+                                car['class'] = classParse(template)
+                                car['bodystlye'] = bodystyleParse(template)
+                                car['manufacturer'] = manufacturerParse(template)
+                                car['engine'] = engineParse(template)
+                                car['transmission'] = transmissionParse(template)
+                                car['wheelbase'] = wheelbaseParse(template)
+                                car['length'] = lengthParse(template)
+                                car['width'] = widthParse(template)
+                                car['height'] = heightParse(template)
+                                car['weight'] = weightParse(template)
+                                car['image'] = imageParse(template)
+                                # print(car['image'])
+                                cars.append(car)
 
                     except Exception as e:
-                        # print(e)
+                        print(e)
                         continue
 
 
 
 #EXPORT_________________________________________
 #
-# dir = ('C:/Users/eufou/Desktop/CARS/parsed')
-# if not os.path.exists(dir):
-#     os.mkdir(dir)
+dir = ('C:/Users/eufou/Desktop/CARS/parsed')
+if not os.path.exists(dir):
+    os.mkdir(dir)
 #
 # for key in myDict:
 #     subdir = (dir +"/" + key)
 #     if not os.path.exists(subdir):
 #         os.mkdir(subdir)
 #
-# def jsonOutput(subdir,filename,data):
-#     if data:
-#         with open(os.path.join(dir + subdir, filename + '.txt'), mode='w') as outfile:
-#             json.dump(data, outfile)
-#     else:
-#         pass
+def jsonOutput(filename,data):
+    if data:
+        with open(os.path.join(dir, filename + '.txt'), mode='w') as outfile:
+            json.dump(data, outfile)
+    else:
+        pass
 
 
 #EXPORT ACTIVITY____________________
 #
-# def exporter():
+def exporter():
+    jsonOutput('cars', cars)
+    print('ran')
+
 #
 #
 #
@@ -1509,9 +1711,8 @@ for filename in os.listdir(root_path):
 #         jsonOutput('/Phone', filename, phoneHolder)
 #
 
-
-# fileParse()
-# print(len(cars))
-# print(vehicles)
-
-# exporter()
+print(len(cars))
+try:
+    exporter()
+except Exception as e:
+    print(e)
