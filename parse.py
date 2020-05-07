@@ -320,15 +320,27 @@ def modelyearsParse(template):
             modelyears = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
             modelyearsbsackup = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
         if modelyears:
+            if car['model'] == 'Ford EXP':
+                modelyears = modelyears.replace('.5', '')
+                # print(modelyears)
+            if car['model'] == 'GMC Typhoon':
+                modelyears = modelyears.split('<')[0]
             modelyears = re.split('<br>|<br/>|<br />|<BR>', modelyears)
             newmodelyears = []
             for item in modelyears:
                 paraname = None
                 easyvalue = None
                 easyname = None
+                value = None
+                fullDate = None
+                partialDate = None
                 if 'ubl ' in item or 'list' in item or '{ubl' in item or 'unbulleted' in item:
                     item = item.split('|')[1:]
                     for subitem in item:
+                        paraname = None
+                        easyvalue = None
+                        easyname = None
+                        value = None
                         subitem = subitem.lstrip().rstrip()
 
                         try:
@@ -422,14 +434,16 @@ def modelyearsParse(template):
                         item = item.replace('Present', '2020')
                     except:
                         pass
-                    try:
+
+                    if type(item) is int:
                         if len(item) is 8 or len(item) is 6 or len(item) is 4:
                             # print(item)
                             newmodelyears.append(int(item))
-                    except Exception as e:
+                        else:
+                            item = item.split(' ')[1]
+                            newmodelyears.append(int(item))
+                            # print(item)
                         # print(item)
-                        item = item.split(' ')[1]
-                        newmodelyears.append(int(item))
                     else:
                         # newItem = []
                         paraname = re.findall(r'\((.*?)\)', item)
@@ -461,6 +475,8 @@ def modelyearsParse(template):
                                             # print(newItem)
                                             newmodelyears.append(newItem)
                                             starter = False;
+                                    # else:
+                                    #     print(subitem)
 
 
                         else:
@@ -473,23 +489,22 @@ def modelyearsParse(template):
                                     if '{' in item:
                                         easyvalue = easyvalue.split('{{')[0]
                                         newItem  =  {easyname : int(easyvalue)}
+                                        newmodelyears.append(newItem)
+
                                     elif 'May' in item or 'China' in easyname:
                                         easyvalue = re.sub("\D", "", easyvalue)
                                         newItem  =  {easyname : int(easyvalue)}
+                                        newmodelyears.append(newItem)
+
                                     else:
                                         # print(easyname)
                                         newmodelyears.append(int(easyname))
-                                        continue
-                                newmodelyears.append(newItem)
                                 # print(newItem)
                             else:
                                 item = item.lstrip().rstrip()
                                 if len(item) is 8 or  len(item) is 6 or len(item) is 4:
                                     try:
                                         newmodelyears.append(int(item))
-                                        # print(item)
-
-                                        # continue
                                     except:
                                         print(item)
                                 else:
@@ -516,7 +531,6 @@ def modelyearsParse(template):
                                                     continue
                                                 newmodelyears.append(int(subitem))
                                                 # print(subitem)
-                                            continue
                                         else:
                                             fullDate = re.findall(r'[0-9]{4}', item)
                                             if len(fullDate) == 1:
@@ -1815,39 +1829,39 @@ newcars = []
 for car in cars:
     newcar = car
     if car['modelyears']:
+
+        newcar['variant'] = None
         for item in car['modelyears']:
             if type(item) == dict:
-                print(item.keys())
+                # print(item.keys())
                 newcar['variant'] = item.keys()
-                item = item.values()
+                if type(item.values()) == list:
+                    item = int(item.values()[0])
+                else:
+                    item = int(item.values())
             if type(item) == int:
                 if len(str(item)) == 6:
                     if int(str(item)[0:2]) == 19:
                         item = int(str(item)[0:4] + '19' + str(item)[4:])
                     elif int(str(item)[0:2]) == 20:
                         item = int(str(item)[0:4] + '20' + str(item)[4:])
-                    else:
-                        print(item)
+
                 if len(str(item)) == 8:
                     prod_start = int(str(item)[0:4])
                     prod_end = int(str(item)[4:])
                     while prod_start < prod_end +1:
                         item = prod_start
                         newcar['modelyears'] = item
-                        if not newcar['variant']:
-                            newcar['variant'] = None
                         newcars.append(newcar)
                         prod_start += 1
                 elif len(str(item)) == 4:
                     newcar['modelyears'] = item
-                    if not newcar['variant']:
-                        newcar['variant'] = None
                     newcars.append(newcar)
-            # else:
-            #     # if type(item) == str:
-            #     print(item)
-                # print(type(item))
-                # print(car['make'],car['model'],car['modelyears'])
+
+            else:
+                print(item)
+
+
 
 #EXPORT_________________________________________
 #
@@ -1889,8 +1903,8 @@ def exporter():
 #         jsonOutput('/Phone', filename, phoneHolder)
 #
 #
-# print(len(newcars))
-# try:
-#     exporter()
-# except Exception as e:
-#     print(e)
+print(len(newcars))
+try:
+    exporter()
+except Exception as e:
+    print(e)
