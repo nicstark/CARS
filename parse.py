@@ -189,7 +189,7 @@ def manufacturerParse(template):
         manufacturer = str(template.get('manufacturer').value.lstrip().rstrip().encode('ascii', 'ignore'))
         if manufacturer:
             # print(make)
-            # print(man)
+            # print(manufacturer)
             # manufacturer = re.search(r'\[\[(.*)\]\]', manufacturer)
             # manufacturer = manufacturer.split(']]')
             char_list = ['\[', '\]', '\|', '\<br\>', '\<br\/\>', '\<br \/\>', '\{\{', '\}\}', 'unbulleted list','bulleted list','Unbulleted list', 'ubl']
@@ -199,16 +199,27 @@ def manufacturerParse(template):
             manufacturer = manufacturer.split('.')[0]
             manufacturer = manufacturer.split('#')[0]
             manufacturer = manufacturer.split('<')[0]
+            # print(len(manufacturer))
+            # if len(manufacturer) < 2:
+            #     print(manufacturer)
+            # if manufacturer is None:
+            #     print(template)
             # manufacturer = manufacturer.split('<br')
             # for item in manufacturer:
             #     item = str(item).replace(r'\[\[', '')
             #     print(item)
             # cars[make][model][generation] = {'manufacturer': manufacturer}
             return manufacturer
+        else:
+            return filename.split('.')[0]
             # print(manufacturer)
     except Exception as e:
-        # print('manu error', e)
+        # print(filename.split('.')[0])
+        return filename.split('.')[0]
+
+        # print('manu error', e, template)
         pass
+
 
 def bodystyleParse(template):
     try:
@@ -302,10 +313,14 @@ def classParse(template):
 
 def modelyearsParse(template):
     try:
-        modelyears = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
-        modelyearsbackup = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        try:
+            modelyears = str(template.get('production').value.lstrip().rstrip().encode('ascii', 'ignore'))
+            modelyearsbackup = str(template.get('production').value.lstrip().rstrip().encode('ascii', 'ignore'))
+        except:
+            modelyears = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
+            modelyearsbsackup = str(template.get('model_years').value.lstrip().rstrip().encode('ascii', 'ignore'))
         if modelyears:
-            modelyears = re.split('<br>|<br/>|<br />', modelyears)
+            modelyears = re.split('<br>|<br/>|<br />|<BR>', modelyears)
             newmodelyears = []
             for item in modelyears:
                 paraname = None
@@ -334,49 +349,61 @@ def modelyearsParse(template):
                             pass
                         try:
                             subitem = subitem.replace('&ndash;', '')
-
                         except:
                             pass
-
                         try:
                             subitem = subitem.replace('present', '2020')
                         except:
                             pass
-
                         try:
                             subitem = subitem.replace('Present', '2020')
                         except:
                             pass
 
-                        if len(subitem) is 8 or  len(subitem) is 6 or len(subitem) is 4:
+                        if len(subitem) is 8 or len(subitem) is 6 or len(subitem) is 4:
                             newmodelyears.append(int(subitem))
                         else:
-                            newItem = []
+                            # newItem = []
+
                             paraname = re.search(r'\((.*?)\)', subitem)
                             subitem = subitem.split('<')[0]
+                            # print(subitem)
                             if paraname:
                                 # print(subitem)
                                 paraname = str(paraname.group(0))[1:-1]
-                                value = subitem.split(' ')[0].strip(',')
+                                value = re.search(r'([0-9]+)', subitem)
+                                value = value.group(0)
+                                # print(value)
                                 try:
                                     newItem  =  {paraname : int(value)}
                                     newmodelyears.append(newItem)
-                                except:
+                                except Exception as e:
+                                    print(e)
                                     pass
                                 # print(newItem)
                             else:
-                                if ':' in subitem:
-                                    easyname = subitem.split(':')[0]
-                                    easyvalue = subitem.split(':')[1]
-                                    newItem  =  {easyname : int(easyvalue)}
-                                    newmodelyears.append(newItem)
+                                try:
+                                    if 'http' in subitem:
+                                        pass
+                                    # if '//' in subitem:
+                                    #     print(subitem)
+                                    elif ':' in subitem:
+                                        easyname = subitem.split(':')[0]
+                                        easyvalue = subitem.split(':')[1]
+                                        newItem  =  {easyname : int(easyvalue)}
+                                        newmodelyears.append(newItem)
 
-                                elif len(subitem.strip()) is 8 or  len(subitem.strip()) is 6 or len(subitem.strip()) is 4:
-                                    newmodelyears.append(int(subitem.strip()))
-                                else:
-                                    newmodelyears.append(subitem.strip(')'))
-                                    # print(subitem)
+                                    elif len(subitem.strip()) is 8 or  len(subitem.strip()) is 6 or len(subitem.strip()) is 4:
+                                        newmodelyears.append(int(subitem.strip()))
+                                        # print(subitem)
+                                    else:
+                                        pass
+
+                                        # newmodelyears.append(subitem.strip(')'))
+                                except Exception as e:
+                                    print(e)
                 else:
+                    # print(item)
                     item = item.lstrip().rstrip()
 
                     try:
@@ -385,10 +412,8 @@ def modelyearsParse(template):
                         pass
                     try:
                         item = item.replace('&ndash;', '')
-
                     except:
                         pass
-
                     try:
                         item = item.replace('present', '2020')
                     except:
@@ -397,64 +422,167 @@ def modelyearsParse(template):
                         item = item.replace('Present', '2020')
                     except:
                         pass
-
-                    if len(item) is 8 or  len(item) is 6 or len(item) is 4:
-                        newmodelyears.append(int(item))
+                    try:
+                        if len(item) is 8 or len(item) is 6 or len(item) is 4:
+                            # print(item)
+                            newmodelyears.append(int(item))
+                    except Exception as e:
                         # print(item)
+                        item = item.split(' ')[1]
+                        newmodelyears.append(int(item))
                     else:
-                        newItem = []
-                        paraname = re.search(r'\((.*?)\)', item)
+                        # newItem = []
+                        paraname = re.findall(r'\((.*?)\)', item)
                         item = item.split('<')[0]
+                        # print(item)
+
                         if paraname:
-                            paraname = str(paraname.group(0))[1:-1]
-                            value = item.split(' ')[0].strip(',')
-                            newItem  =  {paraname : int(value)}
-                            newmodelyears.append(newItem)
-                            # print(newItem)
+                            # paraname = str(paraname.group(0))[1:-1]
+                            paraname = str(paraname[0])
+                            value = re.findall(r'([0-9]+)', item)
+                            if len(value) == 1:
+                                # print(value)
+                                newItem  =  {paraname : int(value)}
+                                newmodelyears.append(newItem)
+                            else:
+                                starter = False;
+                                for subitem in value:
+                                    if len(subitem) == 8:
+                                        newItem  =  {paraname : int(value)}
+                                        newmodelyears.append(newItem)
+                                    elif len(subitem) == 4:
+                                        if not starter:
+                                            firstvalue = subitem
+                                            starter = True
+                                        else:
+                                            secondvalue = subitem
+                                            value = int(str(firstvalue)+str(secondvalue))
+                                            newItem  =  {paraname : int(value)}
+                                            # print(newItem)
+                                            newmodelyears.append(newItem)
+                                            starter = False;
+
+
                         else:
                             if ':' in item:
                                 easyname = item.split(':')[0]
                                 easyvalue = item.split(':')[1]
-                                newItem  =  {easyname : int(easyvalue)}
+                                try:
+                                    newItem  =  {easyname : int(easyvalue)}
+                                except Exception as e:
+                                    if '{' in item:
+                                        easyvalue = easyvalue.split('{{')[0]
+                                        newItem  =  {easyname : int(easyvalue)}
+                                    elif 'May' in item or 'China' in easyname:
+                                        easyvalue = re.sub("\D", "", easyvalue)
+                                        newItem  =  {easyname : int(easyvalue)}
+                                    else:
+                                        # print(easyname)
+                                        newmodelyears.append(int(easyname))
+                                        continue
                                 newmodelyears.append(newItem)
+                                # print(newItem)
                             else:
                                 item = item.lstrip().rstrip()
                                 if len(item) is 8 or  len(item) is 6 or len(item) is 4:
-                                    newmodelyears.append(int(item))
+                                    try:
+                                        newmodelyears.append(int(item))
+                                        # print(item)
+
+                                        # continue
+                                    except:
+                                        print(item)
                                 else:
+                                    # print(item)
                                     if 'and' in item:
                                         item = item.split('and')
                                         for subitem in item:
-                                            # print(subitem.strip())
-                                            newmodelyears.append(subitem.strip())
+                                            newmodelyears.append(int(subitem.strip()))
+                                        # continue
                                     elif ',' in item:
-                                        item = item.split(',')
-                                        for subitem in item:
-                                            # print(subitem.strip())
-                                            newmodelyears.append(subitem.strip())
-                                    else:
-                                        if '.5' in item:
-                                            item = item.replace('.5', '')
-                                            newmodelyears.append(item)
-                                        elif len(item.replace(' ', '')) is 8:
-                                            newmodelyears.append(item)
+                                        if 'produced' in item:
+                                            # print(item)
+                                            continue
+                                        if 'El Camino' in item:
+                                            item = item.split(' ')[0]
+                                            newmodelyears.append(int(item))
+                                            continue
+                                        # print(item)
+                                        fullDate = re.findall(r'[0-9]{8}', item)
+                                        if len(fullDate) > 0:
+                                            for subitem in fullDate:
+                                                # print(subitem)
+                                                if ',' in subitem:
+                                                    continue
+                                                newmodelyears.append(int(subitem))
+                                                # print(subitem)
+                                            continue
                                         else:
-                                            paravalue = re.search(r'[0-9]{8}', item)
-                                            if paravalue:
-                                                newItem  =  {item[8:] : int(paravalue.group(0))}
-                                                newmodelyears.append(newItem)
+                                            fullDate = re.findall(r'[0-9]{4}', item)
+                                            if len(fullDate) == 1:
+                                                newmodelyears.append(int(fullDate[0]))
+                                                continue
+                                            elif len(fullDate) == 2:
+                                                # print(int(str(fullDate[0]) + str(fullDate[1])))
+                                                newmodelyears.append(int(str(fullDate[0]) + str(fullDate[1])))
+                                                continue
                                             else:
-                                                newmodelyears.append(2020)
+                                                # print(item)
+                                                pass
+
+                                    else:
+                                        try:
+                                            # if 'built' in item or ',' in item:
+                                            #     continue
+                                            if '{{' in item:
+                                                item = item.split('{{')[0]
+                                            if len(item) < 4:
+                                                # print(item)
+                                                continue
+                                            if len(re.findall(r'[0-9]',item)) < 1:
+                                                # print(item)
+                                                continue
+                                            # print(item)
+                                            fullDate = re.findall(r'[0-9]{8}', item)
+                                            if len(fullDate) == 1:
+                                                newmodelyears.append(int(fullDate[0]))
+                                                continue
+                                            # if len(fullDate) > 1:
+                                            #     # item = item.split(' ')
+                                            #     print(item)
+
+                                            partialDate = re.findall(r'[0-9]{4}', item)
+                                            if len(partialDate) == 2:
+                                                newmodelyears.append(int(str(partialDate[0])+str(partialDate[1])))
+                                            elif len(partialDate) == 1:
+                                                newmodelyears.append(int(partialDate[0]))
+                                                # print(partialDate)
+                                                # if len(item[-1]) == 8:
+                                                #     newmodelyears.append(int(item[-1]))
+                                                #     continue
+                                                # else:
+                                                #     print(item)
+                                        except Exception as e:
+                                            print(e)
+                                            print(item)
+                                        #     for subitem in fullDate:
+                                        #         newmodelyears.append(subitem)
+                                        #     continue
+                                        # print(item)
+
 
 
             modelyears = newmodelyears
+            # print(car['model'])
+            # print(modelyears)
             return modelyears
             # cars[make][model][generation] = {'model_years': modelyears}
 
     except Exception as e:
         pass
-        # print(e, 'model_years', modelyears)
-        # print(item)
+        # print(e, 'model_years')
+        #
+        # # print(item)
         # exc_type, exc_obj, exc_tb = sys.exc_info()
         # fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
         # print(exc_type, fname, exc_tb.tb_lineno)
@@ -728,6 +856,7 @@ def wheelbaseParse(template):
     except Exception as e:
         # print('wheelbase', wheelbase, e)
         pass
+
 def lengthParse(template):
     try:
         length = str(template.get('length').value.lstrip().rstrip().encode('ascii', 'ignore'))
@@ -1601,11 +1730,14 @@ for filename in os.listdir(root_path):
 
         with open (root_path + filename, 'r') as vehicles_file:
 
-
+            make = filename.split('.')[0]
             mainsoup = BeautifulSoup(vehicles_file,features="lxml")
             pages = mainsoup.find_all('page')
             for page in pages:
-                model = str(page.find('title').get_text().encode('ascii', 'ignore'))
+                try:
+                    model = str(page.find('title').get_text().encode('ascii', 'ignore'))
+                except e as Exception:
+                    print(e)
                 # print(title)
                 # print(title)
                 # cars = []
@@ -1623,8 +1755,9 @@ for filename in os.listdir(root_path):
                             namecheck = ['Infobox automobile', 'Infobox electric', 'Infobox racing']
                             if any(x in template.name for x in namecheck):
                                 car = {}
-                                electric = None
+                                manufacturer = None
                                 generation = None
+                                electric = None
                                 production = None
                                 designer= None
                                 engine= None
@@ -1639,21 +1772,24 @@ for filename in os.listdir(root_path):
                                 widthbackup = None
                                 char_list = ['\[', '\]', '\&nbsp\;L', '\/\>', '\}', '\{', 'unbulleted list', '\&nbsp\;']
 
-                                if 'electric' in template.name:
-                                    car['electric'] = True
-                                else:
-                                    car['electric'] = False
-                                    # electric = False
 
 
+
+                                car['manufacturer'] = manufacturerParse(template)
+                                car['make'] = make
+                                car['model'] = model
                                 car['generation'] = generationParse(template)
+                                car['modelyears'] = modelyearsParse(template)
+                                # if car['modelyears']:
+                                #     if len(car['modelyears']) == 1:
+                                #         if type(car['modelyears'][0]) == int:
+                                #             car['modelyears'] = car['modelyears'][0]
+                                car['image'] = imageParse(template)
                                 car['production'] = productionParse(template)
                                 car['assembly'] = assemblyParse(template)
-                                car['modelyears'] = modelyearsParse(template)
                                 car['designer'] = designerParse(template)
                                 car['class'] = classParse(template)
                                 car['bodystlye'] = bodystyleParse(template)
-                                car['manufacturer'] = manufacturerParse(template)
                                 car['engine'] = engineParse(template)
                                 car['transmission'] = transmissionParse(template)
                                 car['wheelbase'] = wheelbaseParse(template)
@@ -1661,15 +1797,57 @@ for filename in os.listdir(root_path):
                                 car['width'] = widthParse(template)
                                 car['height'] = heightParse(template)
                                 car['weight'] = weightParse(template)
-                                car['image'] = imageParse(template)
-                                # print(car['image'])
+
+                                if 'electric' in template.name:
+                                    car['electric'] = True
+                                else:
+                                    car['electric'] = False
+
+                                # print(car['name'])
                                 cars.append(car)
 
                     except Exception as e:
                         print(e)
                         continue
 
+newcars = []
 
+for car in cars:
+    newcar = car
+    if car['modelyears']:
+        for item in car['modelyears']:
+            if type(item) == dict:
+                print(item.keys())
+                newcar['variant'] = item.keys()
+                item = item.values()
+            if type(item) == int:
+                if len(str(item)) == 6:
+                    if int(str(item)[0:2]) == 19:
+                        item = int(str(item)[0:4] + '19' + str(item)[4:])
+                    elif int(str(item)[0:2]) == 20:
+                        item = int(str(item)[0:4] + '20' + str(item)[4:])
+                    else:
+                        print(item)
+                if len(str(item)) == 8:
+                    prod_start = int(str(item)[0:4])
+                    prod_end = int(str(item)[4:])
+                    while prod_start < prod_end +1:
+                        item = prod_start
+                        newcar['modelyears'] = item
+                        if not newcar['variant']:
+                            newcar['variant'] = None
+                        newcars.append(newcar)
+                        prod_start += 1
+                elif len(str(item)) == 4:
+                    newcar['modelyears'] = item
+                    if not newcar['variant']:
+                        newcar['variant'] = None
+                    newcars.append(newcar)
+            # else:
+            #     # if type(item) == str:
+            #     print(item)
+                # print(type(item))
+                # print(car['make'],car['model'],car['modelyears'])
 
 #EXPORT_________________________________________
 #
@@ -1693,7 +1871,7 @@ def jsonOutput(filename,data):
 #EXPORT ACTIVITY____________________
 #
 def exporter():
-    jsonOutput('cars', cars)
+    jsonOutput('cars', newcars)
     print('ran')
 
 #
@@ -1710,9 +1888,9 @@ def exporter():
 #                 continue
 #         jsonOutput('/Phone', filename, phoneHolder)
 #
-
-print(len(cars))
-try:
-    exporter()
-except Exception as e:
-    print(e)
+#
+# print(len(newcars))
+# try:
+#     exporter()
+# except Exception as e:
+#     print(e)
